@@ -166,6 +166,7 @@ ALTER TABLE CorreoCliente ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoC1 CHECK(Correo <> '');
 ALTER TABLE CorreoCliente ADD CONSTRAINT Correo2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
 ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoCliente_pk PRIMARY KEY(IDPersona, Correo);
+ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoCliente_fk FOREIGN KEY (IDPersona) REFERENCES Cliente(IDPersona);
 
 
 CREATE TABLE TelefonoCliente (
@@ -176,6 +177,7 @@ ALTER TABLE TelefonoCliente ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE TelefonoCliente ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoC1 CHECK(Telefono <> '');
 ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoCLiente_pk PRIMARY KEY(IDPersona, Telefono);
+ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoCLiente_fk FOREIGN KEY (IDPersona) REFERENCES Cliente(IDPersona);
 
 
 CREATE TABLE Evento (
@@ -211,6 +213,7 @@ ALTER TABLE Jaula ALTER COLUMN IDBioma SET NOT NULL;
 ALTER TABLE Jaula ALTER COLUMN NumJaula SET NOT NULL;
 ALTER TABLE Jaula add CONSTRAINT NumJaulaC1 UNIQUE (NumJaula);
 ALTER TABLE Jaula ADD CONSTRAINT Jaula_pk PRIMARY KEY (IDBioma, NumJaula);
+ALTER TABLE Jaula ADD CONSTRAINT Jaula_fk FOREIGN KEY (IDBioma) REFERENCES Bioma(IDBioma);
 
 
 CREATE TABLE Servicio (
@@ -221,6 +224,7 @@ ALTER TABLE Servicio ALTER COLUMN IDBioma SET NOT NULL;
 ALTER TABLE Servicio ALTER COLUMN Tipo SET NOT NULL;
 ALTER TABLE Servicio ADD CONSTRAINT TipoC1 CHECK(Tipo <> '');
 ALTER TABLE Servicio ADD CONSTRAINT Servicio_pk PRIMARY KEY (IDBioma, Tipo);
+ALTER TABLE Servicio ADD CONSTRAINT Servicio_fk FOREIGN KEY (IDBioma) REFERENCES Bioma(IDBioma);
 
 
 CREATE TABLE Ticket (
@@ -243,6 +247,7 @@ ALTER TABLE Ticket ADD CONSTRAINT TipoC1 CHECK(Tipo <> '');
 ALTER TABLE Ticket ADD CONSTRAINT Ticket_pk PRIMARY KEY (NumTicket, IDBioma, Tipo);
 ALTER TABLE Ticket ADD CONSTRAINT Ticket_fkey
 FOREIGN KEY(IDPersona) REFERENCES Cliente(IDPersona);
+ALTER TABLE Ticket ADD CONSTRAINT Ticket_fk FOREIGN KEY (IDBioma,Tipo) REFERENCES Servicio(IDBioma,Tipo);
 
 
 CREATE TABLE Cuidador (
@@ -313,6 +318,7 @@ ALTER TABLE CorreoCuidador ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidadorC1 CHECK(Correo <> '');
 ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidadorC2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
 ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidador_pk PRIMARY KEY(IDPersona, Correo);
+ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidador_fk FOREIGN KEY (IDPersona) REFERENCES Cuidador(IDPersona);
 
 
 CREATE TABLE TelefonoCuidador (
@@ -324,6 +330,7 @@ ALTER TABLE TelefonoCuidador ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidadorC1 CHECK(Telefono <> '');
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidadorC2 UNIQUE(Telefono);
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidador_pk PRIMARY KEY(IDPersona, Telefono);
+ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidador_fk FOREIGN KEY (IDPersona) REFERENCES Cuidador(IDPersona);
 
 
 CREATE TABLE Animal (
@@ -430,6 +437,7 @@ ALTER TABLE Especialidad ALTER COLUMN Especialidad SET NOT NULL;
 ALTER TABLE Especialidad ADD CONSTRAINT EspecialidadC1 CHECK (Especialidad <> '');
 ALTER TABLE Especialidad ADD CONSTRAINT EspecialidadC2 CHECK (Especialidad <> '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Especialidad ADD CONSTRAINT Especialidad_pk PRIMARY KEY(IDPersona,Especialidad);
+ALTER TABLE Especialidad ADD CONSTRAINT Especialidad_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona);
 
 
 CREATE TABLE CorreoVeterinario (
@@ -442,6 +450,7 @@ ALTER TABLE CorreoVeterinario ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinarioC1 CHECK(Correo <> '');
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinarioC2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinario_pk PRIMARY KEY(IDPersona, Correo);
+ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinario_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona);
 
 
 CREATE TABLE TelefonoVeterinario (
@@ -452,7 +461,8 @@ ALTER TABLE TelefonoVeterinario ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE TelefonoVeterinario ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoVeterinario ADD CONSTRAINT TelefonoVeterinarioC1 CHECK(Telefono <> '');
 ALTER TABLE TelefonoVeterinario ADD CONSTRAINT TelefonoVeterinarioC2 UNIQUE(Telefono);
-ALTER TABLE TelefonoVeterinario ADD CONSTRAINT TelefonoCuidador_pk1 PRIMARY KEY(IDPersona, Telefono);
+ALTER TABLE TelefonoVeterinario ADD CONSTRAINT TelefonoVeterinario_pk PRIMARY KEY(IDPersona, Telefono);
+ALTER TABLE TelefonoVeterinario ADD CONSTRAINT TelefonoVeterinario_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona);
 
 
 CREATE TABLE ProveerAlimento (
