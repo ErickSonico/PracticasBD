@@ -376,6 +376,14 @@ ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidadorC2 CHECK(Correo ~ '^[a-z
 ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidador_pk PRIMARY KEY(IDPersona, Correo);
 ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidador_fk FOREIGN KEY (IDPersona) REFERENCES Cuidador(IDPersona);
 
+COMMENT ON TABLE CorreoCuidador IS 'Tabla para los correos de un cuidador.';
+COMMENT ON COLUMN CorreoCuidador.IDPersona IS 'ID del clietne.';
+COMMENT ON COLUMN CorreoCuidador.Correo IS 'Correo electrónico del cuidador.';
+COMMENT ON CONSTRAINT CorreoCuidadorC1 ON CorreoCuidador IS 'Check que verifica que el correo no sea la cadena vacía.';
+COMMENT ON CONSTRAINT CorreoCuidadorC2 ON CorreoCuidador IS 'Check que verifica que el correo tenga una estructura válida.';
+COMMENT ON CONSTRAINT CorreoCuidador_pk ON CorreoCuidador IS 'Llave primaria de la tabla.';
+COMMENT ON CONSTRAINT CorreoCuidador_fk ON CorreoCuidador IS 'Llave foránea de la tabla.';
+
 
 CREATE TABLE TelefonoCuidador (
    IDPersona INT NOT NULL,
@@ -387,6 +395,14 @@ ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidadorC1 CHECK(Telefono <>
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidadorC2 UNIQUE(Telefono);
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidador_pk PRIMARY KEY(IDPersona, Telefono);
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidador_fk FOREIGN KEY (IDPersona) REFERENCES Cuidador(IDPersona);
+
+COMMENT ON TABLE TelefonoCuidador IS 'Tabla con el teléfono del cuidador.';
+COMMENT ON COLUMN TelefonoCuidador.IDPersona IS 'ID del cuidador al que pertenece el teléfono.';
+COMMENT ON COLUMN TelefonoCuidador.Telefono IS 'Telefono del cuidador.';
+COMMENT ON CONSTRAINT TelefonoCuidadorC1 ON TelefonoCuidador IS 'Check que verifica que el teléfono no sea la cadena vacía.';
+COMMENT ON CONSTRAINT TelefonoCuidadorC2 ON TelefonoCuidador IS 'Check para verificar que la cadena del teléfono solo contenga números.';
+COMMENT ON CONSTRAINT TelefonoCuidador_pk ON TelefonoCuidador IS 'Llave primaria de la tabla.';
+COMMENT ON CONSTRAINT TelefonoCuidador_fk ON TelefonoCuidador IS 'Llave foránea de la tabla.';
 
 
 CREATE TABLE Animal (
@@ -426,6 +442,31 @@ ALTER TABLE Animal ALTER COLUMN Alimentacion SET NOT NULL;
 ALTER TABLE Animal ADD CONSTRAINT AlimentacionAnimalC1 CHECK(Alimentacion <> '');
 ALTER TABLE Animal ALTER COLUMN Altura SET NOT NULL;
 
+COMMENT ON TABLE Animal IS 'Tabla que contiene los datos de un Animal.';
+COMMENT ON COLUMN Animal.IDAnimal IS 'ID del Animal.';
+COMMENT ON COLUMN Animal.IDPersona IS 'ID del cuidador del Animal.';
+COMMENT ON COLUMN Animal.NumJaula IS 'Jaula en la que se enjaula en Animal.';
+COMMENT ON COLUMN Animal.IDBioma IS 'ID del bioama en el que esta el Animal.';
+COMMENT ON COLUMN Animal.Nombre IS 'Nombre comun del Animal.';
+COMMENT ON COLUMN Animal.Especie IS 'Especie del Animal.';
+COMMENT ON COLUMN Animal.Sexo IS 'Sexo del Animal.';
+COMMENT ON COLUMN Animal.Peso IS 'Peso del Animal.';
+COMMENT ON COLUMN Animal.Alimentacion IS 'Alimentacion que tiene el Animal.';
+COMMENT ON COLUMN Animal.Altura IS 'Altura del Animal.';
+COMMENT ON CONSTRAINT IDAnimalC1 ON Animal IS 'Check que verifica que IDAnimal sea unico.';
+COMMENT ON CONSTRAINT IDAnimal_pk ON Animal IS 'Llave primaria de la tabla';
+COMMENT ON CONSTRAINT IDPersonaC5 ON Animal IS 'Check que verifica que IDPersona sea unico.';
+COMMENT ON CONSTRAINT IDPersona_fk ON Animal IS 'Llave foranea de la tabla.';
+COMMENT ON CONSTRAINT NumJaulaC2 ON Animal IS 'Check que verifica que NumJaula sea unico.';
+COMMENT ON CONSTRAINT NumJaula_fk ON Animal IS 'Llave foranea de la tabla.';
+COMMENT ON CONSTRAINT IDBiomaC2 ON Animal IS 'Check que verifica que IDBioma sea unico.';
+COMMENT ON CONSTRAINT NombreAnimalC1 ON Animal IS 'Check que verifica que el nombre del animal no sea la cadena vacia.';
+COMMENT ON CONSTRAINT NombreAnimalC2 ON Animal IS 'Check que verifica que el nombre del animal tenga una estructura valida.';
+COMMENT ON CONSTRAINT EspecieAnimalC1 ON Animal IS 'Check que verifica que la especie del animal no sea la cadena vacia.';
+COMMENT ON CONSTRAINT EspecieAnimalC2 ON Animal IS 'Check que verifica que la especie del animal tenga una estructura valida.';
+COMMENT ON CONSTRAINT SexoAnimalC1 ON Animal IS 'Check que verifica que el sexo del animal no sea la cadena vacia.';
+COMMENT ON CONSTRAINT SexoAnimalC2 ON Animal IS 'Check que verifica que el seco del animal tenga una estructura valida.';
+COMMENT ON CONSTRAINT AlimentacionAnimalC1 ON Animal IS 'Check que verifica que la alimentacion del animal no sea la cadena vacia.';
 
 CREATE TABLE Veterinario (
    IDPersona INT,
@@ -531,6 +572,14 @@ ALTER TABLE Especialidad ADD CONSTRAINT EspecialidadC2 CHECK (Especialidad <> '^
 ALTER TABLE Especialidad ADD CONSTRAINT Especialidad_pk PRIMARY KEY(IDPersona,Especialidad);
 ALTER TABLE Especialidad ADD CONSTRAINT Especialidad_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona);
 
+COMMENT ON TABLE Especialidad IS 'Tabla para las especialidades de un veterinario.';
+COMMENT ON COLUMN Especialidad.IDPersona IS 'ID del veterinario.';
+COMMENT ON COLUMN Especialidad.Especialidad IS 'Especialidad del veterinario.';
+COMMENT ON CONSTRAINT EspecialidadC1 ON Especialidad IS 'Check que verifica que la especialidad no sea la cadena vacia.';
+COMMENT ON CONSTRAINT EspecialidadC2 ON Especialidad IS 'Check que verifica que la especialidad tenga una estructura valuda.';
+COMMENT ON CONSTRAINT Especialidad_pk ON Especialidad IS 'Llave primaria de la tabla.';
+COMMENT ON CONSTRAINT Especialidad_fk ON Especialidad IS 'Llave foránea de la tabla.';
+
 
 CREATE TABLE CorreoVeterinario (
    IDPersona INT NOT NULL,
@@ -544,6 +593,13 @@ ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinarioC2 CHECK(Correo ~ 
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinario_pk PRIMARY KEY(IDPersona, Correo);
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinario_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona);
 
+COMMENT ON TABLE CorreoVeterinario IS 'Tabla para los correos de un veterinario.';
+COMMENT ON COLUMN CorreoVeterinario.IDPersona IS 'ID del veterinario.';
+COMMENT ON COLUMN CorreoVeterinario.Correo IS 'Correo electrónico del veterinario.';
+COMMENT ON CONSTRAINT CorreoVeterinarioC1 ON CorreoVeterinario IS 'Check que verifica que el correo no sea la cadena vacía.';
+COMMENT ON CONSTRAINT CorreoVeterinarioC2 ON CorreoVeterinario IS 'Check que verifica que el correo tenga una estructura válida.';
+COMMENT ON CONSTRAINT CorreoVeterinario_pk ON CorreoVeterinario IS 'Llave primaria de la tabla.';
+COMMENT ON CONSTRAINT CorreoVeterinario_fk ON CorreoVeterinario IS 'Llave foránea de la tabla.';
 
 CREATE TABLE TelefonoVeterinario (
    IDPersona INT NOT NULL,
