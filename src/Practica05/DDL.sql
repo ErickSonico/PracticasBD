@@ -138,7 +138,7 @@ COMMENT ON COLUMN Medicina.IDInsumo IS 'Identificador de la medicina.';
 COMMENT ON COLUMN Medicina.Nombre IS 'Nombre de la medicina.';
 COMMENT ON COLUMN Medicina.Caducidad IS 'Fecha de caducidad de la medicina.';
 COMMENT ON COLUMN Medicina.Cantidad IS 'Cantidad de ese tipo medicina.';
-COMMENT ON COLUMN Medicina.Refrigeración IS 'Indica si la medicina necesita refrigeración o no.';
+COMMENT ON COLUMN Medicina.Refrigeracion IS 'Indica si la medicina necesita refrigeración o no.';
 COMMENT ON COLUMN Medicina.NumProveedor IS 'Número de proveedor de la medicina.';
 COMMENT ON COLUMN Medicina.Tipo IS 'Tipo de la medicina.';
 COMMENT ON COLUMN Medicina.Laboratorio IS 'Laboratorio de donde viene la medicina.';
@@ -196,9 +196,17 @@ CREATE TABLE CorreoCliente (
 ALTER TABLE CorreoCliente ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE CorreoCliente ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoC1 CHECK(Correo <> '');
-ALTER TABLE CorreoCliente ADD CONSTRAINT Correo2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
+ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoC2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
 ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoCliente_pk PRIMARY KEY(IDPersona, Correo);
 ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoCliente_fk FOREIGN KEY (IDPersona) REFERENCES Cliente(IDPersona);
+
+COMMENT ON TABLE CorreoCliente IS 'Tabla para los correos de un cliente.';
+COMMENT ON COLUMN CorreoCliente.IDPersona IS 'ID del clietne.';
+COMMENT ON COLUMN CorreoCliente.Correo IS 'Correo electrónico del cliente.';
+COMMENT ON CONSTRAINT CorreoC1 ON CorreoCliente IS 'Check que verifica que el correo no sea la cadena vacía.';
+COMMENT ON CONSTRAINT CorreoC2 ON CorreoCliente IS 'Check que verifica que el correo tenga una estructura válida.';
+COMMENT ON CONSTRAINT CorreoCliente_pk ON CorreoCliente IS 'Llave primaria de la tabla.';
+COMMENT ON CONSTRAINT CorreoCliente_fk ON CorreoCliente IS 'Llave foránea de la tabla.';
 
 
 CREATE TABLE TelefonoCliente (
@@ -208,8 +216,17 @@ CREATE TABLE TelefonoCliente (
 ALTER TABLE TelefonoCliente ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE TelefonoCliente ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoC1 CHECK(Telefono <> '');
+ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoC2 CHECK(Telefono ~ '[0-9]*$');
 ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoCLiente_pk PRIMARY KEY(IDPersona, Telefono);
 ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoCLiente_fk FOREIGN KEY (IDPersona) REFERENCES Cliente(IDPersona);
+
+COMMENT ON TABLE TelefonoCliente IS 'Tabla con el teléfono del cliente.';
+COMMENT ON COLUMN TelefonoCliente.IDPersona IS 'ID del cliente al que pertenece el teléfono.';
+COMMENT ON COLUMN TelefonoCliente.Telefono IS 'Telefono del cliente.';
+COMMENT ON CONSTRAINT TelefonoC1 ON TelefonoCliente IS 'Check que verifica que el teléfono no sea la cadena vacía.';
+COMMENT ON CONSTRAINT TelefonoC2 ON TelefonoCliente IS 'Check para verificar que la cadena del teléfono solo contenga números.';
+COMMENT ON CONSTRAINT TelefonoCliente_pk ON TelefonoCliente IS 'Llave primaria de la tabla.';
+COMMENT ON CONSTRAINT TelefonoCliente_fk ON TelefonoCliente IS 'Llave foránea de la tabla.';
 
 
 CREATE TABLE Evento (
@@ -225,6 +242,13 @@ ALTER TABLE Evento ADD CONSTRAINT TipoC1 CHECK(Tipo <> '');
 ALTER TABLE Evento ALTER COLUMN Capacidad SET NOT NULL;
 ALTER TABLE Evento ADD CONSTRAINT Evento_pk PRIMARY KEY (IDEvento);
 
+COMMENT ON TABLE Evento IS 'Tabla que contiene los datos de los eventos.';
+COMMENT ON COLUMN Evento.IDEvento IS 'ID del evento.';
+COMMENT ON COLUMN Evento.Fecha IS 'Fecha del evento.';
+COMMENT ON COLUMN Evento.Tipo IS 'Tipo del evento.';
+COMMENT ON COLUMN Evento.Capacidad IS 'Capacidad de asistentes del evento.';
+COMMENT ON CONSTRAINT TipoC1 ON Evento IS 'Check para verificar que el tipo del evento no sea la cadena vacía.';
+COMMENT ON CONSTRAINT Evento_pk ON Evento IS 'Llave primaria de la tabla Evento.';
 
 CREATE TABLE Bioma (
 IDBioma INT,
