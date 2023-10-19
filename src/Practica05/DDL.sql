@@ -482,6 +482,42 @@ ALTER TABLE Veterinario ALTER COLUMN DiasLabor SET NOT NULL;
 ALTER TABLE Veterinario ALTER COLUMN Horario SET NOT NULL;
 ALTER TABLE Veterinario ADD CONSTRAINT Veterinario_pk PRIMARY KEY (IDPersona);
 
+COMMENT ON TABLE Veterinario IS 'Tabla que contiene los datos de los veterinarios.';
+COMMENT ON COLUMN Veterinario.IDPersona IS 'Identificador del veterinario.';
+COMMENT ON COLUMN Veterinario.IDBioma IS 'Identificador del bioma en el que trabaja el veterinario.';
+COMMENT ON COLUMN Veterinario.Nombre IS 'Nombre del veterinario.';
+COMMENT ON CONSTRAINT NombreC1 ON Veterinario IS 'Check que verifica que el nombre no sea la cadena vacía.';
+COMMENT ON CONSTRAINT NombreC2 ON Veterinario IS 'Check que verifica que el nombre sólo contenga letras y espacios.';
+COMMENT ON COLUMN Veterinario.ApellidoPaterno IS 'Apellido paterno del veterinario.';
+COMMENT ON CONSTRAINT ApellidoPaternoC1 ON Veterinario IS 'Check que verifica que el apellido paterno no sea la cadena vacía.';
+COMMENT ON CONSTRAINT ApellidoPaternoC2 ON Veterinario IS 'Check que verifica que el apellido paterno sólo contenga letras y espacios.';
+COMMENT ON COLUMN Veterinario.ApellidoMaterno IS 'Apellido materno del veterinario.';
+COMMENT ON CONSTRAINT ApellidoMaternoC1 ON Veterinario IS 'Check que verifica que el apellido materno no sea la cadena vacía.';
+COMMENT ON CONSTRAINT ApellidoMaternoC2 ON Veterinario IS 'Check que verifica que el apellido materno sólo contenga letras y espacios.';
+COMMENT ON COLUMN Veterinario.RFC IS 'RFC del veterinario.';
+COMMENT ON CONSTRAINT RFCC1 ON Veterinario IS 'Check que verifica que el RFC no sea la cadena vacía.';
+COMMENT ON COLUMN Veterinario.Genero IS 'Género del veterinario.';
+COMMENT ON CONSTRAINT GeneroC1 ON Veterinario IS 'Check que verifica que el género no sea la cadena vacía.';
+COMMENT ON CONSTRAINT GeneroC2 ON Veterinario IS 'Check que verifica que el género sólo sea M o F';
+COMMENT ON COLUMN Veterinario.InicioContrato IS 'Fecha de inicio del contrato del veterinario.';
+COMMENT ON COLUMN Veterinario.FinContrato IS 'Fecha de fin del contrato del veterinario.';
+COMMENT ON COLUMN Veterinario.NumInt IS 'Número interior de la dirección del veterinario.';
+COMMENT ON COLUMN Veterinario.NumExt IS 'Número exterior de la dirección del veterinario.';
+COMMENT ON COLUMN Veterinario.Calle IS 'Calle donde vive el veterinario.';
+COMMENT ON CONSTRAINT CalleC1 ON Veterinario IS 'Check que verifica que la calle no sea la cadena vacía.';
+COMMENT ON CONSTRAINT CalleC2 ON Veterinario IS 'Check que verifica que la calle sólo contenga letras y espacios.';
+COMMENT ON COLUMN Veterinario.Colonia IS 'Colonia donde vive el veterinario.';
+COMMENT ON CONSTRAINT ColoniaC1 ON Veterinario IS 'Check que verifica que la colonia no sea la cadena vacía.';
+COMMENT ON CONSTRAINT ColoniaC2 ON Veterinario IS 'Check que verifica que la colonia sólo contenga letras y espacios.';
+COMMENT ON COLUMN Veterinario.CodigoPostal IS 'Código postal del veterinario.';
+COMMENT ON COLUMN Veterinario.Estado IS 'Estado donde vive el veterinario.';
+COMMENT ON CONSTRAINT EstadoC1 ON Veterinario IS 'Check que verifica que el estado no sea la cadena vacía.';
+COMMENT ON CONSTRAINT EstadoC2 ON Veterinario IS 'Check que verifica que el estado sólo contenga letras y espacios.';
+COMMENT ON COLUMN Veterinario.Salario IS 'Salario del veterinario.';
+COMMENT ON COLUMN Veterinario.DiasLabor IS 'Número de días laborales del veterinario.';
+COMMENT ON COLUMN Veterinario.Horario IS 'Horario del veterinario.';
+COMMENT ON CONSTRAINT Veterinario_pk ON Veterinario IS 'Llave primaria del veterinario.';
+
 
 CREATE TABLE Especialidad (
    IDPersona INT,
@@ -532,6 +568,12 @@ FOREIGN KEY(IDPersona) REFERENCES Proveedor(IDPersona);
 ALTER TABLE ProveerAlimento ADD CONSTRAINT ProveerAlimento_fkey2
 FOREIGN KEY(IDInsumo) REFERENCES Alimento(IDInsumo);
 
+COMMENT ON TABLE ProveerAlimento IS 'Relación entre proveedor y alimento.';
+COMMENT ON COLUMN ProveerAlimento.IDPersona IS 'Identificador del proveedor.';
+COMMENT ON COLUMN ProveerAlimento.IDInsumo IS 'Identificador del alimento proveído.';
+COMMENT ON CONSTRAINT ProveerAlimento_fkey ON ProveerAlimento IS 'Llave foránea del proveedor.';
+COMMENT ON CONSTRAINT ProveerAlimento_fkey2 ON ProveerAlimento IS 'Llave foránea del alimento proveído.';
+
 
 CREATE TABLE ProveerMedicina (
 IDPersona INT,
@@ -543,6 +585,12 @@ ALTER TABLE ProveerMedicina ADD CONSTRAINT ProveerMedicina_fkey
 FOREIGN KEY(IDPersona) REFERENCES Proveedor(IDPersona);
 ALTER TABLE ProveerMedicina ADD CONSTRAINT ProveerMedicina_fkey2
 FOREIGN KEY(IDInsumo) REFERENCES Medicina(IDInsumo);
+
+COMMENT ON TABLE ProveerMedicina IS 'Relación entre proveedor y medicina.';
+COMMENT ON COLUMN ProveerMedicina.IDPersona IS 'Identificador del proveedor.';
+COMMENT ON COLUMN ProveerMedicina.IDInsumo IS 'Identificador de la medicina proveída.';
+COMMENT ON CONSTRAINT ProveerMedicina_fkey ON ProveerMedicina IS 'Llave foránea del proveedor.';
+COMMENT ON CONSTRAINT ProveerMedicina_fkey2 ON ProveerMedicina IS 'Llave foránea de la medicina proveída.';
 
 
 CREATE TABLE Atender (
@@ -558,6 +606,13 @@ FOREIGN KEY(IDPersona) REFERENCES Veterinario(IDPersona);
 ALTER TABLE Atender ADD CONSTRAINT Atender_fkey2
 FOREIGN KEY(IDAnimal) REFERENCES Animal(IDAnimal);
 
+COMMENT ON TABLE Atender IS 'Relación entre veterinario y animal.';
+COMMENT ON COLUMN Atender.IDPersona IS 'Identificador del veterinario.';
+COMMENT ON COLUMN Atender.IDAnimal IS 'Identificador del animal atendido.';
+COMMENT ON COLUMN Atender.IndicacionMedica IS 'Indicación médica del animal.';
+COMMENT ON CONSTRAINT Atender_fkey ON Atender IS 'Llave foránea del veterinario.';
+COMMENT ON CONSTRAINT Atender_fkey2 ON Atender IS 'Llave foránea del animal.';
+
 
 CREATE TABLE DistribuirAlimento (
 IDBioma INT,
@@ -569,6 +624,12 @@ ALTER TABLE DistribuirAlimento ADD CONSTRAINT DistribuirAlimento_fkey
 FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma);
 ALTER TABLE DistribuirAlimento ADD CONSTRAINT DistribuirAlimento_fkey2
 FOREIGN KEY(IDInsumo) REFERENCES Alimento(IDInsumo);
+
+COMMENT ON TABLE DistribuirAlimento IS 'Relación de distribuir un alimento en un bioma.';
+COMMENT ON COLUMN DistribuirAlimento.IDBioma IS 'Identificador del bioma.';
+COMMENT ON COLUMN DistribuirAlimento.IDInsumo IS 'Identificador del alimento.';
+COMMENT ON CONSTRAINT DistribuirAlimento_fkey ON DistribuirAlimento IS 'Llave foránea del bioma.';
+COMMENT ON CONSTRAINT DistribuirAlimento_fkey2 ON DistribuirAlimento IS 'Llave foránea del alimento.';
 
 
 CREATE TABLE DistribuirMedicina (
@@ -582,6 +643,12 @@ FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma);
 ALTER TABLE DistribuirMedicina ADD CONSTRAINT DistribuirMedicina_fkey2
 FOREIGN KEY(IDInsumo) REFERENCES Medicina(IDInsumo);
 
+COMMENT ON TABLE DistribuirMedicina IS 'Relación de distribuir medicina en un bioma.';
+COMMENT ON COLUMN DistribuirMedicina.IDBioma IS 'Identificador del bioma.';
+COMMENT ON COLUMN DistribuirMedicina.IDInsumo IS 'Identificador de la medicina.';
+COMMENT ON CONSTRAINT DistribuirMedicina_fkey ON DistribuirMedicina IS 'Llave foránea del bioma.';
+COMMENT ON CONSTRAINT DistribuirMedicina_fkey2 ON DistribuirMedicina IS 'Llave foránea de la medicina.';
+
 
 CREATE TABLE Notificar (
 IDPersona INT,
@@ -593,6 +660,12 @@ ALTER TABLE Notificar ADD CONSTRAINT Notificar_fkey
 FOREIGN KEY(IDPersona) REFERENCES Cliente(IDPersona);
 ALTER TABLE Notificar ADD CONSTRAINT Notificar_fkey2
 FOREIGN KEY(IDEvento) REFERENCES Evento(IDEvento);
+
+COMMENT ON TABLE Notificar IS 'Relación de notificar a un cliente que hay un evento.';
+COMMENT ON COLUMN Notificar.IDPersona IS 'Identificador del cliente.';
+COMMENT ON COLUMN Notificar.IDEvento IS 'Identificador del evento.';
+COMMENT ON CONSTRAINT Notificar_fkey ON Notificar IS 'Llave foránea del cliente.';
+COMMENT ON CONSTRAINT Notificar_fkey2 ON Notificar IS 'Llave foránea del evento.';
 
 
 CREATE TABLE Asistir (
