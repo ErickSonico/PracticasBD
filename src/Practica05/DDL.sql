@@ -133,6 +133,22 @@ ALTER TABLE Medicina ADD CONSTRAINT TipoC1 CHECK(Tipo <> '');
 ALTER TABLE Medicina ALTER COLUMN Laboratorio SET NOT NULL;
 ALTER TABLE Medicina ADD CONSTRAINT LaboratorioC1 CHECK(Laboratorio <> '');
 
+COMMENT ON TABLE Medicina IS 'Tabla que contiene los datos de las medicinas para los animales.';
+COMMENT ON COLUMN Medicina.IDInsumo IS 'Identificador de la medicina.';
+COMMENT ON COLUMN Medicina.Nombre IS 'Nombre de la medicina.';
+COMMENT ON COLUMN Medicina.Caducidad IS 'Fecha de caducidad de la medicina.';
+COMMENT ON COLUMN Medicina.Cantidad IS 'Cantidad de ese tipo medicina.';
+COMMENT ON COLUMN Medicina.Refrigeración IS 'Indica si la medicina necesita refrigeración o no.';
+COMMENT ON COLUMN Medicina.NumProveedor IS 'Número de proveedor de la medicina.';
+COMMENT ON COLUMN Medicina.Tipo IS 'Tipo de la medicina.';
+COMMENT ON COLUMN Medicina.Laboratorio IS 'Laboratorio de donde viene la medicina.';
+COMMENT ON CONSTRAINT IDInsumoC2 ON Medicina IS 'Restricción de unicidad para el ID de medicina.';
+COMMENT ON CONSTRAINT IDInsumo_pk ON Medicina IS 'Llave primaria de la medicina.';
+COMMENT ON CONSTRAINT NombreC1 ON Medicina IS 'Check que nos asegura que el nombre no sea la cadena vacía.';
+COMMENT ON CONSTRAINT NombreC2 ON Medicina IS 'Check que nos asegura que el nombre de la medicina sólo esté conformado por letras.';
+COMMENT ON CONSTRAINT TipoC1 ON Medicina IS 'Check que nos asegura que el tipo de la medicina no sea la cadena vacía.';
+COMMENT ON CONSTRAINT LaboratorioC1 ON Medicina IS 'Check que nos asegura que el laboratorio de la medicina no sea la cadena vacía.';
+
 
 CREATE TABLE Cliente (
    IDPersona INT,
@@ -155,6 +171,22 @@ ALTER TABLE Cliente ALTER COLUMN Genero SET NOT NULL;
 ALTER TABLE Cliente ADD CONSTRAINT GeneroC1 CHECK(Genero <> '');
 ALTER TABLE Cliente ADD CONSTRAINT GeneroC2 CHECK(Genero ~ '^[MF]$');
 ALTER TABLE Cliente ADD CONSTRAINT Cliente_pk PRIMARY KEY (IDPersona);
+
+COMMENT ON TABLE Cliente IS 'Tabla que contiene los datos de un cliente.';
+COMMENT ON COLUMN Cliente.IDPersona IS 'ID del cliente.';
+COMMENT ON COLUMN Cliente.Nombre IS 'Nombre del cliente.';
+COMMENT ON COLUMN Cliente.ApellidoPaterno IS 'Apellido paterno del cliente.';
+COMMENT ON COLUMN Cliente.ApellidoMaterno IS 'Apellido materno del cliente.';
+COMMENT ON COLUMN Cliente.Genero IS 'Género del cliente.';
+COMMENT ON CONSTRAINT NombreC1 ON Cliente IS 'Check que impide que el nombre del cliente sea la cadena vacía.';
+COMMENT ON CONSTRAINT NombreC2 ON Cliente IS 'Check que verifica que el nombre del cliente contenga sólo letras.';
+COMMENT ON CONSTRAINT ApellidoPaternoC1 ON Cliente IS 'Check que impide que el apellido paterno del cliente sea la cadena vacía.';
+COMMENT ON CONSTRAINT ApellidoPaternoC2 ON Cliente IS 'Check que verifica que el apellido paterno del cliente contenga sólo letras.';
+COMMENT ON CONSTRAINT ApellidoMaternoC1 ON Cliente IS 'Check que impide que el apellido materno del cliente sea la cadena vacía.';
+COMMENT ON CONSTRAINT ApellidoMaternoC2 ON Cliente IS 'Check que verifica que el apellido materno del cliente contenga sólo letras.';
+COMMENT ON CONSTRAINT GeneroC1 ON Cliente IS 'Check que verifica que el género no sea la cadena vacía.';
+COMMENT ON CONSTRAINT GeneroC2 ON Cliente IS 'Check que verifica que el género sólo sea M o F, es decir masculino o femenino.';
+COMMENT ON CONSTRAINT Cliente_pk ON Cliente IS 'Llave primaria del cleinte';
 
 
 CREATE TABLE CorreoCliente (
