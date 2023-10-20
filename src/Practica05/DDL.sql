@@ -336,6 +336,12 @@ ALTER TABLE Bioma ALTER COLUMN Tipo SET NOT NULL;
 ALTER TABLE Bioma ADD CONSTRAINT TipoC1 CHECK(Tipo <> '');
 ALTER TABLE Bioma ADD CONSTRAINT Bioma_pk PRIMARY KEY (IDBioma);
 
+COMMENT ON TABLE Bioma IS 'Tabla que contiene los datos de cada bioma.';
+COMMENT ON COLUMN Bioma.IDBioma IS 'ID del bioma.';
+COMMENT ON COLUMN Bioma.Tipo IS 'Tipo de bioma.';
+COMMENT ON CONSTRAINT IDBiomaC1 ON Bioma IS 'Restriccion unique para el atributo Bioma';
+COMMENT ON CONSTRAINT TipoC1 ON Bioma IS 'Restriccion check el cual nos asegura que Tipo de bioma no sea la cadena vacia';
+COMMENT ON CONSTRAINT Bioma_pk ON Bioma IS 'La llave primaria de la tabla Bioma';
 
 CREATE TABLE Jaula (
 IDBioma INT,
@@ -348,6 +354,12 @@ ALTER TABLE Jaula ADD CONSTRAINT Jaula_pk PRIMARY KEY (IDBioma, NumJaula);
 ALTER TABLE Jaula ADD CONSTRAINT Jaula_fk FOREIGN KEY (IDBioma) REFERENCES Bioma(IDBioma)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
+COMMENT ON TABLE Jaula IS 'Tabla que contiene los datos de cada jaula.';
+COMMENT ON COLUMN Jaula.IDBioma IS 'ID de la jaula.';
+COMMENT ON COLUMN Jaula.NumJaula IS 'Número de la jaula.';
+COMMENT ON CONSTRAINT NumJaulaC1 ON Jaula IS 'Restriccion unique para el atributo NumJaula';
+COMMENT ON CONSTRAINT Jaula_pk ON Jaula IS 'La llave primaria de la tabla Jaula';
+COMMENT ON CONSTRAINT Jaula_fk ON Jaula IS 'La llave foránea de la tabla Jaula que hace referencia a la columna IDBioma de la tabla Bioma';
 
 CREATE TABLE Servicio (
 IDBioma INT,
@@ -360,6 +372,12 @@ ALTER TABLE Servicio ADD CONSTRAINT Servicio_pk PRIMARY KEY (IDBioma, Tipo);
 ALTER TABLE Servicio ADD CONSTRAINT Servicio_fk FOREIGN KEY (IDBioma) REFERENCES Bioma(IDBioma)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
+COMMENT ON TABLE Servicio IS 'Tabla que contiene los datos de cada Servicio.';
+COMMENT ON COLUMN Servicio.IDBioma IS 'ID del Bioma.';
+COMMENT ON COLUMN Servicio.Tipo IS 'Tipo del servicio.';
+COMMENT ON CONSTRAINT TipoC1 ON Servicio IS 'Restriccion check el cual nos asegura que Tipo de Servicio no sea la cadena vacia';
+COMMENT ON CONSTRAINT Servicio_pk ON Servicio IS 'La llave primaria de la tabla Servicio';
+COMMENT ON CONSTRAINT Servicio_fk ON Servicio IS 'La llave foránea de la tabla Servicio que hace referencia a la columna IDBioma de la tabla Bioma';
 
 CREATE TABLE Ticket (
 NumTicket INT,
@@ -383,6 +401,19 @@ ALTER TABLE Ticket ADD CONSTRAINT Ticket_fkey FOREIGN KEY(IDPersona) REFERENCES 
 ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE Ticket ADD CONSTRAINT Ticket_fk FOREIGN KEY (IDBioma,Tipo) REFERENCES Servicio(IDBioma,Tipo)
 ON UPDATE CASCADE ON DELETE CASCADE;
+
+COMMENT ON TABLE Ticket IS 'Tabla que contiene los datos de cada Ticket.';
+COMMENT ON COLUMN Ticket.NumTicket IS 'Numero del Ticket.';
+COMMENT ON COLUMN Ticket.IDBioma IS 'ID del Bioma.';
+COMMENT ON COLUMN Ticket.Tipo IS 'Tipo del servicio.';
+COMMENT ON COLUMN Ticket.IDPersona IS 'ID de la Persona.';
+COMMENT ON COLUMN Ticket.Fecha IS 'Fecha del Ticket.';
+COMMENT ON COLUMN Ticket.CostoTotal IS 'Costo Total del Ticket.';
+COMMENT ON COLUMN Ticket.Descuento IS 'Descuento del Ticket.';
+COMMENT ON CONSTRAINT TipoC1 ON Ticket IS 'Restriccion check el cual nos asegura que Tipo de Servicio no sea la cadena vacia';
+COMMENT ON CONSTRAINT Ticket_pk ON Ticket IS 'La llave primaria de la tabla Ticket';
+COMMENT ON CONSTRAINT Ticket_fkey ON Ticket IS 'La llave foránea de la tabla Ticket que hace referencia a la columna IDPersona de la tabla Cliente';
+COMMENT ON CONSTRAINT Ticket_fk ON Ticket IS 'La llave foránea de la tabla Ticket que hace referencia a las columnas IDBioma y Tipo de la tabla Servicio';
 
 
 CREATE TABLE Cuidador (
@@ -441,6 +472,42 @@ ALTER TABLE Cuidador ALTER COLUMN Horario SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT Cuidador_pk PRIMARY KEY (IDPersona);
 ALTER TABLE Cuidador ADD CONSTRAINT Cuidador_fkey FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma)
 ON UPDATE CASCADE ON DELETE CASCADE;
+
+COMMENT ON TABLE Cuidador IS 'Tabla que contiene los Cuidadores';
+COMMENT ON COLUMN Cuidador.IDBioma IS 'Identificador del bioma';
+COMMENT ON COLUMN Cuidador.Nombre IS 'Nombre del Cuidador';
+COMMENT ON COLUMN Cuidador.ApellidoPaterno IS 'Apellido paterno del Cuidador';
+COMMENT ON COLUMN Cuidador.ApellidoMaterno IS 'Apellido materno del Cuidador';
+COMMENT ON COLUMN Cuidador.RFC IS 'RFC del Cuidador';
+COMMENT ON COLUMN Cuidador.Genero IS 'Genero del Cuidador';
+COMMENT ON COLUMN Cuidador.InicioContrato IS 'Fecha de inicio del contrato';
+COMMENT ON COLUMN Cuidador.FinContrato IS 'Fecha de fin del contrato';
+COMMENT ON COLUMN Cuidador.NumInt IS 'Numero interior del edificio de la vivienda';
+COMMENT ON COLUMN Cuidador.NumExt IS 'Numero exterior de la vivienda';
+COMMENT ON COLUMN Cuidador.Calle IS 'Calle de la vivienda';
+COMMENT ON COLUMN Cuidador.Colonia IS 'Colonia de la vivienda';
+COMMENT ON COLUMN Cuidador.CodigoPostal IS 'Codigo postal de la vivienda';
+COMMENT ON COLUMN Cuidador.Estado IS 'Estado de la vivienda';
+COMMENT ON COLUMN Cuidador.Salario IS 'Salario del Cuidador';
+COMMENT ON COLUMN Cuidador.DiasLabor IS 'Días laborales del Cuidador';
+COMMENT ON COLUMN Cuidador.Horario IS 'Horario del Cuidador';
+COMMENT ON CONSTRAINT NombreC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Nombre no es la cadena vacia';
+COMMENT ON CONSTRAINT NombreC2 ON Proveedor IS 'Restriccion check para nombres únicamente con letras';
+COMMENT ON CONSTRAINT ApellidoPaternoC1 ON Proveedor IS 'Restriccion check el cual nos asegura que ApellidoPaterno no es la cadena vacia';
+COMMENT ON CONSTRAINT ApellidoPaternoC2 ON Proveedor IS 'Restriccion check para ApellidoPaternos únicamente con letras';
+COMMENT ON CONSTRAINT ApellidoMaternoC1 ON Proveedor IS 'Restriccion check el cual nos asegura que ApellidoMaterno no es la cadena vacia';
+COMMENT ON CONSTRAINT ApellidoMaternoC2 ON Proveedor IS 'Restriccion check para ApellidoMaternos únicamente con letras';
+COMMENT ON CONSTRAINT RFCC1 ON Proveedor IS 'Restriccion check el cual nos asegura que RFC no es la cadena vacia';
+COMMENT ON CONSTRAINT GeneroC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Genero no es la cadena vacia';
+COMMENT ON CONSTRAINT GeneroC2 ON Proveedor IS 'Restriccion check para admitir sólo dos géneros M o F';
+COMMENT ON CONSTRAINT CalleC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Calle no es la cadena vacia';
+COMMENT ON CONSTRAINT CalleC2 ON Proveedor IS 'Restriccion check para Calles únicamente con letras';
+COMMENT ON CONSTRAINT ColoniaC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Colonia no es la cadena vacia';
+COMMENT ON CONSTRAINT ColoniaC2 ON Proveedor IS 'Restriccion check para Colonias únicamente con letras';
+COMMENT ON CONSTRAINT EstadoC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Estado no es la cadena vacia';
+COMMENT ON CONSTRAINT EstadoC2 ON Proveedor IS 'Restriccion check para Estados únicamente con letras';
+COMMENT ON CONSTRAINT Cuidador_pk ON Cuidador IS 'La llave primaria de la tabla Cuidador';
+COMMENT ON CONSTRAINT Cuidador_fkey ON Cuidador IS 'La llave foránea de la tabla Cuidador que hace referencia a la columna IDBioma de la tabla Bioma';
 
 
 CREATE TABLE CorreoCuidador (
