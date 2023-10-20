@@ -272,7 +272,8 @@ ALTER TABLE CorreoCliente ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoC1 CHECK(Correo <> '');
 ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoC2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
 ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoCliente_pk PRIMARY KEY(IDPersona, Correo);
-ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoCliente_fk FOREIGN KEY (IDPersona) REFERENCES Cliente(IDPersona);
+ALTER TABLE CorreoCliente ADD CONSTRAINT CorreoCliente_fk FOREIGN KEY (IDPersona) REFERENCES Cliente(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE CorreoCliente IS 'Tabla para los correos de un cliente.';
 COMMENT ON COLUMN CorreoCliente.IDPersona IS 'ID del clietne.';
@@ -292,7 +293,8 @@ ALTER TABLE TelefonoCliente ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoC1 CHECK(Telefono <> '');
 ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoC2 CHECK(Telefono ~ '[0-9]*$');
 ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoCLiente_pk PRIMARY KEY(IDPersona, Telefono);
-ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoCLiente_fk FOREIGN KEY (IDPersona) REFERENCES Cliente(IDPersona);
+ALTER TABLE TelefonoCliente ADD CONSTRAINT TelefonoCLiente_fk FOREIGN KEY (IDPersona) REFERENCES Cliente(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE TelefonoCliente IS 'Tabla con el teléfono del cliente.';
 COMMENT ON COLUMN TelefonoCliente.IDPersona IS 'ID del cliente al que pertenece el teléfono.';
@@ -377,8 +379,8 @@ ALTER TABLE Ticket ALTER COLUMN CostoTotal SET NOT NULL;
 ALTER TABLE Ticket ALTER COLUMN Descuento SET NOT NULL;
 ALTER TABLE Ticket ADD CONSTRAINT TipoC1 CHECK(Tipo <> '');
 ALTER TABLE Ticket ADD CONSTRAINT Ticket_pk PRIMARY KEY (NumTicket, IDBioma, Tipo);
-ALTER TABLE Ticket ADD CONSTRAINT Ticket_fkey
-FOREIGN KEY(IDPersona) REFERENCES Cliente(IDPersona);
+ALTER TABLE Ticket ADD CONSTRAINT Ticket_fkey FOREIGN KEY(IDPersona) REFERENCES Cliente(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE Ticket ADD CONSTRAINT Ticket_fk FOREIGN KEY (IDBioma,Tipo) REFERENCES Servicio(IDBioma,Tipo)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
@@ -437,8 +439,7 @@ ALTER TABLE Cuidador ALTER COLUMN Salario SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN DiasLabor SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN Horario SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT Cuidador_pk PRIMARY KEY (IDPersona);
-ALTER TABLE Cuidador ADD CONSTRAINT Cuidador_fkey
-FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma)
+ALTER TABLE Cuidador ADD CONSTRAINT Cuidador_fkey FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 
@@ -502,10 +503,12 @@ ALTER TABLE Animal ADD CONSTRAINT IDAnimalC1 UNIQUE (IDAnimal);
 ALTER TABLE Animal ADD CONSTRAINT IDAnimal_pk PRIMARY KEY (IDAnimal);
 ALTER TABLE Animal ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE Animal ADD CONSTRAINT IDPersonaC5 UNIQUE (IDPersona);
-ALTER TABLE Animal ADD CONSTRAINT IDPersona_fk FOREIGN KEY (IDPersona) REFERENCES Cuidador(IDPersona);
+ALTER TABLE Animal ADD CONSTRAINT IDPersona_fk FOREIGN KEY (IDPersona) REFERENCES Cuidador(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE Animal ALTER COLUMN NumJaula SET NOT NULL;
 ALTER TABLE Animal ADD CONSTRAINT NumJaulaC2 UNIQUE (NumJaula);
-ALTER TABLE Animal ADD CONSTRAINT NumJaula_fk FOREIGN KEY (NumJaula,IDBioma) REFERENCES Jaula(NumJaula,IDBioma);
+ALTER TABLE Animal ADD CONSTRAINT NumJaula_fk FOREIGN KEY (NumJaula,IDBioma) REFERENCES Jaula(NumJaula,IDBioma)
+ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE Animal ALTER COLUMN IDBioma SET NOT NULL;
 ALTER TABLE Animal ADD CONSTRAINT IDBiomaC2 UNIQUE(IDBioma);
 ALTER TABLE Animal ALTER COLUMN Nombre SET NOT NULL;
@@ -650,7 +653,8 @@ ALTER TABLE Especialidad ALTER COLUMN Especialidad SET NOT NULL;
 ALTER TABLE Especialidad ADD CONSTRAINT EspecialidadC1 CHECK (Especialidad <> '');
 ALTER TABLE Especialidad ADD CONSTRAINT EspecialidadC2 CHECK (Especialidad <> '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Especialidad ADD CONSTRAINT Especialidad_pk PRIMARY KEY(IDPersona,Especialidad);
-ALTER TABLE Especialidad ADD CONSTRAINT Especialidad_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona);
+ALTER TABLE Especialidad ADD CONSTRAINT Especialidad_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE Especialidad IS 'Tabla para las especialidades de un veterinario.';
 COMMENT ON COLUMN Especialidad.IDPersona IS 'ID del veterinario.';
@@ -671,7 +675,8 @@ ALTER TABLE CorreoVeterinario ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinarioC1 CHECK(Correo <> '');
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinarioC2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinario_pk PRIMARY KEY(IDPersona, Correo);
-ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinario_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona);
+ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinario_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE CorreoVeterinario IS 'Tabla para los correos de un veterinario.';
 COMMENT ON COLUMN CorreoVeterinario.IDPersona IS 'ID del veterinario.';
@@ -690,7 +695,8 @@ ALTER TABLE TelefonoVeterinario ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoVeterinario ADD CONSTRAINT TelefonoVeterinarioC1 CHECK(Telefono <> '');
 ALTER TABLE TelefonoVeterinario ADD CONSTRAINT TelefonoVeterinarioC2 UNIQUE(Telefono);
 ALTER TABLE TelefonoVeterinario ADD CONSTRAINT TelefonoVeterinario_pk PRIMARY KEY(IDPersona, Telefono);
-ALTER TABLE TelefonoVeterinario ADD CONSTRAINT TelefonoVeterinario_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona);
+ALTER TABLE TelefonoVeterinario ADD CONSTRAINT TelefonoVeterinario_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 CREATE TABLE ProveerAlimento (
@@ -699,10 +705,10 @@ IDInsumo INT
 );
 ALTER TABLE ProveerAlimento ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE ProveerAlimento ALTER COLUMN IDInsumo SET NOT NULL;
-ALTER TABLE ProveerAlimento ADD CONSTRAINT ProveerAlimento_fkey
-FOREIGN KEY(IDPersona) REFERENCES Proveedor(IDPersona);
-ALTER TABLE ProveerAlimento ADD CONSTRAINT ProveerAlimento_fkey2
-FOREIGN KEY(IDInsumo) REFERENCES Alimento(IDInsumo);
+ALTER TABLE ProveerAlimento ADD CONSTRAINT ProveerAlimento_fkey FOREIGN KEY(IDPersona) REFERENCES Proveedor(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE ProveerAlimento ADD CONSTRAINT ProveerAlimento_fkey2 FOREIGN KEY(IDInsumo) REFERENCES Alimento(IDInsumo)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE ProveerAlimento IS 'Relación entre proveedor y alimento.';
 COMMENT ON COLUMN ProveerAlimento.IDPersona IS 'Identificador del proveedor.';
@@ -717,10 +723,10 @@ IDInsumo INT
 );
 ALTER TABLE ProveerMedicina ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE ProveerMedicina ALTER COLUMN IDInsumo SET NOT NULL;
-ALTER TABLE ProveerMedicina ADD CONSTRAINT ProveerMedicina_fkey
-FOREIGN KEY(IDPersona) REFERENCES Proveedor(IDPersona);
-ALTER TABLE ProveerMedicina ADD CONSTRAINT ProveerMedicina_fkey2
-FOREIGN KEY(IDInsumo) REFERENCES Medicina(IDInsumo);
+ALTER TABLE ProveerMedicina ADD CONSTRAINT ProveerMedicina_fkey FOREIGN KEY(IDPersona) REFERENCES Proveedor(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE ProveerMedicina ADD CONSTRAINT ProveerMedicina_fkey2 FOREIGN KEY(IDInsumo) REFERENCES Medicina(IDInsumo)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE ProveerMedicina IS 'Relación entre proveedor y medicina.';
 COMMENT ON COLUMN ProveerMedicina.IDPersona IS 'Identificador del proveedor.';
@@ -737,10 +743,10 @@ IndicacionMedica text
 ALTER TABLE Atender ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE Atender ALTER COLUMN IDAnimal SET NOT NULL;
 ALTER TABLE Atender ALTER COLUMN IndicacionMedica SET NOT NULL;
-ALTER TABLE Atender ADD CONSTRAINT Atender_fkey
-FOREIGN KEY(IDPersona) REFERENCES Veterinario(IDPersona);
-ALTER TABLE Atender ADD CONSTRAINT Atender_fkey2
-FOREIGN KEY(IDAnimal) REFERENCES Animal(IDAnimal);
+ALTER TABLE Atender ADD CONSTRAINT Atender_fkey FOREIGN KEY(IDPersona) REFERENCES Veterinario(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE Atender ADD CONSTRAINT Atender_fkey2 FOREIGN KEY(IDAnimal) REFERENCES Animal(IDAnimal)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE Atender IS 'Relación entre veterinario y animal.';
 COMMENT ON COLUMN Atender.IDPersona IS 'Identificador del veterinario.';
@@ -756,10 +762,10 @@ IDInsumo INT
 );
 ALTER TABLE DistribuirAlimento ALTER COLUMN IDBioma SET NOT NULL;
 ALTER TABLE DistribuirAlimento ALTER COLUMN IDInsumo SET NOT NULL;
-ALTER TABLE DistribuirAlimento ADD CONSTRAINT DistribuirAlimento_fkey
-FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma);
-ALTER TABLE DistribuirAlimento ADD CONSTRAINT DistribuirAlimento_fkey2
-FOREIGN KEY(IDInsumo) REFERENCES Alimento(IDInsumo);
+ALTER TABLE DistribuirAlimento ADD CONSTRAINT DistribuirAlimento_fkey FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma)
+ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE DistribuirAlimento ADD CONSTRAINT DistribuirAlimento_fkey2 FOREIGN KEY(IDInsumo) REFERENCES Alimento(IDInsumo)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE DistribuirAlimento IS 'Relación de distribuir un alimento en un bioma.';
 COMMENT ON COLUMN DistribuirAlimento.IDBioma IS 'Identificador del bioma.';
@@ -774,10 +780,10 @@ IDInsumo INT
 );
 ALTER TABLE DistribuirMedicina ALTER COLUMN IDBioma SET NOT NULL;
 ALTER TABLE DistribuirMedicina ALTER COLUMN IDInsumo SET NOT NULL;
-ALTER TABLE DistribuirMedicina ADD CONSTRAINT DistribuirMedicina_fkey
-FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma);
-ALTER TABLE DistribuirMedicina ADD CONSTRAINT DistribuirMedicina_fkey2
-FOREIGN KEY(IDInsumo) REFERENCES Medicina(IDInsumo);
+ALTER TABLE DistribuirMedicina ADD CONSTRAINT DistribuirMedicina_fkey FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma)
+ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE DistribuirMedicina ADD CONSTRAINT DistribuirMedicina_fkey2 FOREIGN KEY(IDInsumo) REFERENCES Medicina(IDInsumo)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE DistribuirMedicina IS 'Relación de distribuir medicina en un bioma.';
 COMMENT ON COLUMN DistribuirMedicina.IDBioma IS 'Identificador del bioma.';
@@ -792,10 +798,10 @@ IDEvento INT
 );
 ALTER TABLE Notificar ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE Notificar ALTER COLUMN IDEvento SET NOT NULL;
-ALTER TABLE Notificar ADD CONSTRAINT Notificar_fkey
-FOREIGN KEY(IDPersona) REFERENCES Cliente(IDPersona);
-ALTER TABLE Notificar ADD CONSTRAINT Notificar_fkey2
-FOREIGN KEY(IDEvento) REFERENCES Evento(IDEvento);
+ALTER TABLE Notificar ADD CONSTRAINT Notificar_fkey FOREIGN KEY(IDPersona) REFERENCES Cliente(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE Notificar ADD CONSTRAINT Notificar_fkey2 FOREIGN KEY(IDEvento) REFERENCES Evento(IDEvento)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE Notificar IS 'Relación de notificar a un cliente que hay un evento.';
 COMMENT ON COLUMN Notificar.IDPersona IS 'Identificador del cliente.';
@@ -810,10 +816,10 @@ IDEvento INT
 );
 ALTER TABLE Asistir ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE Asistir ALTER COLUMN IDEvento SET NOT NULL;
-ALTER TABLE Asistir ADD CONSTRAINT Asistir_fkey
-FOREIGN KEY(IDEvento) REFERENCES Evento(IDEvento);
-ALTER TABLE Asistir ADD CONSTRAINT Asistir_fkey2
-FOREIGN KEY(IDPersona) REFERENCES Cliente(IDPersona);
+ALTER TABLE Asistir ADD CONSTRAINT Asistir_fkey FOREIGN KEY(IDEvento) REFERENCES Evento(IDEvento)
+ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE Asistir ADD CONSTRAINT Asistir_fkey2 FOREIGN KEY(IDPersona) REFERENCES Cliente(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 CREATE TABLE Trabajar (
@@ -822,10 +828,10 @@ IDPersona INT
 );
 ALTER TABLE Trabajar ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE Trabajar ALTER COLUMN IDBioma SET NOT NULL;
-ALTER TABLE Trabajar ADD CONSTRAINT Trabajar_fkey
-FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma);
-ALTER TABLE Trabajar ADD CONSTRAINT Trabajar_fkey2
-FOREIGN KEY(IDPersona) REFERENCES Veterinario(IDPersona);
+ALTER TABLE Trabajar ADD CONSTRAINT Trabajar_fkey FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma)
+ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE Trabajar ADD CONSTRAINT Trabajar_fkey2 FOREIGN KEY(IDPersona) REFERENCES Veterinario(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
