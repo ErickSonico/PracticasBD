@@ -70,7 +70,8 @@ ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC1 UNIQUE (Correo);
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC2 CHECK(Correo <> '');
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC3 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoProveedor_pk PRIMARY KEY (IDPersona,Correo);
-ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoProveedor_fk FOREIGN KEY (IDPersona) REFERENCES Proveedor(IDPersona);
+ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoProveedor_fk FOREIGN KEY (IDPersona) REFERENCES Proveedor(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 CREATE TABLE TelefonoProveedor (
    IDPersona INT,
@@ -82,8 +83,8 @@ ALTER TABLE TelefonoProveedor ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoProveedor ADD CONSTRAINT TelefonoC1 UNIQUE (Telefono);
 ALTER TABLE TelefonoProveedor ADD CONSTRAINT TelefonoC2 CHECK(Telefono <> '');
 ALTER TABLE TelefonoProveedor ADD CONSTRAINT TelefonoProveedor_pk PRIMARY KEY (IDPersona,Telefono);
-ALTER TABLE TelefonoProveedor ADD CONSTRAINT TelefonoProveedor_fk FOREIGN KEY (IDPersona) REFERENCES Proveedor(IDPersona);
-
+ALTER TABLE TelefonoProveedor ADD CONSTRAINT TelefonoProveedor_fk FOREIGN KEY (IDPersona) REFERENCES Proveedor(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 CREATE TABLE Alimento (
    IDInsumo INT,
@@ -269,7 +270,8 @@ ALTER TABLE Jaula ALTER COLUMN IDBioma SET NOT NULL;
 ALTER TABLE Jaula ALTER COLUMN NumJaula SET NOT NULL;
 ALTER TABLE Jaula add CONSTRAINT NumJaulaC1 UNIQUE (NumJaula);
 ALTER TABLE Jaula ADD CONSTRAINT Jaula_pk PRIMARY KEY (IDBioma, NumJaula);
-ALTER TABLE Jaula ADD CONSTRAINT Jaula_fk FOREIGN KEY (IDBioma) REFERENCES Bioma(IDBioma);
+ALTER TABLE Jaula ADD CONSTRAINT Jaula_fk FOREIGN KEY (IDBioma) REFERENCES Bioma(IDBioma)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 CREATE TABLE Servicio (
@@ -280,7 +282,8 @@ ALTER TABLE Servicio ALTER COLUMN IDBioma SET NOT NULL;
 ALTER TABLE Servicio ALTER COLUMN Tipo SET NOT NULL;
 ALTER TABLE Servicio ADD CONSTRAINT TipoC1 CHECK(Tipo <> '');
 ALTER TABLE Servicio ADD CONSTRAINT Servicio_pk PRIMARY KEY (IDBioma, Tipo);
-ALTER TABLE Servicio ADD CONSTRAINT Servicio_fk FOREIGN KEY (IDBioma) REFERENCES Bioma(IDBioma);
+ALTER TABLE Servicio ADD CONSTRAINT Servicio_fk FOREIGN KEY (IDBioma) REFERENCES Bioma(IDBioma)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 CREATE TABLE Ticket (
@@ -303,7 +306,8 @@ ALTER TABLE Ticket ADD CONSTRAINT TipoC1 CHECK(Tipo <> '');
 ALTER TABLE Ticket ADD CONSTRAINT Ticket_pk PRIMARY KEY (NumTicket, IDBioma, Tipo);
 ALTER TABLE Ticket ADD CONSTRAINT Ticket_fkey
 FOREIGN KEY(IDPersona) REFERENCES Cliente(IDPersona);
-ALTER TABLE Ticket ADD CONSTRAINT Ticket_fk FOREIGN KEY (IDBioma,Tipo) REFERENCES Servicio(IDBioma,Tipo);
+ALTER TABLE Ticket ADD CONSTRAINT Ticket_fk FOREIGN KEY (IDBioma,Tipo) REFERENCES Servicio(IDBioma,Tipo)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 CREATE TABLE Cuidador (
@@ -361,7 +365,8 @@ ALTER TABLE Cuidador ALTER COLUMN DiasLabor SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN Horario SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT Cuidador_pk PRIMARY KEY (IDPersona);
 ALTER TABLE Cuidador ADD CONSTRAINT Cuidador_fkey
-FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma);
+FOREIGN KEY(IDBioma) REFERENCES Bioma(IDBioma)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 CREATE TABLE CorreoCuidador (
@@ -374,7 +379,8 @@ ALTER TABLE CorreoCuidador ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidadorC1 CHECK(Correo <> '');
 ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidadorC2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
 ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidador_pk PRIMARY KEY(IDPersona, Correo);
-ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidador_fk FOREIGN KEY (IDPersona) REFERENCES Cuidador(IDPersona);
+ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidador_fk FOREIGN KEY (IDPersona) REFERENCES Cuidador(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE CorreoCuidador IS 'Tabla para los correos de un cuidador.';
 COMMENT ON COLUMN CorreoCuidador.IDPersona IS 'ID del clietne.';
@@ -394,7 +400,8 @@ ALTER TABLE TelefonoCuidador ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidadorC1 CHECK(Telefono <> '');
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidadorC2 UNIQUE(Telefono);
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidador_pk PRIMARY KEY(IDPersona, Telefono);
-ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidador_fk FOREIGN KEY (IDPersona) REFERENCES Cuidador(IDPersona);
+ALTER TABLE TelefonoCuidador ADD CONSTRAINT TelefonoCuidador_fk FOREIGN KEY (IDPersona) REFERENCES Cuidador(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE TelefonoCuidador IS 'Tabla con el teléfono del cuidador.';
 COMMENT ON COLUMN TelefonoCuidador.IDPersona IS 'ID del cuidador al que pertenece el teléfono.';
