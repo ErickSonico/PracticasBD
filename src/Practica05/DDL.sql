@@ -108,7 +108,8 @@ ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC1 UNIQUE (Correo);
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC2 CHECK(Correo <> '');
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC3 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoProveedor_pk PRIMARY KEY (IDPersona,Correo);
-ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoProveedor_fk FOREIGN KEY (IDPersona) REFERENCES Proveedor(IDPersona);
+ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoProveedor_fk FOREIGN KEY (IDPersona) REFERENCES Proveedor(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE CorreoProveedor IS 'Tabla que contiene los correos electrónicos de los proveedores';
 COMMENT ON COLUMN CorreoProveedor.IDPersona IS 'Identificador del Proveedor';
@@ -131,11 +132,12 @@ ALTER TABLE TelefonoProveedor ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoProveedor ADD CONSTRAINT TelefonoC1 UNIQUE (Telefono);
 ALTER TABLE TelefonoProveedor ADD CONSTRAINT TelefonoC2 CHECK(Telefono <> '');
 ALTER TABLE TelefonoProveedor ADD CONSTRAINT TelefonoProveedor_pk PRIMARY KEY (IDPersona,Telefono);
-ALTER TABLE TelefonoProveedor ADD CONSTRAINT TelefonoProveedor_fk FOREIGN KEY (IDPersona) REFERENCES Proveedor(IDPersona);
+ALTER TABLE TelefonoProveedor ADD CONSTRAINT TelefonoProveedor_fk FOREIGN KEY (IDPersona) REFERENCES Proveedor(IDPersona)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 COMMENT ON TABLE TelefonoProveedor IS 'Tabla que contiene los teléfonos de los proveedores';
 COMMENT ON COLUMN TelefonoProveedor.IDPersona IS 'Identificador del TelefonoProveedor';
-COMMENT ON COLUMN TelefonoProveedor.Correo IS 'Teléfono del Proveedor';
+COMMENT ON COLUMN TelefonoProveedor.Telefono IS 'Teléfono del Proveedor';
 COMMENT ON CONSTRAINT TelefonoProveedor_pk ON TelefonoProveedor IS 'La llave primaria de la tabla TelefonoProveedor';
 COMMENT ON CONSTRAINT TelefonoProveedor_fk ON TelefonoProveedor IS 'La llave foránea de la tabla TelefonoProveedor que hace referencia a la columna IDPersona de la tabla Proveedor';
 COMMENT ON CONSTRAINT IDPersonaC3 ON TelefonoProveedor IS 'Restriccion unique para el atributo IDPersona de TelefonoProveedor';
@@ -173,11 +175,11 @@ COMMENT ON COLUMN Alimento.Cantidad IS 'Cantidad del Alimento';
 COMMENT ON COLUMN Alimento.Refrigeracion IS 'Si el Alimento necesita refrigeración';
 COMMENT ON COLUMN Alimento.NumProveedor IS 'Proveedor del Alimento';
 COMMENT ON COLUMN Alimento.Tipo IS 'Tipo de Alimento';
-COMMENT ON CONSTRAINT IDInsumo_pk ON Proveedor IS 'La llave primaria de la tabla Alimento';
-COMMENT ON CONSTRAINT IDInsumoC1 ON Proveedor IS 'Restriccion unique para el atributo IDInsumo de Alimento';
-COMMENT ON CONSTRAINT NombreC3 ON Proveedor IS 'Restriccion check el cual nos asegura que Nombre no es la cadena vacia';
-COMMENT ON CONSTRAINT NombreC4 ON Proveedor IS 'Restriccion check para Nombres únicamente con letras';
-COMMENT ON CONSTRAINT TipoC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Tipo no es la cadena vacia';
+COMMENT ON CONSTRAINT Alimento_pk ON Alimento IS 'La llave primaria de la tabla Alimento';
+COMMENT ON CONSTRAINT IDInsumoC1 ON Alimento IS 'Restriccion unique para el atributo IDInsumo de Alimento';
+COMMENT ON CONSTRAINT NombreC3 ON Alimento IS 'Restriccion check el cual nos asegura que Nombre no es la cadena vacia';
+COMMENT ON CONSTRAINT NombreC4 ON Alimento IS 'Restriccion check para Nombres únicamente con letras';
+COMMENT ON CONSTRAINT TipoC1 ON Alimento IS 'Restriccion check el cual nos asegura que Tipo no es la cadena vacia';
 
 
 CREATE TABLE Medicina (
