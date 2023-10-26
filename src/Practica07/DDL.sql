@@ -52,7 +52,7 @@ ALTER TABLE Proveedor ADD CONSTRAINT ColoniaC2 CHECK (Colonia ~ '[a-zÑñA-Záé
 ALTER TABLE Proveedor ALTER COLUMN CodigoPostal SET NOT NULL;
 ALTER TABLE Proveedor ALTER COLUMN Estado SET NOT NULL;
 ALTER TABLE Proveedor ADD CONSTRAINT EstadoC1 CHECK(Estado <> '');
-ALTER TABLE Proveedor ADD CONSTRAINT EstadoC2 CHECK(Estado ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Proveedor ADD CONSTRAINT EstadoC2 CHECK(Estado ~ '[a-zÑñA-ZáéíóúÁÉÍÓÚüÜ0-9\. ]*$');
 ALTER TABLE Proveedor ALTER COLUMN Costo SET NOT NULL;
 ALTER TABLE Proveedor ALTER COLUMN Producto SET NOT NULL;
 ALTER TABLE Proveedor ADD CONSTRAINT ProductoC1 CHECK(Producto <> '');
