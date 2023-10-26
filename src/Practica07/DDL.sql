@@ -1,4 +1,4 @@
-DROP SCHEMA IF EXISTS public CASCADE;
+CuidadorDROP SCHEMA IF EXISTS public CASCADE;
 CREATE SCHEMA public;
 
 CREATE TABLE Proveedor (
@@ -492,21 +492,21 @@ COMMENT ON COLUMN Cuidador.Estado IS 'Estado de la vivienda';
 COMMENT ON COLUMN Cuidador.Salario IS 'Salario del Cuidador';
 COMMENT ON COLUMN Cuidador.DiasLabor IS 'Días laborales del Cuidador';
 COMMENT ON COLUMN Cuidador.Horario IS 'Horario del Cuidador';
-COMMENT ON CONSTRAINT NombreC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Nombre no es la cadena vacia';
-COMMENT ON CONSTRAINT NombreC2 ON Proveedor IS 'Restriccion check para nombres únicamente con letras';
-COMMENT ON CONSTRAINT ApellidoPaternoC1 ON Proveedor IS 'Restriccion check el cual nos asegura que ApellidoPaterno no es la cadena vacia';
-COMMENT ON CONSTRAINT ApellidoPaternoC2 ON Proveedor IS 'Restriccion check para ApellidoPaternos únicamente con letras';
-COMMENT ON CONSTRAINT ApellidoMaternoC1 ON Proveedor IS 'Restriccion check el cual nos asegura que ApellidoMaterno no es la cadena vacia';
-COMMENT ON CONSTRAINT ApellidoMaternoC2 ON Proveedor IS 'Restriccion check para ApellidoMaternos únicamente con letras';
-COMMENT ON CONSTRAINT RFCC1 ON Proveedor IS 'Restriccion check el cual nos asegura que RFC no es la cadena vacia';
-COMMENT ON CONSTRAINT GeneroC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Genero no es la cadena vacia';
-COMMENT ON CONSTRAINT GeneroC2 ON Proveedor IS 'Restriccion check para admitir sólo dos géneros M o F';
-COMMENT ON CONSTRAINT CalleC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Calle no es la cadena vacia';
-COMMENT ON CONSTRAINT CalleC2 ON Proveedor IS 'Restriccion check para Calles únicamente con letras';
-COMMENT ON CONSTRAINT ColoniaC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Colonia no es la cadena vacia';
-COMMENT ON CONSTRAINT ColoniaC2 ON Proveedor IS 'Restriccion check para Colonias únicamente con letras';
-COMMENT ON CONSTRAINT EstadoC1 ON Proveedor IS 'Restriccion check el cual nos asegura que Estado no es la cadena vacia';
-COMMENT ON CONSTRAINT EstadoC2 ON Proveedor IS 'Restriccion check para Estados únicamente con letras';
+COMMENT ON CONSTRAINT NombreC1 ON Cuidador IS 'Restriccion check el cual nos asegura que Nombre no es la cadena vacia';
+COMMENT ON CONSTRAINT NombreC2 ON Cuidador IS 'Restriccion check para nombres únicamente con letras';
+COMMENT ON CONSTRAINT ApellidoPaternoC1 ON Cuidador IS 'Restriccion check el cual nos asegura que ApellidoPaterno no es la cadena vacia';
+COMMENT ON CONSTRAINT ApellidoPaternoC2 ON Cuidador IS 'Restriccion check para ApellidoPaternos únicamente con letras';
+COMMENT ON CONSTRAINT ApellidoMaternoC1 ON Cuidador IS 'Restriccion check el cual nos asegura que ApellidoMaterno no es la cadena vacia';
+COMMENT ON CONSTRAINT ApellidoMaternoC2 ON Cuidador IS 'Restriccion check para ApellidoMaternos únicamente con letras';
+COMMENT ON CONSTRAINT RFCC1 ON Cuidador IS 'Restriccion check el cual nos asegura que RFC no es la cadena vacia';
+COMMENT ON CONSTRAINT GeneroC1 ON Cuidador IS 'Restriccion check el cual nos asegura que Genero no es la cadena vacia';
+COMMENT ON CONSTRAINT GeneroC2 ON Cuidador IS 'Restriccion check para admitir sólo dos géneros M o F';
+COMMENT ON CONSTRAINT CalleC1 ON Cuidador IS 'Restriccion check el cual nos asegura que Calle no es la cadena vacia';
+COMMENT ON CONSTRAINT CalleC2 ON Cuidador IS 'Restriccion check para Calles únicamente con letras';
+COMMENT ON CONSTRAINT ColoniaC1 ON Cuidador IS 'Restriccion check el cual nos asegura que Colonia no es la cadena vacia';
+COMMENT ON CONSTRAINT ColoniaC2 ON Cuidador IS 'Restriccion check para Colonias únicamente con letras';
+COMMENT ON CONSTRAINT EstadoC1 ON Cuidador IS 'Restriccion check el cual nos asegura que Estado no es la cadena vacia';
+COMMENT ON CONSTRAINT EstadoC2 ON Cuidador IS 'Restriccion check para Estados únicamente con letras';
 COMMENT ON CONSTRAINT Cuidador_pk ON Cuidador IS 'La llave primaria de la tabla Cuidador';
 COMMENT ON CONSTRAINT Cuidador_fkey ON Cuidador IS 'La llave foránea de la tabla Cuidador que hace referencia a la columna IDBioma de la tabla Bioma';
 
