@@ -100,14 +100,14 @@ COMMENT ON CONSTRAINT FrecuenciaC1 ON Proveedor IS 'Restriccion check el cual no
 
 CREATE TABLE CorreoProveedor (
    IDPersona INT,
-   Correo VARCHAR(25)
+   Correo VARCHAR(50)
 );
 ALTER TABLE CorreoProveedor ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE CorreoProveedor ADD CONSTRAINT IDPersonaC2 UNIQUE (IDPersona);
 ALTER TABLE CorreoProveedor ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC1 UNIQUE (Correo);
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC2 CHECK(Correo <> '');
-ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC3 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
+ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC3 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[0-9a-z.-]*\.[a-zA-Z]{2,}$');
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoProveedor_pk PRIMARY KEY (IDPersona,Correo);
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoProveedor_fk FOREIGN KEY (IDPersona) REFERENCES Proveedor(IDPersona)
 ON UPDATE CASCADE ON DELETE CASCADE;
