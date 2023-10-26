@@ -1,24 +1,24 @@
 DROP SCHEMA IF EXISTS public CASCADE;
 CREATE SCHEMA public;
 
-
 CREATE TABLE Proveedor (
    IDPersona INT,
-   Nombre VARCHAR(50),
+   Nombre VARCHAR(50), 
    ApellidoPaterno VARCHAR(50),
    ApellidoMaterno VARCHAR(50),
+   Nacimiento DATE,
    RFC VARCHAR(18),
    Genero CHAR(1),
    InicioContrato DATE,
    FinContrato DATE,
    NumInt INT,
    NumExt INT,
-   Calle VARCHAR(20),
-   Colonia VARCHAR(20),
+   Calle VARCHAR(50),
+   Colonia VARCHAR(50),
    CodigoPostal INT,
-   Estado VARCHAR(20),
+   Estado VARCHAR(50),
    Costo FLOAT8,
-   Producto VARCHAR(20),
+   Producto VARCHAR(50),
    Frecuencia VARCHAR(20)
 );
 ALTER TABLE Proveedor ALTER COLUMN IDPersona SET NOT NULL;
@@ -29,10 +29,11 @@ ALTER TABLE Proveedor ADD CONSTRAINT NombreC1 CHECK(Nombre <> '');
 ALTER TABLE Proveedor ADD CONSTRAINT NombreC2 CHECK(Nombre ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Proveedor ALTER COLUMN ApellidoPaterno SET NOT NULL;
 ALTER TABLE Proveedor ADD CONSTRAINT ApellidoPaternoC1 CHECK(ApellidoPaterno <> '');
-ALTER TABLE Proveedor ADD CONSTRAINT ApellidoPaternoC2 CHECK(ApellidoPaterno ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Proveedor ADD CONSTRAINT ApellidoPaternoC2 CHECK(ApellidoPaterno ~ '^[A-Za-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Proveedor ALTER COLUMN ApellidoMaterno SET NOT NULL;
 ALTER TABLE Proveedor ADD CONSTRAINT ApellidoMaternoC1 CHECK(ApellidoMaterno <> '');
 ALTER TABLE Proveedor ADD CONSTRAINT ApellidoMaternoC2 CHECK(ApellidoMaterno ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Proveedor ALTER COLUMN Nacimiento SET NOT NULL;
 ALTER TABLE Proveedor ALTER COLUMN RFC SET NOT NULL;
 ALTER TABLE Proveedor ADD CONSTRAINT RFCC1 CHECK(RFC <> '');
 ALTER TABLE Proveedor ALTER COLUMN Genero SET NOT NULL;
@@ -44,10 +45,10 @@ ALTER TABLE Proveedor ALTER COLUMN NumInt SET NOT NULL;
 ALTER TABLE Proveedor ALTER COLUMN NumExt SET NOT NULL;
 ALTER TABLE Proveedor ALTER COLUMN Calle SET NOT NULL;
 ALTER TABLE Proveedor ADD CONSTRAINT CalleC1 CHECK(Calle <> '');
-ALTER TABLE Proveedor ADD constraint CalleC2 CHECK(Calle ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Proveedor ADD CONSTRAINT CalleC2 CHECK(Calle ~ '[a-zA-ZáéíóúÁÉÍÓÚüÜ0-9\. ]*$');
 ALTER TABLE Proveedor ALTER COLUMN Colonia SET NOT NULL;
 ALTER TABLE Proveedor ADD CONSTRAINT ColoniaC1 CHECK(Colonia <> '');
-ALTER TABLE Proveedor ADD CONSTRAINT ColoniaC2 CHECK (Colonia ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Proveedor ADD CONSTRAINT ColoniaC2 CHECK (Colonia ~ '[a-zA-ZáéíóúÁÉÍÓÚüÜ0-9\. ]*$');
 ALTER TABLE Proveedor ALTER COLUMN CodigoPostal SET NOT NULL;
 ALTER TABLE Proveedor ALTER COLUMN Estado SET NOT NULL;
 ALTER TABLE Proveedor ADD CONSTRAINT EstadoC1 CHECK(Estado <> '');
@@ -899,7 +900,5 @@ ALTER TABLE Trabajar ADD CONSTRAINT Trabajar_fkey FOREIGN KEY(IDBioma) REFERENCE
 ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE Trabajar ADD CONSTRAINT Trabajar_fkey2 FOREIGN KEY(IDPersona) REFERENCES Veterinario(IDPersona)
 ON UPDATE CASCADE ON DELETE CASCADE;
-
-
 
 
