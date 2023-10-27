@@ -1,0 +1,1001 @@
+IDInsumo,Nombre,Caducidad,Cantidad,Refrigeracion,Tipo
+1,hormigas de terciopelo,2024-09-07,51,false,Lacteo
+2,repollo blanco,2023-11-07,25,true,Carne
+3,atún,2024-07-09,92,false,Pescado
+4,larvas de abeja,2024-05-23,15,true,Verdura
+5,ciruela damascena,2024-01-07,39,true,Carne
+6,rábano rojo,2023-11-24,75,false,Verdura
+7,trucha marrón,2024-08-11,75,false,Semilla
+8,hormigas blancas,2024-06-25,6,false,Verdura
+9,bacalao,2024-04-18,27,false,Carne
+10,calabaza de invierno,2024-08-13,49,false,Carne
+11,repollo,2024-04-01,91,true,Verdura
+12,enguia,2024-09-13,1,false,Tuberculo
+13,ternera,2024-02-26,13,true,Insecto
+14,gusanos de la miel,2024-02-05,28,false,Pescado
+15,papa,2024-05-26,82,false,Insecto
+16,quinua blanca,2024-08-24,10,true,Insecto
+17,remolacha roja,2024-10-25,16,false,Verdura
+18,rábano oriental redondo,2024-01-19,83,true,Lacteo
+19,papaya,2024-02-23,83,true,Tuberculo
+20,pimiento verde,2024-09-17,70,true,Pescado
+21,calabacín redondo,2023-12-26,11,true,Tuberculo
+22,anguila,2024-02-01,16,false,Verdura
+23,ciruela roja japonesa,2024-01-31,16,false,Carne
+24,larvas de polilla,2024-10-17,78,false,Carne
+25,zanahoria,2023-11-21,78,true,Insecto
+26,gusanos de seda,2024-08-12,99,false,Tuberculo
+27,calabaza de spaghetti,2024-07-25,5,true,Verdura
+28,calabaza de spaghetti,2024-04-11,100,false,Lacteo
+29,tilapia,2024-10-20,31,false,Lacteo
+30,cebolla,2024-09-01,40,false,Tuberculo
+31,frambuesa,2024-03-05,65,true,Semilla
+32,pargo común,2024-05-18,29,false,Insecto
+33,nabo forrajero,2024-06-03,63,true,Pescado
+34,rábano de daikon,2024-02-23,73,false,Fruta
+35,calabacín italiano,2024-09-20,31,true,Semilla
+36,escamoles,2024-09-25,18,false,Semilla
+37,durazno,2024-02-18,97,true,Fruta
+38,lentejas,2024-02-18,80,false,Fruta
+39,durazno,2024-02-03,100,false,Verdura
+40,pollo de Guinea,2023-11-18,19,true,Verdura
+41,pavo Bourbon Red,2024-01-09,27,false,Insecto
+42,gorgojos de palma,2024-07-16,83,true,Fruta
+43,quinoa negra,2024-07-15,42,true,Verdura
+44,rábano blanco,2024-07-21,92,false,Verdura
+45,pollo de Cornualles enano,2024-08-18,93,false,Fruta
+46,almendra australiana,2024-03-27,7,false,Pescado
+47,tomate,2023-12-04,87,true,Semilla
+48,ciruela pasa,2023-11-09,28,false,Carne
+49,nabo daikon,2024-04-18,74,true,Verdura
+50,pollo de Cornualles rojo,2023-12-22,77,true,Tuberculo
+51,quinoa roja,2024-05-21,80,false,Semilla
+52,pavo Bourbon Red,2024-01-02,26,true,Tuberculo
+53,calabaza de invierno,2023-10-28,97,false,Verdura
+54,soja,2024-05-09,49,true,Lacteo
+55,hormigas de bosque,2023-11-10,99,false,Carne
+56,garza blanca grande,2024-09-06,10,true,Verdura
+57,nabo sueco,2024-01-29,88,false,Tuberculo
+58,conejo,2024-10-22,70,false,Semilla
+59,pollo de Cornualles rojo,2024-10-03,87,false,Semilla
+60,lenguado de Dover,2023-11-29,69,true,Fruta
+61,calabaza de barco,2024-09-22,14,true,Lacteo
+62,mijo,2024-06-08,74,true,Pescado
+63,nabo blanco,2024-09-23,90,true,Carne
+64,perca europea,2023-12-23,64,true,Semilla
+65,ciruela amarilla,2024-02-04,53,false,Lacteo
+66,larvas de escarabajo de la harina,2024-03-10,36,false,Verdura
+67,lubina,2024-03-03,15,true,Verdura
+68,calabaza,2024-10-01,26,false,Fruta
+69,calabaza,2024-06-22,12,false,Verdura
+70,batata,2023-12-11,64,false,Pescado
+71,caqui,2024-08-19,89,true,Insecto
+72,nabo,2024-02-04,23,true,Semilla
+73,gusanos del bambú,2024-08-15,95,false,Verdura
+74,cerdo,2024-04-10,49,false,Carne
+75,linaza,2024-09-04,12,true,Tuberculo
+76,larvas de polilla,2024-05-17,93,true,Insecto
+77,venado,2024-02-19,28,false,Fruta
+78,judía verde,2024-02-07,45,false,Verdura
+79,pimientos amarillos,2024-06-29,87,false,Insecto
+80,hormigas,2024-02-18,88,false,Fruta
+81,bacalao del Pacífico,2024-09-19,99,false,Semilla
+82,nabo daikon,2023-11-14,26,true,Verdura
+83,pollo de Cornualles blanco,2024-08-02,34,false,Insecto
+84,pollo de Guinea,2023-11-11,89,false,Verdura
+85,zanahoria,2024-04-25,87,false,Fruta
+86,rábano de daikon,2024-10-17,47,true,Semilla
+87,saltamontes,2024-01-26,61,false,Verdura
+88,remolacha roja,2024-01-15,3,false,Carne
+89,pimientos amarillos,2024-08-04,46,true,Pescado
+90,ciruela roja occidental,2024-02-21,98,false,Verdura
+91,calabacín,2024-10-21,53,false,Lacteo
+92,linaza dorada,2024-03-21,25,false,Pescado
+93,garza blanca grande,2024-03-05,42,true,Verdura
+94,pera,2024-07-18,64,true,Semilla
+95,nabo sueco,2024-05-22,43,true,Verdura
+96,chapulines verdes,2024-03-14,86,true,Tuberculo
+97,remolacha,2024-03-20,40,true,Lacteo
+98,pimiento,2024-01-16,54,false,Verdura
+99,plátano,2024-02-03,8,true,Semilla
+100,calabaza de barco,2024-05-14,65,true,Verdura
+101,lentejas,2024-04-06,36,true,Insecto
+102,cerezas,2024-10-20,73,true,Pescado
+103,calabacín verde,2024-06-03,60,false,Insecto
+104,brócoli,2024-07-09,64,false,Fruta
+105,caqui,2024-04-09,13,false,Insecto
+106,pavo Narragansett,2024-03-04,64,false,Insecto
+107,cebolla,2024-02-15,45,true,Fruta
+108,pollo de Cornualles,2024-02-03,41,true,Carne
+109,pimientos naranja,2024-03-19,67,false,Pescado
+110,semillas de sésamo,2024-04-23,35,false,Carne
+111,durazno,2024-01-17,23,true,Insecto
+112,larvas de abeja de miel,2024-06-11,15,true,Pescado
+113,trucha arcoíris plateada,2023-12-27,77,false,Pescado
+114,nabo largo,2024-02-22,84,true,Pescado
+115,pavo Narragansett,2023-12-24,67,false,Carne
+116,hormigas cortadoras de hojas,2024-05-27,30,true,Carne
+117,pargo rojo del Pacífico,2023-12-07,83,false,Tuberculo
+118,rábano rojo japonés,2023-11-23,41,false,Verdura
+119,tilapia del Nilo,2024-04-16,51,false,Lacteo
+120,larvas de polilla de la seda,2024-02-17,59,false,Carne
+121,repollo blanco,2023-11-28,68,false,Fruta
+122,brócoli,2024-06-14,98,true,Verdura
+123,mazorca de maíz roja,2024-02-12,93,false,Fruta
+124,pato de Muscovy,2023-12-28,99,false,Tuberculo
+125,nabo sueco,2024-08-14,89,true,Semilla
+126,rábano oriental,2023-12-19,69,true,Insecto
+127,avena,2024-04-22,48,true,Pescado
+128,pimientos morrones verdes,2024-09-10,47,false,Semilla
+129,nabo sueco,2024-03-15,46,true,Verdura
+130,amaranto blanco,2023-12-15,1,true,Fruta
+131,ciruela roja,2024-06-06,48,false,Semilla
+132,maíz,2024-08-17,93,false,Semilla
+133,calabacín amarillo,2023-12-13,52,true,Insecto
+134,bacalao de Alaska,2024-02-26,39,true,Semilla
+135,naranja,2024-01-07,43,true,Lacteo
+136,papa,2024-06-06,68,true,Verdura
+137,abejorro,2023-12-28,35,true,Fruta
+138,bacalao del Pacífico,2024-04-20,40,false,Tuberculo
+139,hormiga de la harina,2024-09-19,56,false,Verdura
+140,calabaza del acantilado,2024-02-29,53,true,Fruta
+141,pavo bronceado,2024-02-02,93,true,Semilla
+142,garbanzos,2024-03-24,99,true,Semilla
+143,ciruela roja occidental,2024-02-10,50,false,Lacteo
+144,larvas de polilla,2023-10-28,21,false,Insecto
+145,pimiento rojo,2024-05-05,73,true,Pescado
+146,oveja,2024-04-08,57,true,Fruta
+147,hormiga tejedora,2024-05-19,93,true,Fruta
+148,larvas de polilla de la cera,2024-04-02,42,false,Fruta
+149,calabaza de peregrino,2024-07-10,84,true,Insecto
+150,pollo de Cornualles rojo,2024-06-16,69,true,Verdura
+151,bacalao de Alaska,2024-04-14,83,false,Lacteo
+152,remolacha,2024-03-05,42,true,Verdura
+153,judía verde,2024-01-03,48,true,Carne
+154,zanahoria,2024-06-23,7,false,Fruta
+155,ternera,2023-11-10,22,true,Insecto
+156,kiwi,2024-08-24,36,false,Carne
+157,nuez,2024-06-02,22,true,Semilla
+158,calabaza de Australia,2024-01-30,61,true,Pescado
+159,amaranto blanco,2024-08-29,81,true,Fruta
+160,mijo,2024-02-10,67,true,Pescado
+161,lentejas,2024-02-17,28,true,Tuberculo
+162,calabaza de Australia,2024-09-06,15,true,Tuberculo
+163,gusanos de harina,2024-02-01,80,true,Carne
+164,rábano negro largo,2023-12-25,35,false,Carne
+165,pimiento,2024-04-18,100,false,Fruta
+166,oveja,2024-10-09,79,true,Lacteo
+167,calabacín amarillo,2024-03-31,13,true,Insecto
+168,nombre,2024-02-25,39,false,Carne
+169,enguia,2024-10-03,17,true,Tuberculo
+170,perca europea,2024-01-16,5,true,Pescado
+171,hormiga de fuego,2024-09-14,32,false,Verdura
+172,bacalao de Alaska,2024-05-25,1,true,Fruta
+173,enguia,2024-06-24,10,true,Lacteo
+174,almendra australiana,2024-08-02,5,false,Carne
+175,gusano del harino,2024-06-26,90,true,Semilla
+176,ganso del Canadá,2024-04-05,96,false,Semilla
+177,nabo sueco,2024-08-11,33,true,Lacteo
+178,nombre,2024-07-14,85,true,Tuberculo
+179,pavo de Bourbourg,2024-07-09,67,false,Fruta
+180,quinua roja,2024-09-30,8,true,Insecto
+181,rábano picante,2024-01-12,70,false,Tuberculo
+182,sábalo,2023-10-26,72,false,Lacteo
+183,repollo blanco,2023-11-15,77,true,Verdura
+184,lenguado de Dover,2024-09-10,4,true,Tuberculo
+185,pollo de Cornualles rojo,2024-05-16,18,true,Insecto
+186,pavo bronceado,2024-06-02,25,false,Lacteo
+187,calabacín trompeta,2024-04-11,44,false,Semilla
+188,hormigas de cabeza de huevo,2024-07-31,33,true,Insecto
+189,rábano negro,2023-12-21,28,false,Verdura
+190,quinua negra,2024-09-13,57,false,Verdura
+191,ciruela amarilla,2024-03-08,99,true,Carne
+192,pargo rojo del Golfo de México,2024-08-25,43,false,Carne
+193,pulpo comestible,2024-05-27,15,true,Carne
+194,calabaza delicata,2024-01-29,46,true,Pescado
+195,sésamo negro,2024-01-29,90,false,Lacteo
+196,pavo,2024-09-25,32,false,Verdura
+197,mijo,2024-03-11,94,false,Semilla
+198,quinua roja,2024-09-26,14,true,Verdura
+199,durazno,2024-05-02,2,false,Fruta
+200,ganso,2023-12-10,91,true,Pescado
+201,gusanos del corazón,2023-11-03,93,true,Tuberculo
+202,berro de agua,2024-02-04,67,false,Verdura
+203,rábano negro largo,2024-01-16,100,true,Verdura
+204,ciruela negra,2024-04-04,51,false,Semilla
+205,calabaza de cera,2023-12-31,46,true,Fruta
+206,pargo rojo del Golfo de México,2023-12-02,40,false,Lacteo
+207,mújol del Pacífico,2024-07-29,16,true,Lacteo
+208,calabacín italiano,2024-08-08,5,true,Pescado
+209,rábano,2024-09-17,47,true,Lacteo
+210,maíz,2023-12-06,76,true,Tuberculo
+211,chía blanca,2024-05-06,3,false,Verdura
+212,amaranto negro,2024-08-21,88,false,Verdura
+213,quinoa roja,2024-08-11,80,true,Carne
+214,trucha marrón,2024-05-10,78,false,Insecto
+215,garza blanca grande,2024-03-22,50,true,Fruta
+216,almendra de coco,2024-01-19,87,true,Tuberculo
+217,pollo de Cornualles,2024-04-30,2,true,Fruta
+218,calabacín amarillo,2023-12-05,46,true,Insecto
+219,rábano de daikon,2024-01-02,16,true,Lacteo
+220,trucha de arroyo,2024-07-31,8,true,Tuberculo
+221,garza blanca grande,2024-01-16,77,false,Lacteo
+222,larvas de abeja de miel,2023-11-23,25,false,Fruta
+223,gusanos del bambú,2024-08-02,52,false,Tuberculo
+224,gusanos de la miel,2024-05-25,69,false,Pescado
+225,pollo de Guinea,2024-08-26,28,true,Pescado
+226,lentejas,2024-04-08,73,false,Carne
+227,calabacín redondo,2024-06-20,46,false,Lacteo
+228,larvas de polilla de la cera,2024-06-28,81,false,Semilla
+229,pollo de Guinea,2024-05-22,60,true,Verdura
+230,trucha de arroyo,2024-07-10,22,false,Fruta
+231,pera,2024-09-22,93,false,Pescado
+232,gusanos de la col,2024-09-29,66,true,Insecto
+233,bacalao del Pacífico,2024-04-16,17,false,Carne
+234,pavo Bourbon Red,2024-07-23,88,true,Lacteo
+235,venado,2024-04-05,81,false,Carne
+236,avena,2024-02-15,90,false,Semilla
+237,melón dulce,2024-03-23,12,false,Semilla
+238,calabacín de verano,2024-01-06,17,true,Pescado
+239,remolacha,2023-12-03,4,false,Tuberculo
+240,nabo silvestre,2023-11-11,90,false,Verdura
+241,calabaza de bellota,2024-10-08,56,false,Verdura
+242,pavo de Norfolk Black,2024-08-06,41,false,Insecto
+243,gusanos del corazón,2024-06-17,11,false,Verdura
+244,gusano del harino,2024-09-29,12,false,Semilla
+245,calabacín cimarrón,2023-11-30,91,true,Fruta
+246,avispa,2024-07-08,89,false,Fruta
+247,rábano blanco,2024-08-22,84,true,Semilla
+248,bacalao,2024-04-17,39,false,Fruta
+249,nombre,2024-08-08,33,true,Verdura
+250,almendra negra,2024-04-17,37,false,Lacteo
+251,avena,2024-10-08,25,true,Verdura
+252,calabacín amarillo,2024-08-18,34,true,Fruta
+253,rábano japonés,2023-11-01,35,true,Pescado
+254,escamoles,2024-04-02,44,false,Verdura
+255,quinua roja,2024-04-11,27,false,Tuberculo
+256,pollo,2024-04-14,42,false,Carne
+257,rábano picante,2024-04-11,25,false,Carne
+258,pimientos morrones,2024-10-24,81,true,Semilla
+259,gusanos de la miel,2024-07-18,65,false,Fruta
+260,almendra de macadamia,2024-04-03,89,true,Fruta
+261,amaranto rojo,2024-09-25,78,true,Pescado
+262,pollo de Guinea,2024-04-16,97,false,Semilla
+263,larvas de polilla del ejército,2024-08-15,92,true,Carne
+264,mújol rayado,2024-03-25,62,true,Lacteo
+265,larvas de polilla del ejército,2024-08-21,84,false,Semilla
+266,pargo rojo del Pacífico,2024-08-10,97,true,Lacteo
+267,trucha arcoíris dorada,2024-07-11,72,true,Semilla
+268,alcachofa,2024-09-29,96,false,Semilla
+269,sábalo,2024-07-12,35,true,Lacteo
+270,rábano redondo,2024-01-14,96,false,Insecto
+271,pimiento verde,2024-05-01,72,true,Lacteo
+272,plátano,2024-02-23,66,false,Lacteo
+273,rábano oriental redondo,2024-01-27,39,false,Semilla
+274,bacalao del Atlántico,2024-09-16,71,false,Insecto
+275,melón dulce,2024-05-27,27,false,Lacteo
+276,pavo Bourbon Red,2024-03-29,52,false,Insecto
+277,ternera,2023-12-28,53,true,Semilla
+278,maíz,2024-05-15,11,false,Fruta
+279,grillos,2024-08-16,86,true,Insecto
+280,espinaca,2024-04-30,56,false,Pescado
+281,ciruela roja,2024-10-22,54,true,Lacteo
+282,garza real,2024-03-10,92,true,Verdura
+283,cebolla,2024-05-28,42,false,Fruta
+284,larvas de escarabajo de la harina,2024-08-10,15,false,Pescado
+285,calabaza de Australia,2024-05-17,94,false,Pescado
+286,gallina de Cornualles,2024-08-31,28,false,Pescado
+287,venado,2024-01-02,49,false,Verdura
+288,plátano,2023-12-13,91,true,Carne
+289,pollo de Guinea,2024-07-10,91,true,Verdura
+290,pato de Pekín,2024-03-25,83,false,Verdura
+291,sábalo,2024-05-16,62,false,Pescado
+292,nabo sueco,2024-08-27,32,false,Pescado
+293,sésamo negro,2024-07-17,90,true,Lacteo
+294,pato,2024-02-12,89,true,Verdura
+295,cerdo,2023-12-15,52,true,Insecto
+296,batata,2024-10-20,77,true,Verdura
+297,gusanos de la miel,2024-02-05,31,true,Pescado
+298,larvas de abeja de miel,2024-02-27,72,false,Pescado
+299,tilapia del Nilo,2024-06-01,9,true,Pescado
+300,bacalao,2024-01-02,22,false,Tuberculo
+301,nabo negro,2024-01-21,12,true,Carne
+302,perca europea,2024-08-31,47,false,Carne
+303,pavo de Norfolk Black,2024-04-30,43,false,Fruta
+304,ganso,2024-07-26,29,true,Insecto
+305,ciervo,2024-05-23,51,true,Insecto
+306,rábano daikon,2024-07-25,67,false,Verdura
+307,calabacín trompeta,2024-10-12,68,false,Pescado
+308,calabaza de invierno,2024-10-06,47,false,Insecto
+309,calabacín italiano,2023-12-18,56,false,Verdura
+310,tilapia,2024-10-14,10,true,Fruta
+311,rábano negro,2024-07-13,60,false,Tuberculo
+312,ciruela italiana,2024-10-25,38,false,Verdura
+313,gusano de seda,2024-03-21,43,false,Fruta
+314,gusanos de seda,2024-08-08,94,true,Pescado
+315,calabacín,2023-12-17,53,false,Tuberculo
+316,melón dulce,2024-05-15,22,true,Insecto
+317,almendra negra,2024-05-20,60,false,Tuberculo
+318,hormigas cortadoras de hojas,2024-09-27,62,false,Lacteo
+319,durazno amarillo,2023-11-13,32,true,Lacteo
+320,girasol,2024-05-28,89,true,Lacteo
+321,papaya,2024-07-26,69,false,Semilla
+322,kiwi,2024-07-11,33,true,Tuberculo
+323,nabo largo,2024-03-14,7,true,Pescado
+324,cereza agria,2024-02-14,48,true,Tuberculo
+325,trucha,2024-01-02,38,true,Insecto
+326,pavo Narragansett,2024-09-02,12,true,Pescado
+327,trucha de arroyo,2024-08-29,39,true,Lacteo
+328,judía verde,2024-02-05,59,false,Lacteo
+329,trucha marrón,2024-04-16,100,false,Carne
+330,sardina,2024-01-06,7,false,Carne
+331,brócoli,2024-09-24,21,false,Pescado
+332,almendra,2023-12-23,80,false,Fruta
+333,bacalao de Alaska,2023-12-23,53,true,Lacteo
+334,hormiga tejedora,2024-09-06,69,false,Tuberculo
+335,saltamontes,2024-04-25,94,false,Semilla
+336,pollo de Cornualles,2024-09-05,94,true,Semilla
+337,tilapia del Nilo,2024-02-14,25,true,Insecto
+338,garza blanca grande,2024-09-10,77,true,Lacteo
+339,calabacín romano,2024-07-03,45,true,Tuberculo
+340,sésamo negro,2024-04-18,27,false,Verdura
+341,dorada rayada del Atlántico,2023-10-27,17,false,Fruta
+342,gusano de cera,2024-03-22,37,false,Lacteo
+343,hormiga de la harina,2024-05-16,24,true,Fruta
+344,almendra de macadamia,2024-08-27,95,true,Carne
+345,coliflor,2024-02-05,68,false,Tuberculo
+346,ganso,2024-05-19,81,true,Pescado
+347,ciruela verde,2023-11-06,76,true,Lacteo
+348,garbanzos,2023-12-10,87,false,Tuberculo
+349,gusano de la harina,2024-05-07,45,true,Carne
+350,trucha arcoíris,2023-11-25,82,true,Insecto
+351,avena,2024-07-28,45,false,Verdura
+352,hormiga de la harina,2024-07-05,98,false,Carne
+353,pavo de Norfolk Black,2024-06-24,2,true,Fruta
+354,cacahuate,2024-10-25,38,true,Verdura
+355,sardina europea,2024-08-05,13,false,Carne
+356,pimientos morrones,2024-02-05,1,false,Fruta
+357,calabacín amarillo,2024-03-29,60,true,Carne
+358,pargo rojo del Atlántico,2023-11-23,25,true,Fruta
+359,mazorca de maíz,2024-05-16,83,true,Verdura
+360,pollo de Cornualles enano,2024-09-28,75,true,Tuberculo
+361,uva,2024-10-05,26,false,Lacteo
+362,pavo real,2024-06-24,37,false,Carne
+363,trucha marrón,2024-03-18,9,false,Insecto
+364,coliflor,2024-09-15,83,false,Pescado
+365,garza gris,2024-09-05,54,false,Semilla
+366,ganso de cabeza blanca,2024-02-29,53,true,Lacteo
+367,calabaza de spaghetti,2024-04-05,67,true,Lacteo
+368,hormigas de cabeza de huevo,2024-04-19,59,true,Verdura
+369,mijo perla,2024-03-02,11,false,Fruta
+370,larvas de abeja,2024-05-22,55,false,Pescado
+371,lenguado de Dover,2024-10-24,92,true,Pescado
+372,gallina de Cornualles,2024-07-03,36,true,Pescado
+373,almendra china,2024-02-23,10,false,Pescado
+374,coliflor,2024-09-09,37,false,Semilla
+375,calabacín redondo,2024-02-16,32,false,Verdura
+376,calabaza de peregrino,2024-08-14,39,false,Semilla
+377,almendra china,2023-11-28,18,false,Fruta
+378,ganso del Canadá,2024-07-10,47,true,Tuberculo
+379,trucha,2024-05-21,77,true,Pescado
+380,durazno,2023-11-17,4,true,Verdura
+381,chapulines rojos,2024-02-24,99,true,Lacteo
+382,pavo Narragansett,2024-08-20,91,true,Tuberculo
+383,pimientos amarillos,2024-02-12,1,true,Insecto
+384,mazorca de maíz roja,2024-06-16,9,false,Carne
+385,kiwi,2024-07-03,47,false,Lacteo
+386,abejorro,2024-05-23,41,true,Semilla
+387,ciruela roja japonesa,2024-09-23,33,true,Tuberculo
+388,hormigas de cabeza de huevo,2024-06-11,90,true,Lacteo
+389,mújol del Pacífico,2023-11-30,8,false,Fruta
+390,nabo blanco,2024-08-15,63,false,Semilla
+391,rábano blanco,2024-02-18,19,true,Lacteo
+392,pimiento verde,2024-06-03,42,true,Fruta
+393,larvas de polilla de la seda,2024-08-17,19,true,Carne
+394,pato de Pekín,2024-04-10,93,false,Semilla
+395,ciruela verde,2023-12-02,39,false,Fruta
+396,ciruela,2024-06-28,32,false,Pescado
+397,rábano oriental redondo,2024-04-19,5,true,Verdura
+398,larvas de polilla del atlas,2024-08-20,47,true,Fruta
+399,anguila,2024-05-23,76,false,Verdura
+400,repollo blanco,2024-10-18,79,false,Insecto
+401,hormiga de la harina,2023-12-01,56,true,Tuberculo
+402,rábano chino,2024-09-07,7,false,Tuberculo
+403,calabaza cacahuete,2024-03-18,38,true,Pescado
+404,garbanzos,2023-11-26,98,true,Verdura
+405,lenguado del Atlántico,2024-03-17,52,true,Fruta
+406,pimientos morrones verdes,2024-06-17,47,true,Tuberculo
+407,larvas de langosta,2024-05-10,36,true,Insecto
+408,quinoa negra,2024-05-28,23,true,Insecto
+409,cerdo,2024-03-24,93,true,Carne
+410,zanahoria,2024-02-01,52,true,Fruta
+411,hormiga culona,2024-01-27,3,true,Carne
+412,calabaza de invierno,2023-11-25,63,true,Lacteo
+413,hormiga de la harina,2023-11-29,6,false,Verdura
+414,berenjena,2024-07-24,96,true,Lacteo
+415,durazno amarillo,2024-10-21,94,false,Pescado
+416,calabacín redondo,2024-08-31,5,false,Fruta
+417,trucha arcoíris,2024-06-19,32,false,Insecto
+418,betabel,2024-07-31,13,false,Insecto
+419,ciruela roja occidental,2023-12-01,56,false,Fruta
+420,trucha de arroyo,2024-10-05,66,true,Insecto
+421,pavo bronceado,2024-04-13,72,false,Pescado
+422,conejo,2024-03-17,100,false,Carne
+423,lubina,2024-03-15,70,true,Insecto
+424,pargo rojo del Pacífico,2024-03-19,5,false,Pescado
+425,hormigas,2024-01-02,91,true,Semilla
+426,hormigas blancas,2024-03-30,1,false,Carne
+427,cacahuate,2023-11-22,99,false,Carne
+428,gusanos del corazón,2024-03-02,41,true,Fruta
+429,chapulines verdes,2024-05-09,50,false,Lacteo
+430,zanahoria,2023-11-25,12,false,Lacteo
+431,naranja,2024-04-05,43,false,Fruta
+432,batata,2024-03-21,89,true,Carne
+433,sésamo negro,2023-12-14,9,false,Semilla
+434,hormigas de terciopelo,2024-10-12,73,false,Semilla
+435,gusanos de la col,2024-06-15,3,true,Tuberculo
+436,rábano blanco,2024-10-18,97,false,Fruta
+437,ganso,2024-04-17,13,false,Lacteo
+438,pimientos morrones verdes,2023-12-07,38,true,Semilla
+439,quinoa roja,2024-02-05,23,false,Semilla
+440,durazno amarillo,2024-04-30,89,false,Pescado
+441,bacalao de Alaska,2024-07-15,85,true,Semilla
+442,calabaza de peregrino,2024-01-24,53,false,Verdura
+443,saltamontes,2024-04-25,59,false,Insecto
+444,patata dulce,2024-10-20,51,false,Pescado
+445,ciruela roja occidental,2024-01-28,83,true,Insecto
+446,hormigas blancas,2024-02-16,6,true,Verdura
+447,pavo de Bourbourg,2023-11-10,96,false,Tuberculo
+448,nabo forrajero,2024-01-09,1,true,Lacteo
+449,calabacín trompeta,2024-08-14,93,true,Verdura
+450,cerezas,2024-10-23,49,true,Semilla
+451,almendra negra,2024-07-08,23,true,Verdura
+452,hormigas,2024-07-24,85,false,Semilla
+453,gusano de seda,2024-05-26,51,false,Pescado
+454,rábano silvestre,2023-12-10,7,true,Carne
+455,betabel,2024-04-20,16,true,Lacteo
+456,calabaza de spaghetti,2024-01-04,61,false,Pescado
+457,nabo forrajero,2023-11-19,89,true,Carne
+458,ciruela roja occidental,2024-06-28,79,false,Lacteo
+459,mijo perla,2024-05-06,80,true,Lacteo
+460,grillos,2023-12-04,13,false,Semilla
+461,pargo común,2024-01-29,80,true,Lacteo
+462,lombrices,2024-07-07,57,false,Pescado
+463,larvas de abeja,2024-09-19,98,true,Insecto
+464,rábano blanco,2024-07-03,12,true,Verdura
+465,nabo blanco,2024-08-07,16,false,Pescado
+466,sardina,2024-09-28,61,true,Verdura
+467,pimientos amarillos,2024-02-24,98,false,Semilla
+468,trucha de arroyo,2024-01-06,98,false,Semilla
+469,papa,2024-02-22,14,true,Pescado
+470,pargo rojo del Atlántico,2024-05-20,86,true,Fruta
+471,larvas de abeja,2024-01-05,63,false,Insecto
+472,amaranto negro,2023-11-20,80,false,Pescado
+473,enguia,2024-05-01,73,true,Tuberculo
+474,rábano chino,2024-08-21,42,true,Tuberculo
+475,amaranto rojo,2024-08-03,3,false,Insecto
+476,pimientos naranja,2024-03-24,49,false,Carne
+477,rábano rojo,2023-11-29,30,true,Pescado
+478,ganso de nieve,2023-12-14,9,false,Semilla
+479,coliflor,2024-02-16,50,true,Semilla
+480,grillos,2023-11-12,23,false,Lacteo
+481,calabaza de spaghetti,2023-11-03,81,true,Tuberculo
+482,ciruela verde,2024-06-11,42,false,Tuberculo
+483,chapulines verdes,2024-09-16,93,false,Semilla
+484,rábano redondo,2024-09-04,36,true,Pescado
+485,ciruela negra,2024-09-13,12,true,Verdura
+486,nabo forrajero,2024-06-13,24,false,Verdura
+487,pavo,2024-07-21,94,false,Semilla
+488,bacalao del Pacífico,2024-01-10,8,true,Fruta
+489,espinaca,2024-08-15,100,true,Fruta
+490,ciruela roja japonesa,2023-11-30,23,true,Fruta
+491,berro de agua,2024-06-25,2,false,Insecto
+492,remolacha,2024-09-21,93,false,Verdura
+493,calabaza de piel de serpiente,2024-08-18,36,false,Insecto
+494,larvas de polilla del ejército,2024-02-12,63,true,Fruta
+495,pavo Bourbon Red,2024-07-15,95,false,Lacteo
+496,gusanos de seda,2024-09-19,28,true,Lacteo
+497,almendra australiana,2023-12-09,36,false,Carne
+498,quinua blanca,2024-10-06,29,true,Tuberculo
+499,bacalao del Atlántico,2024-04-18,20,true,Lacteo
+500,quinoa negra,2024-08-06,78,true,Semilla
+501,gusano del harino,2024-05-26,88,true,Fruta
+502,pollo de Guinea,2023-11-11,24,true,Semilla
+503,larvas de abeja,2024-01-31,86,true,Tuberculo
+504,nombre,2024-01-27,52,false,Insecto
+505,rábano oriental,2024-10-01,15,false,Verdura
+506,nabo largo,2024-01-03,92,false,Insecto
+507,garza real,2024-05-06,60,false,Insecto
+508,larvas de abeja,2024-01-16,47,true,Carne
+509,salmón,2023-11-08,40,false,Semilla
+510,gusano de cera,2024-08-10,59,true,Verdura
+511,calabacín francés,2024-04-14,73,false,Tuberculo
+512,pato de Pekín,2023-10-30,6,false,Verdura
+513,pimientos morrones,2024-03-30,12,true,Fruta
+514,soja,2024-10-08,14,true,Verdura
+515,pavo,2023-12-01,5,true,Semilla
+516,larvas de polilla de la seda,2024-02-28,31,true,Lacteo
+517,ciervo,2024-09-10,13,false,Tuberculo
+518,repollo blanco,2024-06-25,48,true,Tuberculo
+519,amaranto negro,2024-06-06,73,true,Lacteo
+520,pavo Narragansett,2024-05-04,4,false,Semilla
+521,ciruela verde,2024-08-02,1,true,Carne
+522,gusanos de harina,2024-06-26,15,false,Fruta
+523,calabaza de barco,2024-04-18,81,true,Verdura
+524,atún,2024-10-02,55,false,Fruta
+525,calabaza del acantilado,2024-06-11,12,true,Carne
+526,pollo de Guinea,2024-05-08,8,false,Insecto
+527,hormigas de terciopelo,2024-09-05,29,true,Verdura
+528,maíz,2024-08-24,75,true,Verdura
+529,escamoles,2024-04-06,23,false,Verdura
+530,avena,2024-02-13,27,false,Lacteo
+531,ciervo,2024-03-03,34,false,Verdura
+532,gusanos de harina,2024-07-30,36,false,Semilla
+533,chapulines verdes,2024-04-05,83,true,Fruta
+534,hormigas cortadoras de hojas,2024-07-22,32,false,Pescado
+535,almendra de macadamia,2024-05-14,70,false,Verdura
+536,ciruela italiana,2024-07-03,50,false,Carne
+537,gusanos de la col,2024-04-14,25,false,Lacteo
+538,sardina europea,2024-04-08,23,false,Insecto
+539,ciruela roja japonesa,2024-04-27,81,true,Tuberculo
+540,lenguado de Dover,2024-09-14,71,true,Lacteo
+541,pavo de Norfolk Black,2024-05-20,87,true,Lacteo
+542,espinaca,2024-09-17,42,true,Semilla
+543,chapulines verdes,2024-07-17,18,false,Pescado
+544,hormigas de cabeza de huevo,2023-11-23,56,true,Carne
+545,pargo rojo del Golfo de México,2024-09-09,87,true,Verdura
+546,calabaza cacahuete,2024-07-01,27,true,Tuberculo
+547,pollo de Guinea,2024-09-05,81,true,Pescado
+548,gusano de la harina,2024-03-28,85,true,Fruta
+549,quinoa roja,2024-08-11,67,true,Fruta
+550,oveja,2024-09-16,29,true,Fruta
+551,pollo de Guinea,2023-12-23,66,false,Semilla
+552,lombrices,2024-08-03,6,true,Insecto
+553,ganso,2024-08-25,93,true,Verdura
+554,durazno amarillo,2023-11-11,69,true,Pescado
+555,trucha de arroyo,2024-05-30,60,true,Insecto
+556,pimiento verde,2024-05-06,87,true,Verdura
+557,gusano del harino,2024-10-16,33,false,Semilla
+558,mújol del Pacífico,2023-10-28,10,false,Lacteo
+559,rábano picante,2023-12-23,41,false,Lacteo
+560,quinua roja,2024-02-11,44,true,Insecto
+561,gusanos de seda,2024-06-14,8,false,Semilla
+562,nabo largo,2023-11-23,5,false,Fruta
+563,ganso,2024-01-12,65,false,Carne
+564,larvas de mariposa,2023-11-01,86,false,Tuberculo
+565,calabacín de verano,2024-04-06,9,false,Pescado
+566,mazorca de maíz roja,2024-05-22,9,false,Tuberculo
+567,trucha de arroyo,2024-09-30,21,false,Insecto
+568,nabo silvestre,2024-03-11,89,true,Fruta
+569,pimientos morrones,2024-05-16,94,false,Fruta
+570,trucha arcoíris plateada,2024-03-29,81,false,Carne
+571,chía,2024-08-27,45,false,Fruta
+572,ciruela roja occidental,2023-11-06,86,false,Insecto
+573,chapulines verdes,2024-05-04,53,false,Pescado
+574,calabacín amarillo,2023-12-07,68,true,Lacteo
+575,ciruela roja japonesa,2024-02-09,93,false,Tuberculo
+576,sardina europea,2024-06-02,12,false,Insecto
+577,almendra blanca,2024-04-06,39,true,Pescado
+578,rábano chino,2024-09-26,41,true,Carne
+579,calabacín,2024-08-15,88,false,Lacteo
+580,calabaza cacahuete,2024-08-27,9,true,Carne
+581,gusanos de harina,2024-07-14,95,true,Lacteo
+582,pargo rojo del Pacífico,2024-01-24,76,true,Carne
+583,rábano blanco,2024-10-23,59,false,Tuberculo
+584,quinua roja,2024-05-14,36,true,Lacteo
+585,mújol del Atlántico,2024-07-03,39,false,Lacteo
+586,ganso hawaiano,2024-06-15,38,true,Verdura
+587,rábano chino,2024-09-02,56,true,Verdura
+588,pollo,2024-08-17,13,false,Verdura
+589,pollo de Cornualles,2024-06-18,54,true,Insecto
+590,calabacín amarillo,2024-08-20,81,true,Pescado
+591,naranja,2023-11-14,65,false,Lacteo
+592,abejorro,2024-08-02,33,true,Verdura
+593,repollo blanco,2024-07-27,21,false,Lacteo
+594,lenguado de Dover,2024-06-16,93,true,Lacteo
+595,ganso hawaiano,2024-08-11,79,true,Tuberculo
+596,garza real,2024-09-21,34,true,Lacteo
+597,coliflor,2024-10-04,76,false,Semilla
+598,quinoa,2023-11-11,65,false,Semilla
+599,frambuesa,2024-07-26,57,true,Fruta
+600,hormigas,2024-05-06,15,false,Fruta
+601,mazorca de maíz,2024-08-10,78,false,Pescado
+602,sardina,2024-08-15,3,true,Tuberculo
+603,almendra australiana,2023-10-31,36,true,Lacteo
+604,pargo común,2024-03-01,2,false,Lacteo
+605,mújol del Atlántico,2024-10-22,74,false,Verdura
+606,saltamontes,2024-07-11,22,false,Lacteo
+607,papaya,2023-12-12,50,false,Verdura
+608,ciruela damascena,2023-11-18,58,false,Carne
+609,chapulines rojos,2024-08-16,89,false,Lacteo
+610,pollo de Cornualles gigante,2024-08-16,93,true,Semilla
+611,pimientos naranja,2024-10-08,73,true,Semilla
+612,quinoa roja,2023-11-12,85,false,Verdura
+613,pato,2024-09-03,54,true,Fruta
+614,naranja,2024-06-21,87,true,Lacteo
+615,repollo,2024-06-21,66,true,Verdura
+616,durazno,2023-12-25,11,false,Insecto
+617,papa,2024-05-25,14,false,Pescado
+618,rábano oriental,2024-07-09,78,true,Lacteo
+619,calabacín verde,2023-12-21,37,true,Semilla
+620,quinua roja,2024-07-01,60,true,Tuberculo
+621,pimiento rojo,2024-02-19,16,true,Pescado
+622,nombre,2024-01-04,61,false,Verdura
+623,hormiga tejedora,2023-11-05,73,false,Fruta
+624,rábano chino,2024-02-19,95,true,Insecto
+625,trucha arcoíris dorada,2024-04-12,96,true,Pescado
+626,nabo largo,2024-02-17,95,true,Tuberculo
+627,calabaza delicata,2024-09-01,96,false,Semilla
+628,ciruela italiana,2024-07-06,79,true,Verdura
+629,calabaza de piel de serpiente,2023-11-07,5,true,Fruta
+630,alcachofa,2024-05-15,64,false,Insecto
+631,pargo dentón,2024-06-27,20,false,Semilla
+632,pargo rojo del Atlántico,2024-09-07,96,true,Lacteo
+633,pimientos amarillos,2024-10-13,6,true,Insecto
+634,avena,2024-08-18,23,true,Pescado
+635,rábano negro,2023-12-06,12,false,Pescado
+636,ciruela roja,2024-09-24,68,false,Semilla
+637,gusanos de seda,2023-11-02,79,false,Insecto
+638,mazorca de maíz morado,2023-10-30,42,true,Tuberculo
+639,espinaca,2024-05-09,93,false,Tuberculo
+640,salmón,2024-02-11,76,true,Fruta
+641,gusanos de seda,2024-08-18,67,true,Insecto
+642,nabo blanco,2024-02-08,57,false,Semilla
+643,calabaza delicata,2024-02-28,34,false,Semilla
+644,gusanos de la col,2024-05-27,86,true,Lacteo
+645,pavo de Norfolk Black,2024-04-01,69,false,Pescado
+646,ciruela italiana,2024-08-21,26,false,Insecto
+647,rábano rojo,2024-02-19,22,true,Tuberculo
+648,pollo de Cornualles,2023-11-08,50,true,Lacteo
+649,calabaza del acantilado,2023-12-09,67,true,Tuberculo
+650,nabo forrajero,2023-11-23,52,false,Fruta
+651,calabacín redondo,2024-03-14,83,true,Carne
+652,mijo,2023-12-11,40,false,Tuberculo
+653,pulpo comestible,2024-06-05,70,false,Fruta
+654,pargo rojo del Golfo de México,2023-11-15,19,false,Verdura
+655,ganso del Canadá,2024-04-19,32,true,Insecto
+656,pato de Muscovy,2024-07-25,89,true,Carne
+657,kiwi,2024-10-20,24,true,Fruta
+658,nabo negro,2024-09-01,83,true,Semilla
+659,nabo blanco,2024-08-24,55,false,Pescado
+660,calabacín cimarrón,2024-09-30,9,true,Verdura
+661,ciruela negra,2024-08-25,26,false,Insecto
+662,calabacín redondo,2024-06-08,43,true,Semilla
+663,ciruela roja japonesa,2024-01-25,50,true,Insecto
+664,gusano de seda,2024-03-01,21,false,Verdura
+665,larvas de mariposa,2024-04-03,64,false,Semilla
+666,naranja,2024-08-25,37,true,Pescado
+667,calabaza de bellota,2024-06-28,51,true,Pescado
+668,garza gris,2024-03-17,89,false,Fruta
+669,durazno,2024-05-15,97,false,Tuberculo
+670,larvas de tenebrio,2024-04-20,41,false,Fruta
+671,sandía,2024-09-09,4,false,Carne
+672,perca europea,2024-10-02,42,true,Insecto
+673,hormiga culona,2024-09-13,87,true,Semilla
+674,nabo negro,2024-08-03,87,false,Semilla
+675,hormigas de bosque,2024-06-14,39,true,Lacteo
+676,mazorca de maíz morado,2024-05-11,26,true,Insecto
+677,berenjena,2024-03-05,91,true,Pescado
+678,salmón,2024-05-24,55,true,Semilla
+679,gusano del harino,2024-04-24,88,true,Carne
+680,gusano de cera,2024-07-21,57,false,Pescado
+681,espinaca,2024-05-07,29,true,Carne
+682,hormigas blancas,2024-02-14,43,false,Tuberculo
+683,chía,2024-10-24,73,false,Tuberculo
+684,alcachofa,2024-02-18,23,false,Insecto
+685,nabo daikon,2024-04-05,54,false,Tuberculo
+686,amaranto rojo,2024-10-25,15,false,Tuberculo
+687,anguila,2024-10-16,39,false,Fruta
+688,caqui,2023-12-02,97,false,Verdura
+689,rábano negro largo,2023-11-06,1,false,Semilla
+690,pollo de Guinea,2024-03-25,16,true,Semilla
+691,pavo bronceado,2024-07-21,24,true,Verdura
+692,hormigas cortadoras de hojas,2024-03-11,49,false,Tuberculo
+693,calabacín redondo,2023-11-29,48,true,Lacteo
+694,garza gris,2024-09-10,8,false,Semilla
+695,gusanos del corazón,2023-12-30,18,true,Verdura
+696,trucha de arroyo,2023-12-26,18,true,Semilla
+697,rábano picante,2023-11-11,30,true,Fruta
+698,pimientos morrones amarillos,2024-06-21,28,false,Semilla
+699,hormigas de bosque,2024-10-21,2,false,Insecto
+700,larvas de polilla de la seda,2023-11-14,58,false,Verdura
+701,mazorca de maíz,2024-08-12,68,false,Semilla
+702,quinoa,2024-08-05,62,true,Insecto
+703,calabaza de Australia,2024-08-24,23,true,Fruta
+704,grillos,2024-09-11,2,false,Insecto
+705,calabaza de piel de serpiente,2024-07-17,54,true,Tuberculo
+706,garza blanca grande,2023-11-23,51,true,Insecto
+707,atún,2024-07-21,3,false,Tuberculo
+708,quinua negra,2024-06-03,39,true,Verdura
+709,larvas de mariposa,2023-11-26,20,true,Insecto
+710,rábano de daikon,2023-11-28,27,false,Pescado
+711,nombre,2024-09-20,92,false,Carne
+712,calabaza de cera,2024-10-08,41,false,Insecto
+713,girasol,2024-09-28,56,false,Pescado
+714,enguia,2024-06-07,96,false,Pescado
+715,espinaca,2024-10-08,33,true,Verdura
+716,larvas de abeja,2024-02-07,4,true,Verdura
+717,anguila,2024-02-25,87,true,Tuberculo
+718,salmón,2023-11-10,78,false,Fruta
+719,papa,2024-06-28,72,false,Pescado
+720,ciruela italiana,2024-10-07,52,true,Carne
+721,anguila,2024-08-18,36,false,Lacteo
+722,larvas de polilla del ejército,2024-04-28,12,false,Verdura
+723,sardina,2023-11-03,8,false,Fruta
+724,linaza dorada,2024-06-09,16,true,Fruta
+725,ciruela roja,2024-01-07,23,true,Semilla
+726,quinua blanca,2024-08-20,68,false,Fruta
+727,calabacín italiano,2024-02-19,30,true,Fruta
+728,calabacín,2024-07-24,72,true,Pescado
+729,alcachofa,2024-01-17,46,false,Lacteo
+730,hormigas de bosque,2024-10-03,97,false,Carne
+731,cacahuate,2024-09-10,19,true,Pescado
+732,lenguado de Dover,2024-10-23,41,false,Pescado
+733,lenguado del Atlántico,2023-10-31,53,true,Verdura
+734,calabacín,2024-01-10,94,true,Tuberculo
+735,ciruela pasa,2023-11-28,65,true,Insecto
+736,pato de Muscovy,2024-07-29,81,false,Tuberculo
+737,ganso,2023-12-24,24,false,Pescado
+738,espinaca,2024-01-11,86,false,Lacteo
+739,trucha arcoíris plateada,2024-05-28,29,false,Tuberculo
+740,berro de agua,2024-02-24,87,false,Pescado
+741,calabaza de barco,2024-04-21,65,true,Tuberculo
+742,pavo real,2024-08-31,70,false,Lacteo
+743,patata dulce,2024-04-20,84,false,Lacteo
+744,pavo,2024-09-12,58,false,Tuberculo
+745,gusanos del corazón,2024-06-21,63,true,Pescado
+746,zanahoria,2024-03-07,32,true,Semilla
+747,ciruela pasa,2024-06-08,66,true,Pescado
+748,mazorca de maíz roja,2024-01-25,59,true,Fruta
+749,hormigas de bosque,2024-06-01,75,false,Insecto
+750,trucha,2023-12-30,72,true,Verdura
+751,pargo rojo del Golfo de México,2023-11-23,71,false,Semilla
+752,garza blanca grande,2023-10-28,74,true,Pescado
+753,calabacín,2024-02-01,20,true,Carne
+754,nabo sueco,2024-09-03,100,false,Lacteo
+755,mazorca de maíz roja,2024-10-23,8,false,Semilla
+756,ciruela roja japonesa,2024-09-17,82,false,Fruta
+757,ciruela roja occidental,2023-12-01,29,true,Semilla
+758,sardina,2024-07-25,48,true,Carne
+759,calabaza de invierno,2024-02-17,83,false,Insecto
+760,linaza dorada,2024-07-07,14,true,Tuberculo
+761,pollo de Cornualles blanco,2024-03-03,20,false,Tuberculo
+762,plátano,2024-04-14,37,true,Insecto
+763,pollo de Cornualles blanco,2024-06-03,67,true,Semilla
+764,pollo de Cornualles,2024-09-13,53,true,Verdura
+765,quinua roja,2024-02-16,69,false,Insecto
+766,rábano japonés,2024-09-10,51,false,Insecto
+767,almendra de coco,2024-03-30,26,true,Insecto
+768,mazorca de maíz roja,2024-10-03,28,false,Verdura
+769,calabacín trompeta,2024-01-16,95,true,Fruta
+770,rábano blanco,2023-11-03,43,false,Tuberculo
+771,oveja,2023-11-01,93,true,Semilla
+772,brócoli,2024-02-18,3,false,Fruta
+773,soja,2024-06-26,55,false,Carne
+774,rábano picante,2024-08-06,84,false,Fruta
+775,hormigas de terciopelo,2023-11-06,64,true,Semilla
+776,calabacín amarillo,2024-03-16,23,true,Verdura
+777,larvas de polilla del ejército,2023-11-18,43,true,Semilla
+778,gusano de seda,2024-10-13,61,true,Verdura
+779,ganso de cabeza blanca,2024-02-22,50,false,Verdura
+780,larvas de abeja de miel,2023-11-22,8,true,Tuberculo
+781,almendra de macadamia,2024-05-28,40,true,Pescado
+782,alcachofa,2023-11-22,92,true,Verdura
+783,oveja,2024-08-13,42,false,Carne
+784,calabacín,2024-04-06,26,false,Fruta
+785,nabo daikon,2023-11-03,24,false,Tuberculo
+786,trucha de arroyo,2024-04-10,84,true,Tuberculo
+787,nabo sueco,2024-05-08,32,false,Lacteo
+788,ganso,2024-01-20,6,true,Insecto
+789,pato de Muscovy,2024-05-17,23,true,Pescado
+790,sardina,2024-10-13,22,true,Verdura
+791,patata dulce,2023-12-25,92,true,Verdura
+792,ciruela italiana,2024-09-14,73,false,Lacteo
+793,pulpo comestible,2023-11-27,92,false,Pescado
+794,almendra de macadamia,2024-08-16,14,false,Carne
+795,lenguado de Dover,2024-06-13,63,true,Carne
+796,pavo bronceado,2024-01-10,62,true,Tuberculo
+797,ganso,2024-02-21,100,true,Fruta
+798,pimiento,2024-04-13,19,true,Semilla
+799,quinoa,2024-03-15,85,false,Semilla
+800,ganso,2024-10-21,83,true,Lacteo
+801,nabo blanco,2023-11-26,2,true,Insecto
+802,pollo de Cornualles rojo,2024-07-08,77,false,Fruta
+803,lombrices,2023-12-04,83,true,Semilla
+804,chía blanca,2024-10-23,30,true,Tuberculo
+805,ciruela damascena,2024-04-09,66,true,Tuberculo
+806,amaranto blanco,2023-12-24,62,true,Verdura
+807,quinoa negra,2024-04-01,7,true,Verdura
+808,garza blanca grande,2023-11-08,94,true,Carne
+809,ganso hawaiano,2024-02-24,73,true,Pescado
+810,ganso,2024-07-08,40,true,Lacteo
+811,berenjena,2024-07-18,54,true,Verdura
+812,cacahuate,2023-11-14,47,true,Fruta
+813,remolacha roja,2024-02-17,23,false,Carne
+814,pimientos morrones rojos,2023-12-13,37,false,Semilla
+815,rábano picante,2024-03-09,24,true,Carne
+816,quinoa negra,2023-11-17,1,true,Carne
+817,mazorca de maíz morado,2023-12-30,29,false,Pescado
+818,sardina europea,2024-09-02,17,false,Carne
+819,gusano del harino,2024-10-16,77,false,Carne
+820,trucha arcoíris,2024-04-20,56,true,Carne
+821,batata,2024-05-17,31,true,Verdura
+822,pavo de Norfolk Black,2024-05-03,45,false,Verdura
+823,hormigas blancas,2024-10-25,88,true,Lacteo
+824,pimientos morrones rojos,2023-11-07,47,false,Tuberculo
+825,calabaza de bellota,2023-12-31,61,false,Pescado
+826,rábano,2024-02-20,60,false,Semilla
+827,ternera,2024-05-24,80,true,Tuberculo
+828,zanahoria,2024-08-11,6,false,Pescado
+829,calabaza,2024-01-01,33,false,Lacteo
+830,gusanos de la miel,2024-10-13,84,true,Insecto
+831,pimientos amarillos,2024-06-04,54,true,Semilla
+832,nabo,2023-11-04,36,false,Tuberculo
+833,ganso de nieve,2024-01-11,89,false,Semilla
+834,hormiga tejedora,2024-01-09,44,false,Pescado
+835,ganso hawaiano,2024-05-15,33,false,Semilla
+836,calabaza delicata,2024-06-17,18,false,Tuberculo
+837,gusanos del corazón,2024-05-30,56,false,Insecto
+838,rábano silvestre,2024-06-19,81,true,Semilla
+839,rábano blanco,2024-03-12,18,false,Tuberculo
+840,calabaza de invierno,2024-09-04,80,true,Lacteo
+841,calabacín italiano,2023-12-10,79,true,Pescado
+842,rábano daikon,2024-02-28,88,false,Verdura
+843,melón amargo,2024-07-19,11,true,Fruta
+844,saltamontes,2024-05-23,59,false,Verdura
+845,larvas de polilla de la cera,2024-02-20,11,true,Pescado
+846,rábano silvestre,2024-09-28,41,true,Semilla
+847,nuez,2024-01-23,66,true,Carne
+848,repollo blanco,2024-10-02,58,true,Fruta
+849,ciruela roja occidental,2024-07-29,88,false,Tuberculo
+850,lenguado europeo,2024-01-11,67,false,Pescado
+851,conejo,2024-03-23,9,false,Tuberculo
+852,nabo daikon,2023-11-11,52,true,Tuberculo
+853,espinaca,2024-01-15,41,true,Carne
+854,amaranto negro,2024-03-15,26,false,Lacteo
+855,sardina,2024-10-24,52,true,Verdura
+856,soja,2024-03-25,14,true,Lacteo
+857,almendra negra,2024-10-09,59,true,Fruta
+858,ciruela amarilla,2024-03-24,93,true,Lacteo
+859,calabacín verde,2024-04-04,83,false,Lacteo
+860,pargo rojo del Atlántico,2024-09-22,45,true,Carne
+861,hormiga de fuego,2024-02-10,57,true,Carne
+862,rábano oriental redondo,2024-08-17,56,false,Insecto
+863,quinoa roja,2024-02-29,78,false,Pescado
+864,espinaca,2024-04-24,14,false,Lacteo
+865,amaranto negro,2024-09-04,12,false,Pescado
+866,caqui,2023-12-14,21,false,Fruta
+867,almendra negra,2024-05-31,92,false,Carne
+868,durazno,2023-11-19,68,false,Insecto
+869,quinua roja,2024-09-27,4,false,Semilla
+870,amaranto rojo,2023-12-22,1,true,Lacteo
+871,trucha de arroyo,2024-07-10,22,true,Insecto
+872,gusano de cera,2024-10-11,92,true,Fruta
+873,pulpo comestible,2024-01-24,40,true,Tuberculo
+874,pimientos morrones amarillos,2024-08-04,44,false,Lacteo
+875,avispa,2023-11-30,86,false,Pescado
+876,durazno amarillo,2023-11-02,65,true,Carne
+877,bacalao del Pacífico,2024-09-01,43,true,Fruta
+878,gusanos del corazón,2024-01-27,52,false,Carne
+879,ciruela santa rosa,2024-02-12,79,true,Tuberculo
+880,cerezas,2024-07-16,47,true,Carne
+881,pollo de Cornualles blanco,2024-03-27,46,false,Insecto
+882,larvas de abeja de miel,2024-08-26,14,false,Carne
+883,ganso de cabeza blanca,2024-10-24,93,false,Insecto
+884,remolacha roja,2023-12-20,63,true,Fruta
+885,calabacín verde,2024-06-16,76,false,Verdura
+886,espinaca,2024-02-06,51,false,Insecto
+887,larvas de tenebrio,2024-02-21,92,true,Insecto
+888,pollo de Cornualles,2023-11-07,46,false,Carne
+889,rábano picante,2024-01-24,97,true,Lacteo
+890,pavo de Bourbourg,2023-11-28,75,true,Verdura
+891,pavo,2024-04-13,18,false,Tuberculo
+892,nabo sueco,2024-04-03,39,false,Tuberculo
+893,calabacín,2024-07-22,60,true,Fruta
+894,quinua roja,2024-02-10,38,false,Semilla
+895,pavo,2024-09-07,93,false,Pescado
+896,trucha marrón,2024-10-14,68,true,Carne
+897,mazorca de maíz,2024-07-16,73,true,Lacteo
+898,lenguado de Dover,2023-11-17,18,false,Verdura
+899,hormigas,2023-11-08,50,true,Lacteo
+900,batata,2023-11-19,11,true,Tuberculo
+901,larvas de polilla de la cera,2024-01-20,20,true,Insecto
+902,plátano,2023-11-18,52,false,Tuberculo
+903,papaya,2024-02-01,35,true,Fruta
+904,ganso de cabeza blanca,2024-10-24,14,false,Carne
+905,trucha arcoíris dorada,2023-12-07,82,false,Fruta
+906,ciruela santa rosa,2024-07-26,21,false,Insecto
+907,trucha marrón,2023-11-15,96,false,Fruta
+908,lenguado europeo,2024-06-17,5,true,Insecto
+909,dorada rayada del Atlántico,2024-10-23,57,false,Fruta
+910,avena,2023-10-30,5,true,Lacteo
+911,almendra australiana,2024-03-18,7,false,Tuberculo
+912,calabaza de Australia,2024-10-25,52,true,Lacteo
+913,mijo,2024-09-25,16,true,Carne
+914,hormiga tejedora,2024-03-09,1,true,Verdura
+915,sardina europea,2024-05-18,21,true,Verdura
+916,calabaza de bellota,2024-03-27,68,true,Carne
+917,calabaza de piel de serpiente,2024-10-23,9,true,Lacteo
+918,mazorca de maíz morado,2024-02-11,27,false,Verdura
+919,quinua blanca,2023-10-28,84,false,Semilla
+920,zanahoria,2024-09-05,12,false,Tuberculo
+921,pavo,2023-10-31,54,false,Fruta
+922,pargo rojo del Golfo de México,2024-08-14,21,false,Insecto
+923,chía,2024-10-06,33,true,Insecto
+924,rábano de daikon,2024-01-27,59,false,Insecto
+925,quinua roja,2024-08-02,94,false,Carne
+926,sardina europea,2023-11-17,45,true,Tuberculo
+927,calabaza,2024-02-04,81,true,Carne
+928,hormiga de fuego,2024-04-02,68,true,Verdura
+929,rábano oriental,2024-10-02,50,false,Fruta
+930,hormigas de terciopelo,2024-08-31,23,false,Fruta
+931,larvas de abeja,2024-06-23,86,true,Pescado
+932,gusanos de harina,2023-11-04,9,false,Lacteo
+933,alcachofa,2023-12-15,80,false,Pescado
+934,pavo bronceado,2024-07-15,69,true,Verdura
+935,melón dulce,2024-05-12,14,true,Lacteo
+936,ternera,2024-03-29,23,true,Semilla
+937,calabaza,2023-12-11,5,true,Fruta
+938,calabaza de Australia,2024-02-03,11,true,Semilla
+939,pargo común,2024-07-24,53,true,Pescado
+940,calabacín trompeta,2024-02-22,22,false,Semilla
+941,avispa,2023-12-02,45,false,Carne
+942,pimiento rojo,2024-10-07,3,false,Verdura
+943,pollo,2023-12-06,41,false,Insecto
+944,trucha arcoíris plateada,2024-05-27,97,false,Insecto
+945,nabo sueco,2023-11-19,91,false,Tuberculo
+946,gusano de cera,2024-03-01,40,true,Fruta
+947,bacalao del Atlántico,2024-10-25,44,true,Semilla
+948,rábano blanco,2024-09-12,2,true,Semilla
+949,quinua negra,2024-08-07,8,true,Carne
+950,pargo rojo del Golfo de México,2024-04-23,9,false,Tuberculo
+951,melón dulce,2024-07-29,90,true,Lacteo
+952,calabacín cimarrón,2023-11-05,61,false,Lacteo
+953,rábano picante,2024-03-18,8,false,Insecto
+954,mújol del Pacífico,2024-06-04,45,true,Semilla
+955,espinaca,2023-12-07,97,true,Carne
+956,pavo de Bourbourg,2024-05-07,71,true,Semilla
+957,alcachofa,2024-05-18,4,true,Lacteo
+958,calabacín amarillo,2024-09-14,24,true,Tuberculo
+959,lenguado del Atlántico,2024-04-13,24,false,Tuberculo
+960,cerdo,2024-04-04,38,true,Verdura
+961,quinoa,2023-12-04,86,false,Pescado
+962,pulpo comestible,2024-07-10,10,false,Fruta
+963,nabo blanco,2024-07-02,98,false,Tuberculo
+964,rábano chino,2024-06-20,72,true,Verdura
+965,gusanos de seda,2024-03-18,16,true,Carne
+966,calabaza de Australia,2024-01-03,80,true,Lacteo
+967,rábano rojo japonés,2024-10-19,42,true,Lacteo
+968,conejo,2024-02-03,23,true,Verdura
+969,gorgojos de palma,2023-10-28,54,true,Verdura
+970,ganso del Canadá,2024-02-29,37,true,Fruta
+971,calabaza de peregrino,2024-10-13,6,true,Carne
+972,linaza,2024-05-17,45,true,Verdura
+973,calabaza cacahuete,2024-02-04,11,true,Carne
+974,repollo blanco,2024-10-24,65,true,Insecto
+975,calabaza cacahuete,2024-03-18,63,false,Insecto
+976,pavo de Norfolk Black,2024-05-10,33,true,Fruta
+977,pollo de Cornualles,2024-08-11,80,true,Fruta
+978,pargo rojo del Pacífico,2024-02-24,93,false,Tuberculo
+979,calabaza espagueti,2023-12-18,66,true,Pescado
+980,amaranto rojo,2024-03-28,17,true,Semilla
+981,berenjena,2024-01-30,53,true,Insecto
+982,larvas de polilla del ejército,2024-04-24,58,true,Tuberculo
+983,ciruela italiana,2024-10-10,13,false,Verdura
+984,hormiga de la harina,2024-01-11,85,false,Lacteo
+985,nabo forrajero,2024-03-15,85,false,Semilla
+986,repollo,2024-03-21,44,true,Fruta
+987,pollo de Cornualles rojo,2023-11-03,8,false,Verdura
+988,pollo de Guinea,2024-02-06,69,true,Semilla
+989,nabo sueco,2024-08-15,65,false,Carne
+990,cebolla,2023-11-29,58,true,Pescado
+991,rábano,2024-04-01,47,true,Verdura
+992,espinaca,2024-07-09,82,false,Verdura
+993,hormiga culona,2024-06-09,17,false,Tuberculo
+994,salmón,2024-02-16,88,true,Fruta
+995,larvas de polilla,2024-02-23,14,false,Pescado
+996,frambuesa,2024-01-07,18,true,Insecto
+997,mújol del Pacífico,2023-11-07,100,false,Tuberculo
+998,ciruela santa rosa,2024-03-08,88,true,Fruta
+999,calabacín de verano,2024-02-13,46,true,Verdura
+1000,pollo de Cornualles blanco,2023-12-05,77,true,Insecto

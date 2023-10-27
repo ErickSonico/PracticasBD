@@ -148,7 +148,7 @@ COMMENT ON CONSTRAINT TelefonoC2 ON TelefonoProveedor IS 'Restriccion check el c
 
 CREATE TABLE Alimento (
    IDInsumo INT,
-   Nombre VARCHAR(20),
+   Nombre VARCHAR(40),
    Caducidad DATE,
    Cantidad FLOAT8,
    Refrigeracion BOOL,
