@@ -64,7 +64,7 @@ COMMENT ON COLUMN Proveedor.IDPersona IS 'Identificador del proveedor';
 COMMENT ON COLUMN Proveedor.Nombre IS 'Nombre del proveedor';
 COMMENT ON COLUMN Proveedor.ApellidoPaterno IS 'Apellido paterno del proveedor';
 COMMENT ON COLUMN Proveedor.ApellidoMaterno IS 'Apellido materno del proveedor';
-COMMENT ON COLUMN Producto.Nacimiento IS 'Fecha de nacimiento';
+COMMENT ON COLUMN Proveedor.Nacimiento IS 'Fecha de nacimiento';
 COMMENT ON COLUMN Proveedor.RFC IS 'RFC del proveedor';
 COMMENT ON COLUMN Proveedor.Genero IS 'Genero del proveedor';
 COMMENT ON COLUMN Proveedor.InicioContrato IS 'Fecha de inicio del contrato';
@@ -183,13 +183,12 @@ COMMENT ON CONSTRAINT TipoC1 ON Alimento IS 'Restriccion check el cual nos asegu
 
 CREATE TABLE Medicina (
    IDInsumo INT,
-   Nombre VARCHAR(20),
+   Nombre VARCHAR(50),
    Caducidad DATE,
    Cantidad FLOAT8,
    Refrigeracion BOOL,
-   NumProveedor INT,
-   Tipo VARCHAR(20),
-   Laboratorio VARCHAR(20)
+   Tipo VARCHAR(50),
+   Laboratorio VARCHAR(50)
 );
 ALTER TABLE Medicina ALTER COLUMN IDInsumo SET NOT NULL;
 ALTER TABLE Medicina ADD CONSTRAINT IDInsumoC2 Unique(IDInsumo);
@@ -200,7 +199,6 @@ ALTER TABLE Medicina ADD CONSTRAINT NombreC2 CHECK(Nombre ~ '^[a-zA-Záéíóú�
 ALTER TABLE Medicina ALTER COLUMN Caducidad SET NOT NULL;
 ALTER TABLE Medicina ALTER COLUMN Cantidad SET NOT NULL;
 ALTER TABLE Medicina ALTER COLUMN Refrigeracion SET NOT NULL;
-ALTER TABLE Medicina ALTER COLUMN NumProveedor SET NOT NULL;
 ALTER TABLE Medicina ALTER COLUMN Tipo SET NOT NULL;
 ALTER TABLE Medicina ADD CONSTRAINT TipoC1 CHECK(Tipo <> '');
 ALTER TABLE Medicina ALTER COLUMN Laboratorio SET NOT NULL;
@@ -212,7 +210,6 @@ COMMENT ON COLUMN Medicina.Nombre IS 'Nombre de la medicina.';
 COMMENT ON COLUMN Medicina.Caducidad IS 'Fecha de caducidad de la medicina.';
 COMMENT ON COLUMN Medicina.Cantidad IS 'Cantidad de ese tipo medicina.';
 COMMENT ON COLUMN Medicina.Refrigeracion IS 'Indica si la medicina necesita refrigeración o no.';
-COMMENT ON COLUMN Medicina.NumProveedor IS 'Número de proveedor de la medicina.';
 COMMENT ON COLUMN Medicina.Tipo IS 'Tipo de la medicina.';
 COMMENT ON COLUMN Medicina.Laboratorio IS 'Laboratorio de donde viene la medicina.';
 COMMENT ON CONSTRAINT IDInsumoC2 ON Medicina IS 'Restricción de unicidad para el ID de medicina.';
@@ -421,7 +418,7 @@ IDBioma INT,
 Nombre VARCHAR(50),
 ApellidoPaterno VARCHAR(50),
 ApellidoMaterno VARCHAR(50),
-Nacimiento DELETE,
+Nacimiento DATE,
 RFC VARCHAR(18),
 Genero CHAR(1),
 InicioContrato DATE,
@@ -447,7 +444,7 @@ ALTER TABLE Cuidador ADD CONSTRAINT ApellidoPaternoC1 CHECK(ApellidoPaterno <> '
 ALTER TABLE Cuidador ADD CONSTRAINT ApellidoPaternoC2 CHECK(ApellidoPaterno ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Cuidador ADD CONSTRAINT ApellidoMaternoC1 CHECK(ApellidoMaterno <> '');
 ALTER TABLE Cuidador ADD CONSTRAINT ApellidoMaternoC2 CHECK(ApellidoMaterno ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
-ALTER TABLE Cuidador ADD CONSTRAINT NacimientoC1 SET NOT NULL;
+ALTER TABLE Cuidador ALTER COLUMN Nacimiento SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN RFC SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT RFCC1 CHECK(RFC <> '');
 ALTER TABLE Cuidador ALTER COLUMN Genero SET NOT NULL;

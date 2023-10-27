@@ -1,0 +1,101 @@
+IDInsumo,Nombre,Caducidad,Cantidad,Refrigeracion,Tipo,Laboratorio
+1,Oxitetraciclina,2026-04-27,246,true,Antiinflamatorio,VetFarm Labs
+2,Neomycin,2025-05-01,764,true,Antiviral,BioZootecno
+3,Omeprazol,2025-03-05,421,false,Antiviral,ZootecnoMedix
+4,Ciclosporina,2024-09-10,783,true,Antiparasitario,AnimalCure Formulations
+5,Fenbendazol,2028-10-27,626,true,Antibiótico,AnimalGuard Labs
+6,Amantadine,2023-02-06,343,false,Desparasitante,ZootecnoMedix
+7,Naproxen,2032-11-22,253,true,Antibiótico,ZootecnoLife Solutions
+8,Dihydrostreptomycin,2026-02-14,720,false,Vitamina,ZooSafe Formulas
+9,Bromhexina,2034-02-12,335,true,Antihistamínico,FarmAnimal Health
+10,Trimethoprim,2020-02-07,979,false,Vitamina,ZootecnoLife Solutions
+11,Prednisone,2027-10-05,308,true,Inmunosupresor,ZooPharmaTech
+12,Famciclovir,2028-03-14,614,false,Desparasitante,ZooMedicine Solutions
+13,Trazodone,2024-10-02,500,true,Anestesia,ZooPro Health
+14,Pentoxifylline,2029-01-10,432,false,Analgésico,ZooCare Pharmaceuticals
+15,Tolazoline,2020-10-14,415,false,Antihistamínico,AgroVet Labs
+16,Dexametasona,2033-04-15,761,true,Antiinflamatorio,AnimalGuard Labs
+17,Sevoflurane,2023-03-08,439,true,Antiviral,FarmVet Innovations
+18,Fluoxetine,2021-07-29,853,true,Antiviral,FarmAnimal Health
+19,Tylosin,2033-12-26,589,false,Desparasitante,VetPro Research
+20,Ketamine,2034-07-03,113,true,Antibiótico,ZooPro Health
+21,Marbofloxacina,2029-07-14,488,true,Vitamina,LivestockPharma
+22,Dihydrostreptomycin,2022-11-29,604,true,Antiinflamatorio,ZooCare Pharmaceuticals
+23,Lansoprazole,2025-02-24,892,false,Antifúngico,AnimalWise Innovations
+24,Famciclovir,2031-12-27,593,true,Antifúngico,ZooCare Technologies
+25,Fenilbutazona,2027-06-22,669,true,Antiviral,LivestockRx Solutions
+26,Ibuprofen,2022-10-20,747,false,Anestesia,AnimalWise Innovations
+27,Loratadina,2023-04-11,309,false,Analgésico,AnimalLife Labs
+28,Tramadol,2025-07-28,229,true,Antiparasitario,AnimalGuard Labs
+29,Toltramate,2033-05-08,873,true,Antiparasitario,AgriVet Research
+30,Fluoxetine,2027-03-10,383,false,Antibiótico,ZooVet Health
+31,Meloxicam,2020-10-15,805,false,Vitamina,ZooGuard Innovations
+32,Penicillin,2033-04-14,838,false,Inmunosupresor,ZootecnoPharmaTech
+33,Dihydrostreptomycin,2023-09-21,851,false,Antiviral,ZooVet Innovations
+34,Chlorpheniramine,2020-01-19,813,true,Antihistamínico,AgroVet Solutions
+35,Roxarsone,2030-11-04,685,false,Antiviral,AnimalCure Solutions
+36,Methimazole,2020-10-18,985,false,Vitamina,VetAgro Health
+37,Zidovudine,2025-09-29,536,true,Antiviral,ZooVet Health
+38,Thiamine,2028-07-22,899,true,Vitamina,ZooCare Research
+39,Procaine,2026-02-03,687,true,Antifúngico,ZooPro Technologies
+40,Roxarsone,2027-11-05,324,false,Vitamina,AgriVet Innovations
+41,Fenbendazol,2033-10-12,857,false,Inmunosupresor,AnimalGuard Pharmaceuticals
+42,Gentamicin,2021-11-17,658,false,Vitamina,FarmAnimal Solutions
+43,Sulfadimethoxine,2025-04-03,293,true,Inmunosupresor,AnimalGuard Pharmaceuticals
+44,Haloperidol,2032-02-05,544,true,Desparasitante,AnimalGuard Innovations
+45,Piperacilina,2034-11-26,144,true,Antiinflamatorio,VetLife Labs
+46,Digoxina,2022-11-15,363,true,Antiviral,Nombre
+47,Doxycycline,2025-07-11,258,false,Anestesia,AgriLivestock Innovations
+48,Sucralfate,2021-06-04,119,false,Desparasitante,ZooVet Health
+49,Toltrazuril,2033-12-27,928,true,Antiinflamatorio,VetZoo Formulas
+50,Ketoprofeno,2020-10-26,899,true,Antiinflamatorio,FarmGuard Pharmaceuticals
+51,Ketamine,2021-02-05,647,true,Antibiótico,ZooTech Innovations
+52,Clomipramine,2029-03-21,777,false,Anestesia,AgriVet Innovations
+53,Sulfadimethoxine,2021-11-19,256,false,Antifúngico,AnimalLife Labs
+54,Toltrazuril,2022-10-29,573,true,Desparasitante,AgriVet Pharma
+55,Sevoflurane,2021-02-20,803,false,Antibiótico,ZootecnoMedix
+56,Rifampicin,2021-01-21,114,true,Vitamina,ZootecnoLife Pharmaceuticals
+57,Ceftiofur,2030-02-09,670,true,Anestesia,VetZoo Laboratories
+58,Dinoprost,2034-10-18,312,false,Antihistamínico,FarmAnimal Solutions
+59,Lorazepam,2022-01-28,659,true,Antiviral,FarmAnimal Health
+60,Levamisole,2023-04-15,551,false,Desparasitante,AgroGuard Pharmaceuticals
+61,Fenbendazole,2022-09-12,450,false,Antiinflamatorio,ZooWell Innovations
+62,Metronidazole,2026-11-05,752,false,Anestesia,ZooWell Innovations
+63,Doxycycline,2020-04-13,395,true,Antifúngico,ZooTech Innovations
+64,Fenbendazole,2034-12-13,802,false,Antibiótico,AgriVet Sciences
+65,Ofloxacin,2025-04-09,201,true,Analgésico,AnimalPro Formulas
+66,Minocycline,2031-08-06,874,false,Anestesia,AnimalCure Solutions
+67,Dinoprost,2025-10-20,431,false,Anestesia,ZooWell Health
+68,Fenilbutazona,2025-01-03,650,true,Antiinflamatorio,VetLife Pharmaceuticals
+69,Levetiracetam,2031-06-13,845,false,Inmunosupresor,AnimalGuard Innovations
+70,Fenilbutazona,2025-05-21,523,true,Antiinflamatorio,ZootecnoMedix
+71,Naproxen,2024-01-05,345,false,Antiviral,ZootecnoLife Pharmaceuticals
+72,Prednisolona,2027-06-21,126,false,Antihistamínico,VetZoo Formulas
+73,Paroxetine,2025-01-13,269,false,Vitamina,AnimalPharma Research
+74,Fipronil,2024-11-12,278,true,Anestesia,ZootecnoLife Pharmaceuticals
+75,Tetracycline,2021-02-21,439,true,Antiinflamatorio,AgroVet Formulas
+76,Pentoxifylline,2022-07-16,163,false,Desparasitante,VetAnimal Pharmaceuticals
+77,Ceftiofur,2024-11-26,454,false,Desparasitante,LivestockPharma Solutions
+78,Fipronil,2028-09-10,642,true,Desparasitante,AnimalPro Formulas
+79,Rifampin,2026-07-10,204,false,Antiparasitario,LivestockPharma Solutions
+80,Clomipramine,2034-02-12,783,false,Desparasitante,FarmAnimal Labs
+81,Pimobendan,2029-11-19,158,false,Antiparasitario,FarmVet Pharma
+82,Tobramycin,2023-02-26,417,true,Antiinflamatorio,ZooWell Formulations
+83,Ciprofloxacina,2029-03-09,251,false,Vitamina,AgriVet Sciences
+84,Cefalexina,2023-12-09,993,false,Inmunosupresor,ZooSafe Formulas
+85,Piperacilina,2024-05-10,360,false,Desparasitante,Farmavet Science
+86,Penicillin,2026-05-31,826,false,Antihistamínico,LivestockRx Labs
+87,Ciclosporina,2020-08-20,575,false,Anestesia,VetZoo Formulas
+88,Fluconazol,2022-01-10,230,false,Analgésico,ZootecnoLife Solutions
+89,Voriconazole,2027-04-11,598,true,Antifúngico,LivestockPharma
+90,Paroxetine,2026-05-01,334,true,Desparasitante,BioVet Research
+91,Naproxen,2020-07-23,967,true,Anestesia,AgroVet Science
+92,Phenylbutazone,2027-05-21,737,true,Desparasitante,FarmAnimal Labs
+93,Amantadine,2028-09-28,412,true,Antibiótico,LivestockPharma
+94,Doxycycline,2030-04-07,760,true,Anestesia,AgriVet Sciences
+95,Nombre,2030-10-20,674,false,Antiparasitario,ZootecnoMedix
+96,Metronidazol,2032-11-22,278,false,Antibiótico,VetFarm Labs
+97,Metronidazole,2023-11-12,987,true,Antiviral,AgriVet Solutions
+98,Zolpidem,2029-06-02,160,true,Antiviral,ZooMed Research
+99,Toltrazuril,2031-03-23,857,false,Antifúngico,VetLife Pharmaceuticals
+100,Paroxetine,2030-01-02,790,false,Antibiótico,LivestockRx Labs
