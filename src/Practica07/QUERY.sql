@@ -6,9 +6,9 @@ WHERE Nombre LIKE 'C%';
 
 
 -- Clientes que hayan nacido en el mes de Junio: --
-SELECT 
+SELECT *
 FROM Cliente
-WHERE Nacimiento LIKE '__-06-__' ;
+WHERE EXTRACT(MONTH FROM Nacimiento) = '06';
 
 
 -- Alimentos cuya fecha de caducidad este entre el 1 de enero de 2023 y del 18 de octubre de 2023 --
