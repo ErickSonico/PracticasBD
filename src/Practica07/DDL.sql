@@ -425,8 +425,8 @@ InicioContrato DATE,
 FinContrato DATE,
 NumInt INT,
 NumExt Int,
-Calle VARCHAR(20),
-Colonia VARCHAR(20),
+Calle VARCHAR(50),
+Colonia VARCHAR(50),
 CodigoPostal INT,
 Estado VARCHAR(20),
 Salario FLOAT8,
@@ -439,11 +439,11 @@ ALTER TABLE Cuidador ALTER COLUMN Nombre SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN ApellidoPaterno SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN ApellidoMaterno SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT NombreC1 CHECK(Nombre <> '');
-ALTER TABLE Cuidador ADD CONSTRAINT NombreC2 CHECK(Nombre ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Cuidador ADD CONSTRAINT NombreC2 CHECK(Nombre ~ '^[a-zñÑA-ZáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Cuidador ADD CONSTRAINT ApellidoPaternoC1 CHECK(ApellidoPaterno <> '');
-ALTER TABLE Cuidador ADD CONSTRAINT ApellidoPaternoC2 CHECK(ApellidoPaterno ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Cuidador ADD CONSTRAINT ApellidoPaternoC2 CHECK(ApellidoPaterno ~ '^[a-zA-ZÑñáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Cuidador ADD CONSTRAINT ApellidoMaternoC1 CHECK(ApellidoMaterno <> '');
-ALTER TABLE Cuidador ADD CONSTRAINT ApellidoMaternoC2 CHECK(ApellidoMaterno ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Cuidador ADD CONSTRAINT ApellidoMaternoC2 CHECK(ApellidoMaterno ~ '^[a-zA-ZÑñáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Cuidador ALTER COLUMN Nacimiento SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN RFC SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT RFCC1 CHECK(RFC <> '');
@@ -456,14 +456,14 @@ ALTER TABLE Cuidador ALTER COLUMN NumInt SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN NumExt SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN Calle SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT CalleC1 CHECK(Calle <> '');
-ALTER TABLE Cuidador ADD constraint CalleC2 CHECK(Calle ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Cuidador ADD constraint CalleC2 CHECK(Calle ~ '[a-zÑñA-ZáéíóúÁÉÍÓÚüÜ0-9\.: ]*$');
 ALTER TABLE Cuidador ALTER COLUMN Colonia SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT ColoniaC1 CHECK(Colonia <> '');
-ALTER TABLE Cuidador ADD CONSTRAINT ColoniaC2 CHECK (Colonia ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Cuidador ADD CONSTRAINT ColoniaC2 CHECK (Calle ~ '[a-zÑñA-ZáéíóúÁÉÍÓÚüÜ0-9\. ]*$');
 ALTER TABLE Cuidador ALTER COLUMN CodigoPostal SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN Estado SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT EstadoC1 CHECK(Estado <> '');
-ALTER TABLE Cuidador ADD CONSTRAINT EstadoC2 CHECK(Estado ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Cuidador ADD CONSTRAINT EstadoC2 CHECK(Estado ~ '[a-zÑñA-ZáéíóúÁÉÍÓÚüÜ0-9\. ]*$');
 ALTER TABLE Cuidador ALTER COLUMN Salario SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN DiasLabor SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN Horario SET NOT NULL;
