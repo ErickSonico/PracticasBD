@@ -618,7 +618,6 @@ COMMENT ON CONSTRAINT AlimentacionAnimalC1 ON Animal IS 'Check que verifica que 
 
 CREATE TABLE Veterinario (
    IDPersona INT,
-   IDBioma INT,
    Nombre VARCHAR(50),
    ApellidoPaterno VARCHAR(50),
    ApellidoMaterno VARCHAR(50),
@@ -637,7 +636,6 @@ CREATE TABLE Veterinario (
    Horario TIME
 );
 ALTER TABLE Veterinario ALTER COLUMN IDPersona SET NOT NULL;
-ALTER TABLE Veterinario ALTER COLUMN IDBioma SET NOT NULL;
 ALTER TABLE Veterinario ALTER COLUMN Nombre SET NOT NULL;
 ALTER TABLE Veterinario ADD CONSTRAINT NombreC1 CHECK(Nombre <> '');
 ALTER TABLE Veterinario ADD CONSTRAINT NombreC2 CHECK(Nombre ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
@@ -673,7 +671,6 @@ ALTER TABLE Veterinario ADD CONSTRAINT Veterinario_pk PRIMARY KEY (IDPersona);
 
 COMMENT ON TABLE Veterinario IS 'Tabla que contiene los datos de los veterinarios.';
 COMMENT ON COLUMN Veterinario.IDPersona IS 'Identificador del veterinario.';
-COMMENT ON COLUMN Veterinario.IDBioma IS 'Identificador del bioma en el que trabaja el veterinario.';
 COMMENT ON COLUMN Veterinario.Nombre IS 'Nombre del veterinario.';
 COMMENT ON CONSTRAINT NombreC1 ON Veterinario IS 'Check que verifica que el nombre no sea la cadena vacía.';
 COMMENT ON CONSTRAINT NombreC2 ON Veterinario IS 'Check que verifica que el nombre sólo contenga letras y espacios.';
