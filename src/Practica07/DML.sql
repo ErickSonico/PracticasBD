@@ -302,16 +302,14 @@ INSERT INTO TelefonoProveedor(IDPersona,Telefono) VALUES (99,5597927910);
 INSERT INTO TelefonoProveedor(IDPersona,Telefono) VALUES (100,5539262191);
 
 
-INSERT INTO Bioma(IDBioma,Tipo) VALUES (1,'Bosque');
-INSERT INTO Bioma(IDBioma,Tipo) VALUES (2,'Selva');
-INSERT INTO Bioma(IDBioma,Tipo) VALUES (3,'Sabana');
-INSERT INTO Bioma(IDBioma,Tipo) VALUES (4,'Tundra');
-INSERT INTO Bioma(IDBioma,Tipo) VALUES (5,'Pastizal');
-INSERT INTO Bioma(IDBioma,Tipo) VALUES (6,'Manglar');
-INSERT INTO Bioma(IDBioma,Tipo) VALUES (7,'Acuiatico');
-INSERT INTO Bioma(IDBioma,Tipo) VALUES (8,'Montañoso');
-INSERT INTO Bioma(IDBioma,Tipo) VALUES (9,'Bambu');
-INSERT INTO Bioma(IDBioma,Tipo) VALUES (10,'Costero');
+INSERT INTO Bioma(IDBioma,Tipo) VALUES (1,'Desierto');
+INSERT INTO Bioma(IDBioma,Tipo) VALUES (2,'Pastizales');
+INSERT INTO Bioma(IDBioma,Tipo) VALUES (3,'Franja');
+INSERT INTO Bioma(IDBioma,Tipo) VALUES (4,'Costera');
+INSERT INTO Bioma(IDBioma,Tipo) VALUES (5,'Tundra');
+INSERT INTO Bioma(IDBioma,Tipo) VALUES (6,'Aviario');
+INSERT INTO Bioma(IDBioma,Tipo) VALUES (7,'Bosque templado');
+INSERT INTO Bioma(IDBioma,Tipo) VALUES (8,'Bosque Tropical');
 
 
 INSERT INTO Jaula(IDBioma,NumJaula) VALUES (3,51522);

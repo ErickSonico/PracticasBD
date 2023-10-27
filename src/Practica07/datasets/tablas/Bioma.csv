@@ -1,11 +1,9 @@
 IDBioma,Tipo
-1,Bosque
-2,Selva
-3,Sabana
-4,Tundra
-5,Pastizal
-6,Manglar
-7,Acuiatico
-8,Montañoso
-9,Bambu
-10,Costero
+1,Desierto
+2,Pastizales
+3,Franja
+4,Costera
+5,Tundra
+6,Aviario
+7,Bosque templado
+8,Bosque Tropical
