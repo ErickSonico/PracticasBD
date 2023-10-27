@@ -64,6 +64,7 @@ COMMENT ON COLUMN Proveedor.IDPersona IS 'Identificador del proveedor';
 COMMENT ON COLUMN Proveedor.Nombre IS 'Nombre del proveedor';
 COMMENT ON COLUMN Proveedor.ApellidoPaterno IS 'Apellido paterno del proveedor';
 COMMENT ON COLUMN Proveedor.ApellidoMaterno IS 'Apellido materno del proveedor';
+COMMENT ON COLUMN Producto.Nacimiento IS 'Fecha de nacimiento';
 COMMENT ON COLUMN Proveedor.RFC IS 'RFC del proveedor';
 COMMENT ON COLUMN Proveedor.Genero IS 'Genero del proveedor';
 COMMENT ON COLUMN Proveedor.InicioContrato IS 'Fecha de inicio del contrato';
@@ -420,6 +421,7 @@ IDBioma INT,
 Nombre VARCHAR(50),
 ApellidoPaterno VARCHAR(50),
 ApellidoMaterno VARCHAR(50),
+Nacimiento DELETE,
 RFC VARCHAR(18),
 Genero CHAR(1),
 InicioContrato DATE,
@@ -445,6 +447,7 @@ ALTER TABLE Cuidador ADD CONSTRAINT ApellidoPaternoC1 CHECK(ApellidoPaterno <> '
 ALTER TABLE Cuidador ADD CONSTRAINT ApellidoPaternoC2 CHECK(ApellidoPaterno ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Cuidador ADD CONSTRAINT ApellidoMaternoC1 CHECK(ApellidoMaterno <> '');
 ALTER TABLE Cuidador ADD CONSTRAINT ApellidoMaternoC2 CHECK(ApellidoMaterno ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Cuidador ADD CONSTRAINT NacimientoC1 SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN RFC SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT RFCC1 CHECK(RFC <> '');
 ALTER TABLE Cuidador ALTER COLUMN Genero SET NOT NULL;
@@ -476,6 +479,7 @@ COMMENT ON COLUMN Cuidador.IDBioma IS 'Identificador del bioma';
 COMMENT ON COLUMN Cuidador.Nombre IS 'Nombre del Cuidador';
 COMMENT ON COLUMN Cuidador.ApellidoPaterno IS 'Apellido paterno del Cuidador';
 COMMENT ON COLUMN Cuidador.ApellidoMaterno IS 'Apellido materno del Cuidador';
+COMMENT ON COLUMN Cuidador.Nacimiento IS 'Fecha de nacimiento';
 COMMENT ON COLUMN Cuidador.RFC IS 'RFC del Cuidador';
 COMMENT ON COLUMN Cuidador.Genero IS 'Genero del Cuidador';
 COMMENT ON COLUMN Cuidador.InicioContrato IS 'Fecha de inicio del contrato';
