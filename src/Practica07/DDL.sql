@@ -709,10 +709,10 @@ CREATE TABLE Especialidad (
    Especialidad VARCHAR(50)
 );
 ALTER TABLE Especialidad ALTER COLUMN IDPersona SET NOT NULL;
-ALTER TABLE Especialidad ADD CONSTRAINT IDPersonaEspecialidadC1 UNIQUE(IDPersona);
 ALTER TABLE Especialidad ALTER COLUMN Especialidad SET NOT NULL;
 ALTER TABLE Especialidad ADD CONSTRAINT EspecialidadC1 CHECK (Especialidad <> '');
 ALTER TABLE Especialidad ADD CONSTRAINT EspecialidadC2 CHECK (Especialidad <> '^[a-zA-ZáéíóúÁÉÍÓÚüÜÑñ ]*$');
+ALTER TABLE Especialidad ADD CONSTRAINT IDPersonaEspecialidadC1 UNIQUE(IDPersona);
 ALTER TABLE Especialidad ADD CONSTRAINT Especialidad_pk PRIMARY KEY(IDPersona,Especialidad);
 ALTER TABLE Especialidad ADD CONSTRAINT Especialidad_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona)
 ON UPDATE CASCADE ON DELETE CASCADE;
