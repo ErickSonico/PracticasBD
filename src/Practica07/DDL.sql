@@ -152,7 +152,6 @@ CREATE TABLE Alimento (
    Caducidad DATE,
    Cantidad FLOAT8,
    Refrigeracion BOOL,
-   NumProveedor INT,
    Tipo VARCHAR(20)
 );
 ALTER TABLE Alimento ALTER COLUMN IDInsumo SET NOT NULL;
@@ -164,7 +163,6 @@ ALTER TABLE Alimento ADD CONSTRAINT NombreC4 CHECK(Nombre ~ '^[a-zA-Záéíóú�
 ALTER TABLE Alimento ALTER COLUMN Caducidad SET NOT NULL;
 ALTER TABLE Alimento ALTER COLUMN Cantidad SET NOT NULL;
 ALTER TABLE Alimento ALTER COLUMN Refrigeracion SET NOT NULL;
-ALTER TABLE Alimento ALTER COLUMN NumProveedor SET NOT NULL;
 ALTER TABLE Alimento ALTER COLUMN Tipo SET NOT NULL;
 ALTER TABLE Alimento ADD CONSTRAINT TipoC1 CHECK(Tipo <> '');
 
@@ -174,7 +172,6 @@ COMMENT ON COLUMN Alimento.Nombre IS 'Nombre del Alimento';
 COMMENT ON COLUMN Alimento.Caducidad IS 'Caducidad del Alimento';
 COMMENT ON COLUMN Alimento.Cantidad IS 'Cantidad del Alimento';
 COMMENT ON COLUMN Alimento.Refrigeracion IS 'Si el Alimento necesita refrigeración';
-COMMENT ON COLUMN Alimento.NumProveedor IS 'Proveedor del Alimento';
 COMMENT ON COLUMN Alimento.Tipo IS 'Tipo de Alimento';
 COMMENT ON CONSTRAINT Alimento_pk ON Alimento IS 'La llave primaria de la tabla Alimento';
 COMMENT ON CONSTRAINT IDInsumoC1 ON Alimento IS 'Restriccion unique para el atributo IDInsumo de Alimento';
