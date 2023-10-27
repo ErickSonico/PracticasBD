@@ -730,12 +730,12 @@ COMMENT ON CONSTRAINT Especialidad_fk ON Especialidad IS 'Llave foránea de la t
 
 CREATE TABLE CorreoVeterinario (
    IDPersona INT NOT NULL,
-   Correo VARCHAR(50) CHECK(Correo <> '') CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$' ) NOT null
+   Correo VARCHAR(50)
 );
 ALTER TABLE CorreoVeterinario ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE CorreoVeterinario ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinarioC1 CHECK(Correo <> '');
-ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinarioC2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
+ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinarioC2 CHECK (Correo ~ '^[a-zA-Z0-9._-]*@[0-9a-zA-Z._-]*$');
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinario_pk PRIMARY KEY(IDPersona, Correo);
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinario_fk FOREIGN KEY (IDPersona) REFERENCES Veterinario(IDPersona)
 ON UPDATE CASCADE ON DELETE CASCADE;
