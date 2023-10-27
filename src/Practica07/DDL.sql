@@ -457,7 +457,7 @@ ALTER TABLE Cuidador ADD CONSTRAINT CalleC1 CHECK(Calle <> '');
 ALTER TABLE Cuidador ADD constraint CalleC2 CHECK(Calle ~ '[a-zÑñA-ZáéíóúÁÉÍÓÚüÜ0-9\.: ]*$');
 ALTER TABLE Cuidador ALTER COLUMN Colonia SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT ColoniaC1 CHECK(Colonia <> '');
-ALTER TABLE Cuidador ADD CONSTRAINT ColoniaC2 CHECK (Calle ~ '[a-zÑñA-ZáéíóúÁÉÍÓÚüÜ0-9\. ]*$');
+ALTER TABLE Cuidador ADD CONSTRAINT ColoniaC2 CHECK (Colonia ~ '[a-zÑñA-ZáéíóúÁÉÍÓÚüÜ0-9\. ]*$');
 ALTER TABLE Cuidador ALTER COLUMN CodigoPostal SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN Estado SET NOT NULL;
 ALTER TABLE Cuidador ADD CONSTRAINT EstadoC1 CHECK(Estado <> '');
@@ -619,16 +619,17 @@ CREATE TABLE Veterinario (
    Nombre VARCHAR(50),
    ApellidoPaterno VARCHAR(50),
    ApellidoMaterno VARCHAR(50),
+   Nacimiento DATE,
    RFC VARCHAR(18),
    Genero CHAR(1),
    InicioContrato DATE,
    FinContrato DATE,
    NumInt INT,
    NumExt Int,
-   Calle VARCHAR(20),
-   Colonia VARCHAR(20),
+   Calle VARCHAR(50),
+   Colonia VARCHAR(50),
    CodigoPostal INT,
-   Estado VARCHAR(20),
+   Estado VARCHAR(30),
    Salario FLOAT8,
    DiasLabor INT,
    Horario TIME
@@ -636,13 +637,14 @@ CREATE TABLE Veterinario (
 ALTER TABLE Veterinario ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE Veterinario ALTER COLUMN Nombre SET NOT NULL;
 ALTER TABLE Veterinario ADD CONSTRAINT NombreC1 CHECK(Nombre <> '');
-ALTER TABLE Veterinario ADD CONSTRAINT NombreC2 CHECK(Nombre ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Veterinario ADD CONSTRAINT NombreC2 CHECK(Nombre ~ '^[a-zñÑA-ZáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Veterinario ALTER COLUMN ApellidoPaterno SET NOT NULL;
 ALTER TABLE Veterinario ADD CONSTRAINT ApellidoPaternoC1 CHECK(ApellidoPaterno <> '');
-ALTER TABLE Veterinario ADD CONSTRAINT ApellidoPaternoC2 CHECK(ApellidoPaterno ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Veterinario ADD CONSTRAINT ApellidoPaternoC2 CHECK(ApellidoPaterno ~ '^[a-zA-ZÑñáéíóúÁÉÍÓÚüÜ ]*$');
 ALTER TABLE Veterinario ALTER COLUMN ApellidoMaterno SET NOT NULL;
 ALTER TABLE Veterinario ADD CONSTRAINT ApellidoMaternoC1 CHECK(ApellidoMaterno <> '');
-ALTER TABLE Veterinario ADD CONSTRAINT ApellidoMaternoC2 CHECK(ApellidoMaterno ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Veterinario ADD CONSTRAINT ApellidoMaternoC2 CHECK(ApellidoMaterno ~ '^[a-zA-ZÑñáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Veterinario ALTER COLUMN Nacimiento SET NOT NULL;
 ALTER TABLE Veterinario ALTER COLUMN RFC SET NOT NULL;
 ALTER TABLE Veterinario ADD CONSTRAINT RFCC1 CHECK(RFC <> '');
 ALTER TABLE Veterinario ALTER COLUMN Genero SET NOT NULL;
@@ -654,14 +656,14 @@ ALTER TABLE Veterinario ALTER COLUMN NumInt SET NOT NULL;
 ALTER TABLE Veterinario ALTER COLUMN NumExt SET NOT NULL;
 ALTER TABLE Veterinario ALTER COLUMN Calle SET NOT NULL;
 ALTER TABLE Veterinario ADD CONSTRAINT CalleC1 CHECK(Calle <> '');
-ALTER TABLE Veterinario ADD constraint CalleC2 CHECK(Calle ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Veterinario ADD constraint CalleC2 CHECK(Calle ~ '[a-zÑñA-ZáéíóúÁÉÍÓÚüÜ0-9\.: ]*$');
 ALTER TABLE Veterinario ALTER COLUMN Colonia SET NOT NULL;
 ALTER TABLE Veterinario ADD CONSTRAINT ColoniaC1 CHECK(Colonia <> '');
-ALTER TABLE Veterinario ADD CONSTRAINT ColoniaC2 CHECK (Colonia ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Veterinario ADD CONSTRAINT ColoniaC2 CHECK (Colonia ~ '[a-zÑñA-ZáéíóúÁÉÍÓÚüÜ0-9\. ]*$');
 ALTER TABLE Veterinario ALTER COLUMN CodigoPostal SET NOT NULL;
 ALTER TABLE Veterinario ALTER COLUMN Estado SET NOT NULL;
 ALTER TABLE Veterinario ADD CONSTRAINT EstadoC1 CHECK(Estado <> '');
-ALTER TABLE Veterinario ADD CONSTRAINT EstadoC2 CHECK(Estado ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜ ]*$');
+ALTER TABLE Veterinario ADD CONSTRAINT EstadoC2 CHECK(Estado ~ '[a-zÑñA-ZáéíóúÁÉÍÓÚüÜ0-9\. ]*$');
 ALTER TABLE Veterinario ALTER COLUMN Salario SET NOT NULL;
 ALTER TABLE Veterinario ALTER COLUMN DiasLabor SET NOT NULL;
 ALTER TABLE Veterinario ALTER COLUMN Horario SET NOT NULL;
@@ -678,6 +680,7 @@ COMMENT ON CONSTRAINT ApellidoPaternoC2 ON Veterinario IS 'Check que verifica qu
 COMMENT ON COLUMN Veterinario.ApellidoMaterno IS 'Apellido materno del veterinario.';
 COMMENT ON CONSTRAINT ApellidoMaternoC1 ON Veterinario IS 'Check que verifica que el apellido materno no sea la cadena vacía.';
 COMMENT ON CONSTRAINT ApellidoMaternoC2 ON Veterinario IS 'Check que verifica que el apellido materno sólo contenga letras y espacios.';
+COMMENT ON COLUMN Veterinario.Nacimiento IS 'Fecha de nacimiento de Veterinario';
 COMMENT ON COLUMN Veterinario.RFC IS 'RFC del veterinario.';
 COMMENT ON CONSTRAINT RFCC1 ON Veterinario IS 'Check que verifica que el RFC no sea la cadena vacía.';
 COMMENT ON COLUMN Veterinario.Genero IS 'Género del veterinario.';
