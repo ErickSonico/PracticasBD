@@ -708,7 +708,7 @@ COMMENT ON CONSTRAINT Veterinario_pk ON Veterinario IS 'Llave primaria del veter
 
 CREATE TABLE Especialidad (
    IDPersona INT,
-   Especialidad VARCHAR(20)
+   Especialidad VARCHAR(50)
 );
 ALTER TABLE Especialidad ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE Especialidad ADD CONSTRAINT IDPersonaEspecialidadC1 UNIQUE(IDPersona);
