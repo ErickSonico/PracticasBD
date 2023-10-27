@@ -223,7 +223,8 @@ CREATE TABLE Cliente (
    Nombre VARCHAR(50),
    ApellidoPaterno VARCHAR(50),
    ApellidoMaterno VARCHAR(50),
-   Genero CHAR(1)
+   Genero CHAR(1),
+   Nacimiento DATE
 );
 ALTER TABLE Cliente ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE Cliente ALTER COLUMN Nombre SET NOT NULL;
@@ -239,6 +240,7 @@ ALTER TABLE Cliente ALTER COLUMN Genero SET NOT NULL;
 ALTER TABLE Cliente ADD CONSTRAINT GeneroC1 CHECK(Genero <> '');
 ALTER TABLE Cliente ADD CONSTRAINT GeneroC2 CHECK(Genero ~ '^[MF]$');
 ALTER TABLE Cliente ADD CONSTRAINT Cliente_pk PRIMARY KEY (IDPersona);
+ALTER TABLE Cliente ALTER COLUMN Nacimiento SET NOT NULL;
 
 COMMENT ON TABLE Cliente IS 'Tabla que contiene los datos de un cliente.';
 COMMENT ON COLUMN Cliente.IDPersona IS 'ID del cliente.';
@@ -246,6 +248,7 @@ COMMENT ON COLUMN Cliente.Nombre IS 'Nombre del cliente.';
 COMMENT ON COLUMN Cliente.ApellidoPaterno IS 'Apellido paterno del cliente.';
 COMMENT ON COLUMN Cliente.ApellidoMaterno IS 'Apellido materno del cliente.';
 COMMENT ON COLUMN Cliente.Genero IS 'Género del cliente.';
+COMMENT ON COLUMN Cliente.Nacimiento IS 'Fecha de nacimiento del cliente.';
 COMMENT ON CONSTRAINT NombreC1 ON Cliente IS 'Check que impide que el nombre del cliente sea la cadena vacía.';
 COMMENT ON CONSTRAINT NombreC2 ON Cliente IS 'Check que verifica que el nombre del cliente contenga sólo letras.';
 COMMENT ON CONSTRAINT ApellidoPaternoC1 ON Cliente IS 'Check que impide que el apellido paterno del cliente sea la cadena vacía.';
