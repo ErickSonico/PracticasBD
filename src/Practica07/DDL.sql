@@ -104,7 +104,6 @@ CREATE TABLE CorreoProveedor (
    Correo VARCHAR(50)
 );
 ALTER TABLE CorreoProveedor ALTER COLUMN IDPersona SET NOT NULL;
-ALTER TABLE CorreoProveedor ADD CONSTRAINT IDPersonaC2 UNIQUE (IDPersona);
 ALTER TABLE CorreoProveedor ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC1 UNIQUE (Correo);
 ALTER TABLE CorreoProveedor ADD CONSTRAINT CorreoC2 CHECK(Correo <> '');
@@ -118,7 +117,6 @@ COMMENT ON COLUMN CorreoProveedor.IDPersona IS 'Identificador del Proveedor';
 COMMENT ON COLUMN CorreoProveedor.Correo IS 'Correo electrónico del Proveedor';
 COMMENT ON CONSTRAINT CorreoProveedor_pk ON CorreoProveedor IS 'La llave primaria de la tabla CorreoProveedor';
 COMMENT ON CONSTRAINT CorreoProveedor_fk ON CorreoProveedor IS 'La llave foránea de la tabla CorreoProveedor que hace referencia a la columna IDPersona de la tabla Proveedor';
-COMMENT ON CONSTRAINT IDPersonaC2 ON CorreoProveedor IS 'Restriccion unique para el atributo IDPersona de CorreoProveedor';
 COMMENT ON CONSTRAINT CorreoC1 ON CorreoProveedor IS 'Restriccion unique para el atributo Correo de CorreoProveedor';
 COMMENT ON CONSTRAINT CorreoC2 ON CorreoProveedor IS 'Restriccion check el cual nos asegura que Correo no es la cadena vacia';
 COMMENT ON CONSTRAINT CorreoC3 ON CorreoProveedor IS 'Restriccion check para Correos únicamente con letras';
@@ -261,7 +259,7 @@ COMMENT ON CONSTRAINT Cliente_pk ON Cliente IS 'Llave primaria del cleinte';
 
 CREATE TABLE CorreoCliente (
    IDPersona INT,
-   Correo VARCHAR(25)
+   Correo VARCHAR(50)
 );
 ALTER TABLE CorreoCliente ALTER COLUMN IDPersona SET NOT NULL;
 ALTER TABLE CorreoCliente ALTER COLUMN Correo SET NOT NULL;
@@ -511,10 +509,9 @@ COMMENT ON CONSTRAINT Cuidador_fkey ON Cuidador IS 'La llave foránea de la tabl
 
 CREATE TABLE CorreoCuidador (
    IDPersona INT,
-   Correo VARCHAR(25)
+   Correo VARCHAR(50)
 );
 ALTER TABLE CorreoCuidador ALTER COLUMN IDPersona SET NOT NULL;
-ALTER TABLE CorreoCuidador ADD CONSTRAINT IDPersonaC4 UNIQUE (IDPersona);
 ALTER TABLE CorreoCuidador ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidadorC1 CHECK(Correo <> '');
 ALTER TABLE CorreoCuidador ADD CONSTRAINT CorreoCuidadorC2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
@@ -730,10 +727,9 @@ COMMENT ON CONSTRAINT Especialidad_fk ON Especialidad IS 'Llave foránea de la t
 
 CREATE TABLE CorreoVeterinario (
    IDPersona INT NOT NULL,
-   Correo VARCHAR(25) CHECK(Correo <> '') CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$' ) NOT null
+   Correo VARCHAR(50) CHECK(Correo <> '') CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$' ) NOT null
 );
 ALTER TABLE CorreoVeterinario ALTER COLUMN IDPersona SET NOT NULL;
-ALTER TABLE CorreoVeterinario ADD CONSTRAINT IDPersonaC6 UNIQUE (IDPersona);
 ALTER TABLE CorreoVeterinario ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinarioC1 CHECK(Correo <> '');
 ALTER TABLE CorreoVeterinario ADD CONSTRAINT CorreoVeterinarioC2 CHECK(Correo ~ '^[a-zA-Z0-9._-]*@[a-z.-]*\.[a-zA-Z]{2,}$');
