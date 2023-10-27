@@ -573,7 +573,6 @@ ALTER TABLE Animal ADD CONSTRAINT NumJaulaC2 UNIQUE (NumJaula);
 ALTER TABLE Animal ADD CONSTRAINT NumJaula_fk FOREIGN KEY (NumJaula,IDBioma) REFERENCES Jaula(NumJaula,IDBioma)
 ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE Animal ALTER COLUMN IDBioma SET NOT NULL;
-ALTER TABLE Animal ADD CONSTRAINT IDBiomaC2 UNIQUE(IDBioma);
 ALTER TABLE Animal ALTER COLUMN Nombre SET NOT NULL;
 ALTER TABLE Animal ADD CONSTRAINT NombreAnimalC1 CHECK(Nombre <> '');
 ALTER TABLE Animal ADD CONSTRAINT NombreAnimalC2 CHECK(Nombre ~ '^[a-zA-ZáéíóúÁÉÍÓÚüÜÑñ ]*$');
@@ -605,7 +604,6 @@ COMMENT ON CONSTRAINT IDPersonaC5 ON Animal IS 'Check que verifica que IDPersona
 COMMENT ON CONSTRAINT IDPersona_fk ON Animal IS 'Llave foranea de la tabla.';
 COMMENT ON CONSTRAINT NumJaulaC2 ON Animal IS 'Check que verifica que NumJaula sea unico.';
 COMMENT ON CONSTRAINT NumJaula_fk ON Animal IS 'Llave foranea de la tabla.';
-COMMENT ON CONSTRAINT IDBiomaC2 ON Animal IS 'Check que verifica que IDBioma sea unico.';
 COMMENT ON CONSTRAINT NombreAnimalC1 ON Animal IS 'Check que verifica que el nombre del animal no sea la cadena vacia.';
 COMMENT ON CONSTRAINT NombreAnimalC2 ON Animal IS 'Check que verifica que el nombre del animal tenga una estructura valida.';
 COMMENT ON CONSTRAINT EspecieAnimalC1 ON Animal IS 'Check que verifica que la especie del animal no sea la cadena vacia.';
