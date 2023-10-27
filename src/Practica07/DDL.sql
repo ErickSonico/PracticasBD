@@ -324,7 +324,7 @@ COMMENT ON CONSTRAINT Evento_pk ON Evento IS 'Llave primaria de la tabla Evento.
 
 CREATE TABLE Bioma (
 IDBioma INT,
-Tipo VARCHAR(10)
+Tipo VARCHAR(30)
 );
 ALTER TABLE Bioma ALTER COLUMN IDBioma SET NOT NULL;
 ALTER TABLE Bioma ADD CONSTRAINT IDBiomaC1 UNIQUE (IDBioma);
