@@ -1,0 +1,101 @@
+﻿IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Nacimiento,RFC,Genero,InicioContrato,FinContrato,NumInt,NumExt,Calle,Colonia,CodigoPostal,Estado,Costo,Producto,Frecuencia
+1,LUKA,SEVILLANO,ASCENCIO,1998-04-30,SEAL980430,F,2000-07-18,2019-03-12,129,85,Av. de los Insurgentes Sur,Ctm X Culhuacan (U Hab),11509,Juarez,6033.12,Medicina,3
+2,HORTENCIA,BELTRAN,CADENGO,1973-04-25,BECH730425,F,2002-05-02,2011-06-19,115,11,James Sullivan,Jaime S Emiliano G,4951,Batan Viejo (El Maestro),8642.1,Alimento,2
+3,JADE,DE LA PALMA,CHIMALPOPOCA,1971-07-11,DECJ710711,M,2008-04-28,2010-12-03,103,5,Eje 2 Poniente Rio Tiber,Cuchilla De Padierna,5959,Independencia San Ramon (U Hab),5805.37,Medicina,1
+4,NAOMI,NEMER,FIALLO,1986-07-11,NEFN860711,F,2009-10-05,2015-12-04,39,70,Av. Zacatepetl,San Lucas (Barr),4556,Romero De Terreros (Cond),5615.71,Alimento,3
+5,ESLI,MENCHACA,VALLEJON,1987-06-24,MEVE870624,M,2007-09-20,2022-08-20,108,155,Eje 10A Sur Av. Universidad,Agricola Oriental Viii,7376,Santa Maria Aztahuacan (Ej) ,5084.81,Medicina,3
+6,NATHALIA,CAJUN,VERTTI,1999-03-25,CAVN990325,M,2005-09-19,2021-03-16,121,97,Eje 4 Sur Prolongacion Plutarco Elias Calles,Tenorios (Ampl),14918,Nonoalco-Tlatelolco (U Hab) ,6372.14,Alimento,3
+7,COSME,RACHED,MULATO,1999-12-16,RAMC991216,F,2010-05-14,2022-08-24,145,129,Eje 3 Poniente Amores,Huasipungo (U Hab),9330,Morales Seccion Palmas (Polanco),10392.95,Alimento,2
+8,ARALY,TAMEZ,ASENCION,1988-12-12,TAAA881212,F,2009-12-05,2017-01-18,50,15,Av. Ejercito Nacional Mexicano,Juristas,11405,Los  Encinos,12774.75,Alimento,3
+9,DOLLY,RIEGO,MURCIA,1967-01-17,RIMD670117,M,2002-03-02,2018-12-28,131,136,Eje 3 Norte Av. Cuitlahuac,La Joya,9211,San Antonio Culhuacan (Barr),5409.07,Alimento,2
+10,KENIA,RICARIO,AGUSTIMIANO,1987-01-26,RIAK870126,M,2000-05-16,2022-05-21,75,172,Av. Ejercito Nacional Mexicano,Atocpa,10677,Granjas Esmeralda,14596.18,Medicina,3
+11,TAILI,NERY,MIXTEGA,1985-08-17,NEMT850817,M,2001-11-01,2019-08-03,20,75,Molino del Rey,Nueva España,11435,La Santisima (Barr),9883.99,Alimento,1
+12,TANNYA,BEULO,MIRNA,1965-01-21,BEMT650121,F,2006-04-23,2013-05-16,74,158,Av. Juan de Dios Batiz,Na Hal Ti (U Hab),8702,Camino A San Juan De Aragon (Pblo),7904.07,Alimento,2
+13,ELEAZAR,ABAZAN,TOME,1989-06-23,ABTE890623,F,2004-06-27,2015-04-18,94,135,Av. 3-A,Ramos Millan Bramadero ,15797,San Bartolo Cahualtongo (Pblo),7042.22,Medicina,1
+14,HORUS,Y YAM,FERRERA,1966-04-16,Y FH660416,F,2001-06-30,2015-05-26,19,138,Eje 2A Sur Francisco Javier Clavijero,Villas Azcapotzalco (U Hab),9614,Parajes Buenavista (Tetecon),12778.79,Medicina,1
+15,JOSEHP,PELAYO,ORDOÑEZ,1996-06-27,PEOJ960627,M,2007-01-14,2021-12-30,78,105,Eje 3 Oriente Francisco del Paso y Troncoso,Ojo De Agua,7434,Mirador ,9284.47,Alimento,2
+16,SKARLETH,SUNZA,SAUZA,1990-06-12,SUSS900612,M,2001-03-22,2015-05-25,126,117,Eje 3 Sur Dr. Ignacio Morones Prieto,Jose Lopez Portillo ,9843,San Lorenzo Atemoaya (Pblo),9582.17,Alimento,1
+17,HARUMI,CANELA,NONATO,1971-05-22,CANH710522,F,2003-09-11,2013-10-18,45,114,Eje 9 Sur Miguel Angel de Quevedo,San Jose Obrero,10076,San Pedro Zacatenco (Pblo),11201.4,Medicina,1
+18,NEREIDA,BORUNDA,TUT,1990-01-03,BOTN900103,F,2007-06-16,2011-05-25,33,84,Eje 1 Oriente Vidal Alcocer,Aviacion Civil (Ampl),3104,San Mateo (Barr),11117.99,Alimento,2
+19,HANNA,SERRALTA,CALIXTRO,1986-01-21,SECH860121,F,2007-11-20,2014-08-27,26,123,Anillo Periferico Boulevard Manuel Avila Camacho,Cocoyotes (Ampl),7848,Zotoltitla,6522.71,Alimento,1
+20,MARLO,DE COSS,URQUIN,1985-03-25,DEUM850325,M,2008-03-29,2015-01-11,75,90,Prolongacion Bosques de la Reforma,Los Angeles Apanoaya,1965,Santa Anita,10410.74,Medicina,2
+21,NIKOOL,CALIHUA,GRANIEL,1988-07-10,CAGN880710,M,2000-03-14,2014-04-11,84,131,Eje 5 Norte Cantera,Corpus Christy,14155,Na Hal Ti (U Hab),9311.21,Alimento,2
+22,KARIN,MULATO,Y ORTEGA,1993-02-09,MUYK930209,M,2008-12-04,2015-05-19,48,44,Av. Marina Nacional,San Francisco Tlalnepantla (Pblo),12654,Olimpica,8691.45,Medicina,3
+23,MARLON,ROMANO,AC,1985-07-23,ROAM850723,F,2001-11-22,2021-05-02,16,19,Av. Industria Militar,Indeco (U Hab),13097,Manuel Rivera Anaya Croc  (U Hab),11861.72,Medicina,3
+24,EVERARDO,MONTAÑEZ,ALMONACI,1984-08-11,MOAE840811,F,2010-05-25,2017-05-21,121,64,Eje 6 Sur Angel Urraza,San Juan Tlihuaca (Pblo),7902,Popo (Ampl),13791.63,Medicina,1
+25,SALOMON,MEGCHUN,LINARTE,1981-02-17,MELS810217,M,2007-04-01,2012-06-23,140,144,Av. Zacatepetl,Emancipacion Del Pueblo (U Hab),1096,Guadalupe Insurgentes,5200.92,Alimento,1
+26,ANETH,AVELLA,MARCELINA,1999-04-19,AVMA990419,F,2000-11-20,2017-12-28,102,90,Eje 3 Oriente Calzada Gral. Ignacio Zaragoza,Pasteros,15564,Cuatro Arboles,14214.1,Alimento,3
+27,BRITANY,ORAN,BARNET,1991-07-12,ORBB910712,M,2002-06-18,2012-12-09,53,18,Eje 3 Norte 16 de Septiembre,Narvarte ,4775,El Arbolillo 1 (U Hab),14723.01,Alimento,2
+28,PATRIK,CALERO,SARTIAGUIN,1992-03-18,CASP920318,M,2006-08-13,2015-09-01,62,172,Calzada General Ignacio Zaragoza,Irrigacion,7616,Transito,10850.78,Medicina,1
+29,CHRISTELLE,ALVA,ARMIENTA,1996-04-06,ALAC960406,F,2003-01-25,2018-07-24,92,49,Camino a Nativitas,Los Gamitos,9058,Barrio Oxtopulco Universidad,7277.73,Medicina,2
+30,LENYN,ESPAÑA,MELCHI,1998-03-26,ESML980326,F,2007-10-18,2019-09-05,87,154,Av. Ceylan,Belvedere,5026,Tres Estrellas,15256.1,Alimento,3
+31,ANTOINE,BRIBIESCAS,HUARACHA,2001-04-20,BRHA010420,F,2008-01-15,2017-10-09,48,3,Av. Oceania,San Salvador Cuauhtenco (Pblo),6118,Moctezuma 1a Seccion,11708.3,Alimento,2
+32,ARIANE,DEFERIA,BENITO,1979-04-03,DEBA790403,F,2003-04-28,2019-03-31,11,41,Eje 1A Sur Av. Chapultepec,Parque Residencial San Antonio (U Hab),1159,Ecologica Novedades Impacto (U Hab),9441.73,Alimento,1
+33,ANAELI,MAGADAN,LAVENANT,2004-03-31,MALA040331,F,2007-10-07,2015-04-13,111,181,Eje 7 Sur Extremadura,Piloto (Adolfo Lopez Mateos),12158,Nueva Generacion 103,13668.09,Alimento,1
+34,ISMERAI,RESCALVO,XULUC,1996-08-16,REXI960816,F,2009-06-05,2016-11-15,52,80,Eje 2A Sur San Luis Potosi,Minerva,1472,La Pera Xochinahuac (U Hab),10853.86,Medicina,2
+35,EILEN,LOMAN,LIGONIO,1998-02-18,LOLE980218,F,2007-05-04,2023-07-11,103,58,Circuito Interior Boulevard Puerto Aereo,Tempiluli,1309,Santa Fe Km 8.5,9777.38,Alimento,2
+36,JESICA,L,LIVERA,1966-06-12,LLJ660612,M,2008-01-19,2020-12-21,96,158,Eje 1A Sur Jose Maria Izazaga,Infonavit (U Hab),1378,Pedregal De Sto Domingo Iv,10942.2,Alimento,2
+37,ATZURI,OCAÑO,OTAÑEZ,1968-11-06,OCOA681106,M,2003-12-16,2013-10-21,71,155,Calzada Coyuya,San Miguel  Xicalco (Pblo),13574,Atlampa,7244.3,Medicina,3
+38,FIORELLA,ESTEBANEZ,ELENES,2001-03-27,ESEF010327,M,2008-03-26,2017-12-19,143,27,Av. Altavista,Presidente Madero (U Hab),10264,Lomas De Plateros (U Hab) ,6575.27,Alimento,2
+39,ABIGAIL,ATECPANECATL,MOO,1965-01-05,ATMA650105,F,2006-10-06,2016-09-23,77,35,Eje 1 Oriente Mariano Arista,San Antonio (Fracc),10162,Cañada Del Olivar (U Hab),14749.11,Alimento,3
+40,RUT,TISNADO,MAAS,1969-08-01,TIMR690801,F,2003-05-29,2020-08-29,11,181,Año de Juarez,Valle De Luces (U Hab),6885,Canal Once (U Hab),13045.25,Alimento,3
+41,KERIN,NORATO,PIÑUELAS,1992-08-13,NOPK920813,M,2005-01-23,2017-12-13,45,102,Eje 4 Sur Av. Te,Culhuacan (Pblo),8362,Mexico Nuevo,5185.45,Medicina,3
+42,NATASHA,CORREO,BLANDO,1995-06-03,COBN950603,F,2001-04-25,2015-04-25,67,175,Eje 3 Norte Angel Albino Corzo,Guadalupe Tepeyac,9635,Potrerillo (Ampl),5446.55,Alimento,3
+43,ROMANE,ESCALONA,ABITIA,1972-04-23,ESAR720423,F,2007-03-07,2015-07-09,7,126,Eje 2 Norte Canal del Norte,Jardines Tecma,12049,San Salvador Cuauhtenco (Pblo),15826.97,Alimento,2
+44,ASENET,TINAJERO,ESTEBANEZ,1979-11-04,TIEA791104,F,2005-09-03,2014-11-20,118,136,Canal Nacional,Bella Vista,13433,Prado Coapa 2a Seccion,14448.82,Alimento,3
+45,AHMED,MOYSEN,MAPEL,1988-02-10,MOMA880210,F,2009-07-15,2017-10-13,136,94,Eje Central Av. del Iman,Sinatel (Ampl),11386,Graciano Sanchez,6296.86,Medicina,3
+46,CHELSEE,BRISEÑO,CAPORAL,1999-01-26,BRCC990126,M,2009-11-06,2015-01-24,46,136,Cumbres de Maltrata,San Marcos (Barr),2881,Portal Del Sol,13997.57,Medicina,3
+47,LEVI,MINDER,ECHAURI,1990-08-31,MIEL900831,F,2008-10-29,2017-05-19,83,68,Av. Oceania,Merced Balbuena,9265,Milpa Del Cedro,12769.41,Alimento,2
+48,ROSENDA,ROSSETE,ALEJANDRI,1969-12-06,ROAR691206,F,2006-02-21,2015-07-08,67,25,Paseo de la Reforma,San Lorenzo Acopilco (Pblo),11451,Residencial Maria Isabel,8806.36,Alimento,3
+49,SORA,ESCORCIA,HERNANDEZ,1995-12-08,ESHS951208,M,2003-01-04,2011-08-02,94,181,Via Expres TAPO,Moctezuma 1a Seccion,15397,Real Del Monte,8996.26,Alimento,2
+50,NERIK,COCOTLE,CAÑEDO,1974-12-26,COCN741226,F,2004-03-16,2022-06-02,50,80,Eje 4 Norte Mimosas,La Asuncion (Barr),5228,Nueva Atzacoalco ,12066.22,Alimento,2
+51,ANALY,PORTUGAL,DEL PILAR,2001-10-25,PODA011025,M,2010-06-06,2020-01-14,70,183,Av. Rio de Tacubaya,Cuitlahuac (U Hab),10394,Mexicaltzingo (Pblo),9778.14,Medicina,2
+52,JANE,TRUJANO,RIOFRIO,2001-10-21,TRRJ011021,F,2001-01-12,2013-05-29,39,31,Av. Ferrocarril San Rafael Atlixco,Jardines Del Sur,2212,Lomas De  Padierna ,12507.5,Alimento,1
+53,SERGI,QUI,GODINEZ,1968-02-27,QUGS680227,M,2005-07-14,2020-07-05,5,23,Eje 4 Sur Benjamin Franklin,Rincon Del Bosque,13760,Progreso Tlalpan,6590.35,Medicina,3
+54,NOUR,SANTILLANEZ,GALERA,1965-10-21,SAGN651021,F,2002-12-11,2022-06-29,26,65,Cumbres de Maltrata,La Forestal 1,2900,El Rosario (Barr),5068.4,Medicina,2
+55,FROYLAN,MONTERREY,COLMENARES,1990-02-28,MOCF900228,M,2010-05-13,2022-06-09,73,38,Eje 5 Sur Av. Circunvalacion,Infonavit (U Hab),5840,Santa Ines,12463.38,Medicina,1
+56,ABY,PALANCARES,HEBREO,1972-09-07,PAHA720907,F,2006-02-03,2015-04-05,112,43,Eje 3 Poniente Av. Colonia del Valle,Independencia,5891,Narciso Mendoza-Villa,5618.27,Alimento,1
+57,ARISHA,SILVEYRA,ARGUETA,1966-11-20,SIAA661120,M,2007-09-08,2017-10-23,120,29,Boulevard Nuevo Leon,Alfalfar,1933,Justo Sierra,7163.25,Alimento,3
+58,JACOB,OAXACA,YAH,1985-01-08,OAYJ850108,M,2000-10-20,2021-12-15,90,75,Av. Hidalgo,Agricola Oriental Iv,7986,Lomas De Centenario (U Hab),14508.67,Alimento,2
+59,AZUSENA,GOLLAZ,CHOC,1984-11-16,GOCA841116,M,2002-07-11,2014-02-09,128,94,Eje 2 Norte Av. Transvaal,Alcanfores (U Hab),4837,Aldana,6244.15,Medicina,3
+60,EDU,ALBAREZ,SANTO,1971-05-19,ALSE710519,M,2000-12-17,2019-03-12,88,131,Av. de los Insurgentes Norte,Esperanza,10006,Petrolera,9733.71,Alimento,3
+61,HASEL,PRUDENCIANO,MASTRANZO,1981-07-23,PRMH810723,F,2002-03-26,2018-10-16,73,111,Eje 4 Sur Tehuantepec,Ignacio Allende,5578,Granjas Estrella ,13124.29,Alimento,2
+62,LORETTA,UCO,ESCARREGA,1977-01-13,UCEL770113,M,2000-07-03,2015-11-09,11,117,Av. Vasco de Quiroga,Azteca,4666,Plazuela Del Pedregal,11285.8,Medicina,1
+63,JOSHIMAR,GARRAFA,RUIZ,1982-12-12,GARJ821212,M,2001-12-26,2012-11-10,7,49,Calzada Gral. Ignacio Zaragoza,La Concepcion (Barr),1796,El Prado,9566.6,Medicina,3
+64,IKEER,MONTEJANO,COSTA,1966-12-25,MOCI661225,M,2009-04-09,2013-12-21,60,23,Eje 10 Sur Av. Copilco,Petrolera Taxqueña,9713,Pedregal De Sto Domingo Viii,8606.9,Alimento,3
+65,BARUCK,MONTOR,NAHUACATL,2004-09-14,MONB040914,M,2001-04-08,2018-08-27,29,74,Av. Aquiles Serdan,Country Club,4690,Angel Zimbron,15120.95,Alimento,3
+66,FRANCO,LARGO,CEFERINO,1991-01-03,LACF910103,F,2001-04-01,2013-07-10,51,50,Eje 5 Sur Av. de las Torres,Popo (Ampl),8603,La Habana,14704.79,Alimento,3
+67,LARA,PERDOMO,MARINES,1996-11-29,PEML961129,M,2000-12-26,2017-08-07,31,117,Anillo Periferico Acueducto de Tenayuca,Barrio Oxtopulco Universidad,15991,El Pocito,12297.78,Alimento,1
+68,JEROME,LOPES,MUÑIZ,1996-08-27,LOMJ960827,M,2000-04-23,2013-11-16,45,185,Calzada Chivatito,6 De Junio,12671,Cerro Grande,7291.87,Alimento,3
+69,LAWRENCE,PASAYE,QUISTIANO,1995-05-20,PAQL950520,F,2003-02-16,2020-09-21,26,84,Eje 3 Norte 16 de Septiembre,San Lorenzo Tezonco  (U Hab),5646,Anahuac Dos Lagos,14409.21,Medicina,1
+70,SIGRID,ANSELMO,LUGARDO,1994-10-22,ANLS941022,M,2004-07-05,2017-07-09,12,139,Circuito Interior Paseo de las Jacarandas,Lomas De Puerta Grande,9497,Presidentes 1ra (Ampl),9240.28,Alimento,3
+71,JUVENTINO,TARIN,BURGOIN,1993-11-27,TABJ931127,M,2007-08-10,2020-04-11,120,181,Mazatlan,Union Popular Emiliano Zapata (U Hab),6030,Tlatilco (U Hab),12482.28,Alimento,2
+72,DULCINEA,RON,MONTORES,1967-10-17,ROMD671017,M,2001-03-27,2013-10-04,19,9,Eje 3 Oriente Francisco del Paso y Troncoso,Jardines Del Pedregal,10802,Villa De Aragon (Fracc),11638.29,Medicina,3
+73,NICOOLE,LINAREZ,NU?EZ,1972-07-17,LINN720717,M,2009-11-30,2017-12-14,76,109,Calzada Mexico Tacuba,Villa Milpa Alta (Pblo),12610,Carlos Hank Gonzalez,7330.11,Alimento,2
+74,NURITH,SICAIROS,SIQUEIROS,1981-01-21,SISN810121,F,2002-03-03,2013-03-31,74,29,Viaducto Rio de la Piedad,Pemex Prados Del Rosario (U Hab),6972,Miguel Aleman,8099.68,Medicina,2
+75,ENNA,TECO,DE LA PARRA,1985-11-30,TEDE851130,F,2010-01-18,2010-12-21,82,18,Eje 5 Norte Lic. Andres Henestrosa,Abraham Gonzalez,11307,Ctm Ix Culhuacan Zona 29-30 (U Hab),11528.6,Alimento,3
+76,KATARA,BLAKE,GUERECA,1963-07-23,BLGK630723,F,2007-10-14,2017-07-13,62,132,Av. Queretaro,Margarita M De Juarez,2539,Chinampac De Juarez ,6581.44,Medicina,1
+77,SAORI,LUERA,LAU,1995-11-29,LULS951129,F,2001-09-28,2015-06-27,98,90,Av. Acueducto de Guadalupe,Dos Rios,4918,Emilio Portes Gil Pemex Picacho (U Hab),14068.64,Alimento,2
+78,ENYEL,BASTIDA,MENDIZABAL,1986-03-16,BAME860316,M,2008-09-12,2017-12-01,129,62,5 de Mayo,Cerro Grande,2910,Quetzalcoatl 3,8769.95,Alimento,3
+79,CEDRIC,CANABAL,CARLOCK,1976-11-07,CACC761107,M,2006-10-06,2014-06-29,73,67,Eje 3 Oriente Francisco del Paso y Troncoso,Sta Cruz Atoyac,3838,Valentin Gomez Farias,5267.97,Alimento,1
+80,YORLENI,DOÑU,ARCIQUE,1975-02-09,DOAY750209,F,2010-06-07,2018-04-25,83,186,Eje 6 Norte 306,Zacahuitzco,6139,Sn Juan  Tepeximilpa (Ampl),12826.93,Medicina,1
+81,YARETSI,FOSADO,BENITES,1967-03-28,FOBY670328,M,2010-07-30,2023-05-24,18,98,Eje 2 Poniente Rio Tiber,Cuitlahuac 1 Y 2 (U Hab),11544,San Juan,9344.37,Medicina,3
+82,JASER,MAGLAH,NIETO,1992-11-05,MANJ921105,M,2006-08-07,2015-03-29,49,150,Eje 7 Sur Benvenuto Cellini,Industrial Puerto Aereo (Fracc),15289,Escuadron 201,13241.45,Medicina,2
+83,JOSHUAN,PURATA,CHAVERO,1973-04-05,PUCJ730405,F,2005-11-11,2020-01-04,95,159,Eje 5 Norte 5 de Febrero,San Francisco Apolocalco,5518,Arturo Gamiz,8732.77,Medicina,3
+84,IRVING,ARGAEZ,JARA,2000-02-26,ARJI000226,M,2004-07-21,2017-02-06,10,138,Circuito Interior Av. Patriotismo,Ma Esther Zuno De Echeverria-Tlalpuente,9265,Barrio Norte,5286.31,Alimento,3
+85,ARIT,JACINTO,BALDOMERO,1987-05-25,JABA870525,F,2001-10-28,2023-06-05,112,101,Paseo de la Reforma,Olivar De Los Padres,5349,Atlamaya,5189.79,Alimento,1
+86,JOEN,PITOL,WARD,1994-12-20,PIWJ941220,M,2000-11-16,2021-01-09,76,172,Av. de las Civilizaciones,Emiliano Zapata,14462,Villa Hermosa,15321.75,Alimento,2
+87,ZELZIN,TABOADA,CHUNGA,2002-03-16,TACZ020316,M,2009-12-11,2016-04-17,72,6,Eje 5 Norte Cantera,Romero Rubio,5145,Zenon Delgado,6849.05,Alimento,1
+88,ASGARD,CASTAÑEDA,BLASS,1980-07-16,CABA800716,M,2000-10-03,2023-01-17,97,111,Av. Vito Alessio Robles,Lomas De  Padierna ,7637,Mosco Chinampa,13878.11,Medicina,1
+89,JAANAI,TECPANECATL,CALLADO,2001-03-03,TECJ010303,F,2002-09-25,2016-12-09,107,135,Canal de Miramontes,La Cañada,8856,Los Cerrillos ,5958.47,Alimento,1
+90,XQUENDA,LABRADOR,CARRIZAL,1966-01-03,LACX660103,F,2006-11-15,2023-05-11,126,62,Eje 4 Sur Gobernador Agustin Vicente Eguia,Ignacio Zaragoza ,15268,Potrero De San Bernardino,14650.98,Alimento,2
+91,XIMENNA,BELMONT,MONTALVAN,1995-01-12,BEMX950112,F,2009-02-21,2014-06-26,13,44,Eje 3 Oriente Francisco del Paso y Troncoso,Potrero De San Bernardino,15308,Nueva Diaz Ordaz,10332.31,Medicina,1
+92,KALIL,ONTAMUCHA,ECHEGARAY,1998-04-05,ONEK980405,F,2003-11-04,2020-10-04,81,159,Eje 1 Sur Dr. Rio de la Loza,Palmas,11897,San Pedro (Barr),11926.93,Alimento,1
+93,ARETZY,VILLASEÑOR,SANTOSCOY,1965-04-11,VISA650411,M,2010-03-11,2011-04-22,65,141,Boulevard Miguel de Cervantes Saavedra,Zapote-Luis Donaldo Colosio (U Habs),1332,La Huerta,8852.77,Alimento,3
+94,ROSELINE,REYNOSA,STENNER,2003-01-21,RESR030121,M,2001-08-19,2015-08-11,4,178,Eje 3 Norte Alfredo Robles Dominguez,Guadalupe (Barr),14052,Residencial Los Pinos (U Hab),15897.39,Alimento,1
+95,JENNY,POPOCATL,SANTISTEBAN,2001-03-24,POSJ010324,F,2004-05-27,2021-12-04,76,100,Eje 7 Sur Municipio Libre,Tepepan (Ampl),6447,El Molinito,15152.84,Alimento,2
+96,JASON,BACAB,PUCH,2002-03-31,BAPJ020331,M,2007-02-11,2023-02-28,36,55,Av. Rio San Joaquin,Minas De Cristo,1976,Lomas De San Angel Inn,9336.15,Medicina,2
+97,PAOLINA,JURADO,CUAMANI,2004-10-05,JUCP041005,M,2009-04-29,2022-11-25,98,5,Plaza de la Constitucion,Los Cedros (Fracc),7736,Centro Urbano Tlalpan (U Hab),5296.85,Alimento,3
+98,ITAN,BARCENA,ALMEDA,1963-09-10,BAAI630910,M,2006-10-13,2020-07-13,32,63,Av. Estanislao Ramirez Ruiz,El Toro,1677,Pedregal De San Angel (Ampl),11011.15,Medicina,2
+99,CARIDAD,CARRO,COELLO,1989-07-19,CACC890719,F,2005-10-23,2011-08-27,125,195,Eje 2 Sur Av. Alvaro Obregon,El Parque,15625,9 1/2 - Francisco Villa (Ejercito Constitucionalista),8914.03,Alimento,1
+100,XALLI,CENTENO,AYAR,1988-09-13,CEAX880913,M,2004-12-12,2017-05-26,124,45,Av. Tezozomoc,El Rosario,9835,La Malinche,15499.26,Alimento,1

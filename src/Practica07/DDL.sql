@@ -14,7 +14,7 @@ CREATE TABLE Proveedor (
    NumInt INT,
    NumExt INT,
    Calle VARCHAR(50),
-   Colonia VARCHAR(50),
+   Colonia VARCHAR(60),
    CodigoPostal INT,
    Estado VARCHAR(50),
    Costo FLOAT8,
