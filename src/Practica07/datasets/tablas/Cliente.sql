@@ -41,7 +41,7 @@ INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VAL
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (41,'HERA','CASILLAS','DE LA SANCHA','F');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (42,'LORETO','BUTANDA','TREVINO','F');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (43,'ELLA','VERAL','GORRA','M');
-INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (44,'YULIAN','ITURBIDE','CEDE�O','M');
+INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (44,'YULIAN','ITURBIDE','CEDEÑO','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (45,'LUVIA','XOTLANIHUA','VILLAMIL','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (46,'JOSEP','TAH','REQUENA','F');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (47,'YUNIEL','MALDONADO','ARIZPE','M');
@@ -49,10 +49,10 @@ INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VAL
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (49,'TERRY','ZAMORAN','CASTILLEROS','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (50,'ARONI','BORRAYO','GUAPO','F');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (51,'RAMCES','SISNEROS','NICIO','M');
-INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (52,'ANIEL','MONTA�O','PASTRANO','F');
-INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (53,'AMEYALI','MENTADO','RODR�GUEZ','M');
+INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (52,'ANIEL','MONTAÑO','PASTRANO','F');
+INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (53,'AMEYALI','MENTADO','RODRÍGUEZ','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (54,'YUSSEL','LEDESMA','BANUELOS','M');
-INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (55,'MAGGIE','PEÿALOZA','KUMUL','M');
+INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (55,'MAGGIE','PEÑALOZA','KUMUL','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (56,'BAALAM','FABELA','AUREOLES','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (57,'OZAIN','MURIEDAS','CORCINO','F');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (58,'SONNY','VASCONCELOS','ROACHO','M');
@@ -67,7 +67,7 @@ INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VAL
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (67,'ERIBERTO','PORTUGUEZ','ALFARO','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (68,'HIROKO','ONOFRE','MAQUEO','F');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (69,'DENYSS','BETANCE','BERISTAIN','M');
-INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (70,'ELIANA','GARC�A','TILAN','M');
+INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (70,'ELIANA','GARCÍA','TILAN','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (71,'MICKEL','SELVAN','QUI#ONES','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (72,'ROSITA','BE','BARRALES','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (73,'VAYRON','BARRERO','LUNAR','F');
@@ -81,8 +81,8 @@ INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VAL
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (81,'MIGUEL','MOLLINEDO','DEL CARPIO','F');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (82,'YOJANA','ALEJOS','CEBADA','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (83,'LU','OVIEDO','PEDRIN','F');
-INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (84,'HILARY','OCA�O','CASTA�OS','M');
-INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (85,'CRISTINA','KAU','CHIÿAS','M');
+INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (84,'HILARY','OCASIO','CASTAÑOS','M');
+INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (85,'CRISTINA','KAU','CHIVAS','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (86,'KENNEDY','ALVINO','DE LARA','M');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (87,'DOMIC','CABADA','BERNARDO','F');
 INSERT INTO Cliente(IDPersona,Nombre,ApellidoPaterno,ApellidoMaterno,Genero) VALUES (88,'ALI','ANDUJO','SEL','F');
