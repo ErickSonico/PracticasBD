@@ -24,23 +24,22 @@ public class MedicinaServicioImp implements MedicinaServicio{
     }
     
     @Override
-    public void insertAlimento(Medicina med){
+    public void insertMedicina(Medicina med){
         medicinaRep.insertMedicina(med);
     }
     
     @Override
-    public void updateAlimento(Medicina med){
+    public void updateMedicina(Medicina med){
         medicinaRep.updateMedicina(med);
     }
     
     @Override
-    public void executeAlimento(Medicina med){
+    public void executeMedicina(Medicina med){
         medicinaRep.executeUpdateMedicina(med);
     }
     
     @Override
-    public void deleteAlimento(Medicina med){
+    public void deleteMedicina(Medicina med){
         medicinaRep.deleteMedicina(med);
     }
-}
 }
