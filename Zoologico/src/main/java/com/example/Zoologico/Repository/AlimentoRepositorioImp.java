@@ -31,6 +31,7 @@ import org.springframework.stereotype.Repository;
  * 
  * Clase con la implementación de la intefraz AlimentoRepositorio.
  */
+@Repository
 public class AlimentoRepositorioImp implements AlimentoRepositorio{
     
     /**
