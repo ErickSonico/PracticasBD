@@ -15,7 +15,7 @@ package com.example.Zoologico.model;
 public class Alimento {
     private Integer idInsumo;
     private String nombre;
-    private String caducidad;
+    private java.sql.Date caducidad;
     private Integer cantidad;
     private Boolean refrigeracion;
     private String tipo;
@@ -24,7 +24,7 @@ public class Alimento {
     
     }
     
-    public Alimento(Integer idInsumo,String nombre, String caducidad, 
+    public Alimento(Integer idInsumo,String nombre, java.sql.Date caducidad, 
             Integer cantidad, Boolean refrigeracion, String tipo) {
         this.idInsumo = idInsumo;
         this.nombre = nombre;
@@ -70,7 +70,7 @@ public class Alimento {
      * Metodo que regresa la fecha de caducidad del alimento
      * @return caducidad de la medicina
      */
-    public String getCaducidad() {
+    public java.sql.Date getCaducidad() {
         return caducidad;
     }
     
@@ -78,7 +78,7 @@ public class Alimento {
      * Metodo que asigna una nueva fecha de caducidad del alimento
      * @param caducidad - nueva fecha de caducidad
      */
-    public void setCaducidad(String caducidad) {
+    public void setCaducidad(java.sql.Date caducidad) {
         this.caducidad = caducidad;
     }
     

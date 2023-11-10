@@ -34,7 +34,7 @@ public class AlimentoRowMapper  implements RowMapper<Alimento>{
         Alimento alim = new Alimento();
         alim.setIdInsumo(rs.getInt("idInsumo"));
         alim.setNombre(rs.getString("nombre"));
-        alim.setCaducidad(rs.getString("caducidad"));
+        alim.setCaducidad(rs.getDate("caducidad"));
         alim.setCantidad(rs.getInt("cantidad"));
         alim.setRefrigeracion(rs.getBoolean("refrigeracion"));
         alim.setTipo(rs.getString("tipo"));  
