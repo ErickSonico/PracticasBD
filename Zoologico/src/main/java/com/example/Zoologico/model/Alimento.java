@@ -13,19 +13,20 @@ package com.example.Zoologico.model;
  * @author Bruno Fernando Ortiz Amaya
  */
 public class Alimento {
+    private Integer idInsumo;
     private String nombre;
     private String caducidad;
     private Integer cantidad;
     private Boolean refrigeracion;
-    private Integer numProveedor;
     private String tipo;
     
     public Alimento() {
     
     }
     
-    public Alimento(String nombre, String caducidad, Integer cantidad, 
-            Boolean refrigeracion, Integer numProveedor, String tipo) {
+    public Alimento(Integer idInsumo,String nombre, String caducidad, 
+            Integer cantidad, Boolean refrigeracion, String tipo) {
+        this.idInsumo = idInsumo
         this.nombre = nombre;
         this.caducidad = caducidad;
         this.cantidad = cantidad;
@@ -34,51 +35,100 @@ public class Alimento {
         this.tipo = tipo;
     }
     
+    /**
+     * Metodo que regesa el ID del alimento
+     * @return ID del alimento
+     */
+    public Integer getIdInsumo() {
+        return idInsumo;
+    }
+    
+    /**
+    * Metodo que asigna un nuevo ID del alimento
+    * @param idInsumo - nuevo ID
+    */
+    public void setIdInsumo(Integer idInsumo) {
+        this.idInsumo = idInsumo;
+    }
+    
+    /**
+     * Metodo que regresa el nombre del alimento
+     * @return nombre de la medicina
+     */
     public String getNombre() {
         return nombre;
     }   
         
+    /**
+     * Metodo que asigna un nuevo nombre al alimento
+     * @param nombre - nuevo nombre 
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
     
+    /**
+     * Metodo que regresa la fecha de caducidad del alimento
+     * @return caducidad de la medicina
+     */
     public String getCaducidad() {
         return caducidad;
     }
     
+    /**
+     * Metodo que asigna una nueva fecha de caducidad del alimento
+     * @param caducidad - nueva fecha de caducidad
+     */
     public void setCaducidad(String caducidad) {
         this.caducidad = caducidad;
     }
     
+    /**
+     * Metodo que regresa la cantidad de alimento
+     * @return cantidad de medicina
+     */
     public Integer getCantidad() {
         return cantidad;
     }
     
+    /**
+     * Metodo que asigna una nueva cantidad del alimento
+     * @param cantidad - nueva cantidad
+     */
     public void setCantidad(Integer cantidad) {
         this.cantidad = cantidad;
     }
     
+    /**
+     * Metodo que regresa la refrigeracion del alimento
+     * @return refrigeracion de medicina
+     */
     public Boolean getRefrigeracion() {
         return refrigeracion;
     }
     
+    /**
+     * Metodo que asigna una nueva refrigeracion del alimento
+     * @param refrigeracion - nueva refrigeracion
+     */
     public void setRefrigeracion(Boolean refrigeracion) {
         this.refrigeracion = refrigeracion;
     }
     
-    public Integer getNumProveedor() {
-        return numProveedor;
-    }
-    
-    public void setNumProveedor(Integer numProveedor) {
-        this.numProveedor = numProveedor;
-    }
-    
+    /**
+     * Metodo que regresa el tipo del alimento
+     * @return tipo de medicina
+     */
     public String getTipo() {
         return tipo;
     }
     
+    /**
+     * Metodo que asigna un nuevo tipo al alimento
+     * @param tipo - nuevo tipo
+     */
     public void setTipo(String tipo) {
         this.tipo = tipo;
+ 
     }
 }

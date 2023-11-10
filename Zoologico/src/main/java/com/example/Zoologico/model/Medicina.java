@@ -13,11 +13,11 @@ package com.example.Zoologico.model;
  * @author Bruno Fernando Ortiz Amaya
  */
 public class Medicina {
+    private Integer idInsumo
     private String nombre;
     private String caducidad;
     private Integer cantidad;
     private Boolean refrigeracion;
-    private Integer numProveedor;
     private String tipo;
     private String laboratorio;
     
@@ -38,16 +38,40 @@ public class Medicina {
      * @param tipo - tipo de medicina
      * @param laboratorio - laboratorio de la medicina
      */
-    public Medicina(String nombre, String caducidad, Integer cantidad, 
-            Boolean refrigeracion, Integer numProveedor, String tipo, 
+    public Medicina(Integer idInsumo,String nombre, String caducidad, 
+            Integer cantidad, Boolean refrigeracion, String tipo, 
             String laboratorio) {
+        this.idInsumo = idInsumo;
         this.nombre = nombre;
         this.caducidad = caducidad;
         this.cantidad = cantidad;
         this.refrigeracion = refrigeracion;
-        this.numProveedor = numProveedor;
         this.tipo = tipo;
         this.laboratorio = laboratorio;
+    }
+    
+    /**
+     * Metodo que regesa el ID de la medicina
+     * @return ID del alimento
+     */
+    public Integer getIdInsumo() {
+        return idInsumo;
+    }
+    
+    /**
+    * Metodo que asigna un nuevo ID a la medicina
+    * @param cantidad - nueva cantidad
+    */
+    public void setIdInsumo(Integer cantidad) {
+        this.cantidad = cantidad;
+    }
+    
+    /**
+     * Metodo que regresa la refrigeracion de la medicina
+     * @return refrigeracion de medicina
+     */
+    public Boolean getRefrigeracion() {
+        return refrigeracion;
     }
     
     /**
@@ -112,22 +136,6 @@ public class Medicina {
      */
     public void setRefrigeracion(Boolean refrigeracion) {
         this.refrigeracion = refrigeracion;
-    }
-    
-    /**
-     * Metodo que regresa el numero de proveedor de la medicina
-     * @return numero de proveedor de la medicina
-     */
-    public Integer getNumProveedor() {
-        return numProveedor;
-    }
-    
-    /**
-     * Metodo que asigna un nuevo proveedor
-     * @param numProveedor - nuevo numero proveedor
-     */
-    public void setNumProveedor(Integer numProveedor) {
-        this.numProveedor = numProveedor;
     }
     
     /**
