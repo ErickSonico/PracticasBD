@@ -4,6 +4,8 @@
  */
 package com.example.Zoologico.Repository;
 
+import com.example.Zoologico.model.Alimento;
+import java.util.List;
 /**
  *
  * @author bruno
