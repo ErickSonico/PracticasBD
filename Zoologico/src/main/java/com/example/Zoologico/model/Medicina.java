@@ -31,10 +31,10 @@ public class Medicina {
     /**
      * Metodo constructor Medicina
      * @param nombre - nombre de la medicina
-     * @param caducudad - fecha de caducidad de la medicina
+     * @param caducidad - fecha de caducidad de la medicina
      * @param cantidad - cantidad de la medicina
      * @param refrigeracion - refrigeracion de la medicina
-     * @param numProveddor - numero del proveedor de la medicina
+     * @param numProveedor - numero del proveedor de la medicina
      * @param tipo - tipo de medicina
      * @param laboratorio - laboratorio de la medicina
      */
@@ -127,7 +127,7 @@ public class Medicina {
      * @param numProveedor - nuevo numero proveedor
      */
     public void setNumProveedor(Integer numProveedor) {
-        this.numProveedor = numProveedor
+        this.numProveedor = numProveedor;
     }
     
     /**
@@ -151,7 +151,7 @@ public class Medicina {
      * @return laboratorio de la medicina
      */
     public String getLaboratorio() {
-        return = laboratorio;
+        return laboratorio;
     }
     
     /**
