@@ -26,7 +26,7 @@ public class MedicinaServicioImp implements MedicinaServicio{
     MedicinaRepositorio medicinaRep;
     
     /**
-     * Método que regresa una lista de medicinas disponibles.
+     * Rregresa una lista de todas las medicinas disponibles.
      * @return lista de medicinas.
      */
     @Override
@@ -53,8 +53,8 @@ public class MedicinaServicioImp implements MedicinaServicio{
     }
     
     /**
-     * Ejecuta una medicina actualizada en el repositorio.
-     * @param med medicina para ejecutar.
+     * Método alternativo para actualizar una medicina del repositorio.
+     * @param med medicina para actualizar.
      */
     @Override
     public void executeMedicina(Medicina med){

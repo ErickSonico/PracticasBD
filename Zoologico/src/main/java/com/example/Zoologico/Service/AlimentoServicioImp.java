@@ -12,7 +12,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 /**
- * Clase que implementa los métodos para el servicio de alimento. 
+ * Servicio del objeto Alimento 
  * @author Valeria Ramírez Vacheron. 
  * @author Eduardo Alfonso Reyes López. 
  * @author Mario Andrés Rosales Peña. 
@@ -27,7 +27,7 @@ public class AlimentoServicioImp implements AlimentoServicio{
     AlimentoRepositorio alimentoRep;
     
     /**
-     * Método que regresa una lista de alimentos
+     * Regresa una lista con todos los alimentos.
      * @return lista con todos los alimentos.
      */
     @Override
@@ -36,7 +36,7 @@ public class AlimentoServicioImp implements AlimentoServicio{
     }
     
     /**
-     * Inserta alimento al repositorio de alimentos.
+     * Inserta un alimento al repositorio de alimentos.
      * @param ali alimento para insertar.
      */
     @Override
@@ -54,8 +54,8 @@ public class AlimentoServicioImp implements AlimentoServicio{
     }
     
     /**
-     * Ejecuta un alimento actualizado en el repositorio de alimentos.
-     * @param ali alimento a ejecutar.
+     * Método alternativo para actualizar un elemento en el repositorio.
+     * @param ali alimento a actualizar
      */
     @Override
     public void executeAlimento(Alimento ali){
