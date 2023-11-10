@@ -4,10 +4,16 @@
  */
 package com.example.Zoologico.Service;
 
+import com.example.Zoologico.model.Alimento;
+import java.util.List;
 /**
  *
- * @author bruno
+ * @author Los Basados
  */
 public interface AlimentoServicio {
-    
+    List<Alimento> findAll();
+    void insertAlimento(Alimento ali);
+    void updateAlimento(Alimento ali);
+    void executeAlimento(Alimento ali);
+    void deleteAlimento(Alimento ali);
 }
