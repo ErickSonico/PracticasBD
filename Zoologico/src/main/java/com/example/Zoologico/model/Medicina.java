@@ -13,7 +13,7 @@ package com.example.Zoologico.model;
  * @author Bruno Fernando Ortiz Amaya
  */
 public class Medicina {
-    private Integer idInsumo
+    private Integer idInsumo;
     private String nombre;
     private String caducidad;
     private Integer cantidad;
