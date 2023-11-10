@@ -9,5 +9,9 @@ package com.example.Zoologico.Repository;
  * @author bruno
  */
 public interface AlimentoRepositorio {
-    
+    List<Alimento> findAll();
+    void insertAlimento(Alimento op);
+    void updateAlimento(Alimento op);
+    void executeUpdateAlimento(Alimento op);
+    public void deleteAlimento(Alimento op);
 }
