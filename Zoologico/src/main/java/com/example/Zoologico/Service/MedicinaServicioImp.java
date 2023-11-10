@@ -19,8 +19,8 @@ public class MedicinaServicioImp implements MedicinaServicio{
     MedicinaRepositorio medicinaRep;
     
     @Override
-    public List<medicina> findAll(){
-        return medicinaRep.findAll();
+    public List<Medicina> findAll(){
+        return (List<Medicina>) medicinaRep.findAll();
     }
     
     @Override

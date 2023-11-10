@@ -21,7 +21,7 @@ public class AlimentoServicioImp implements AlimentoServicio{
     
     @Override
     public List<Alimento> findAll(){
-        return alimentoRep.findAll();
+        return (List<Alimento>) alimentoRep.findAll();
     }
     
     @Override
