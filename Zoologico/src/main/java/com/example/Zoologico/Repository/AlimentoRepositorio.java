@@ -6,9 +6,14 @@ package com.example.Zoologico.Repository;
 
 import com.example.Zoologico.model.Alimento;
 import java.util.List;
+
 /**
  *
- * @author bruno
+ * @author Eduardo
+ */
+/**
+ * 
+ * Interfaz con las operaciones CRUD para la tabla Alimento.
  */
 public interface AlimentoRepositorio {
     List<Alimento> findAll();

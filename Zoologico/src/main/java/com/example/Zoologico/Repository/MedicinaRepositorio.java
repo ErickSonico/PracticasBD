@@ -6,9 +6,15 @@ package com.example.Zoologico.Repository;
 
 import com.example.Zoologico.model.Medicina;
 import java.util.List;
+
 /**
  *
- * @author bruno
+ * @author Eduardo
+ */
+
+/**
+ * 
+ * Interfaz con las operaciones CRUD para la tabla Medicina.
  */
 public interface MedicinaRepositorio {
     List<Medicina> findAll();

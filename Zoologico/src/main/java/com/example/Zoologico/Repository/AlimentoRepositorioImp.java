@@ -26,19 +26,40 @@ import org.springframework.stereotype.Repository;
  *
  * @author Eduardo
  */
-@Repository
+
+/**
+ * 
+ * Clase con la implementación de la intefraz AlimentoRepositorio.
+ */
 public class AlimentoRepositorioImp implements AlimentoRepositorio{
     
+    /**
+     * Variable para las operaciones actualizar, ejecutar queries, consultas
+     * y utilizar los preparatory statement.
+     */
     NamedParameterJdbcTemplate template;
     
     public AlimentoRepositorioImp(NamedParameterJdbcTemplate template){
         this.template = template;
     }
+    
+    /**
+     * Método que nos devuelve todas las tuplas de la tabla Alimento.
+     * Se usa el AlimentoRowMapper para que la lista que pase la query
+     * lo transforme en un operador.
+     * @return List<Alimento> -- Lista con las tuplas de la tabla Alimento
+     */
     @Override
     public List<Alimento> findAll() {
         return template.query("SELECT * FROM Alimento", new AlimentoRowMapper());
     }
 
+    /**
+     * Método que inserta una tupla en la tabla.
+     * Se hace la consulta SQL INSERT con los parámetros mostrados.
+     * El holder permite mandar la información de manera segura.
+     * @param op -- Operador Alimento
+     */
     @Override
     public void insertAlimento(Alimento op) {
         final String sql = "INSERT INTO Alimento(idInsumo,nombre,caducidad,"
@@ -52,8 +73,7 @@ public class AlimentoRepositorioImp implements AlimentoRepositorio{
                 .addValue("cantidad", op.getCantidad())
                 .addValue("refrigeracion", op.getRefrigeracion())
                 .addValue("tipo", op.getTipo());
-        template.update(sql,param,holder);
-        
+        template.update(sql,param,holder); 
     }
     
 
