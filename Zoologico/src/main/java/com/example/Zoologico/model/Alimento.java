@@ -71,7 +71,7 @@ public class Alimento {
     }
     
     public void setNumProveedor(Integer numProveedor) {
-        this.numProveedor = numProveedor
+        this.numProveedor = numProveedor;
     }
     
     public String getTipo() {
