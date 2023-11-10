@@ -31,7 +31,6 @@ public class Alimento {
         this.caducidad = caducidad;
         this.cantidad = cantidad;
         this.refrigeracion = refrigeracion;
-        this.numProveedor = numProveedor;
         this.tipo = tipo;
     }
     
