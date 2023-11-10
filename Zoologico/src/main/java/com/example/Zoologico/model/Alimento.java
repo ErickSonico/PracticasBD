@@ -26,7 +26,7 @@ public class Alimento {
     
     public Alimento(Integer idInsumo,String nombre, String caducidad, 
             Integer cantidad, Boolean refrigeracion, String tipo) {
-        this.idInsumo = idInsumo
+        this.idInsumo = idInsumo;
         this.nombre = nombre;
         this.caducidad = caducidad;
         this.cantidad = cantidad;
@@ -53,7 +53,7 @@ public class Alimento {
     
     /**
      * Metodo que regresa el nombre del alimento
-     * @return nombre de la medicina
+     * @return nombre del alimento
      */
     public String getNombre() {
         return nombre;
@@ -129,6 +129,5 @@ public class Alimento {
      */
     public void setTipo(String tipo) {
         this.tipo = tipo;
- 
     }
 }
