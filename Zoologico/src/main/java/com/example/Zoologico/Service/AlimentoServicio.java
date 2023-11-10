@@ -9,12 +9,12 @@ import com.example.Zoologico.model.Alimento;
 import java.util.List;
 
 /**
- * Interfaz para los métodos del servicio de alimento
- * @author Valeria Ramírez Vacheron 
- * @author Eduardo Alfonso Reyes López 
- * @author Mario Andrés Rosales Peña 
- * @author Erick Iram García Velasco 
- * @author Bruno Fernando Ortiz Amaya
+ * Interfaz para los métodos del servicio de alimento.
+ * @author Valeria Ramírez Vacheron.
+ * @author Eduardo Alfonso Reyes López.
+ * @author Mario Andrés Rosales Peña.
+ * @author Erick Iram García Velasco. 
+ * @author Bruno Fernando Ortiz Amaya.
  */
 public interface AlimentoServicio {
     List<Alimento> findAll();
