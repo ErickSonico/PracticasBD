@@ -60,7 +60,7 @@ public class AlimentoRepositorioImp {
     public void updateAlimento(Alimento op) {
             final String sql = "UPDATE Alimento SET idInsumo:=idInsumo,"
                 + "nombre=:nombre,caducidad=:caducidad,cantidad=:cantidad,"
-                + "refrigeracion=:refrigeracion,tipo=:tipo"
+                + "refrigeracion=:refrigeracion,tipo=:tipo "
                 + "WHERE idInsumo=:idInsumo";
             
         KeyHolder holder = new GeneratedKeyHolder();
@@ -80,7 +80,7 @@ public class AlimentoRepositorioImp {
         final String sql = "UPDATE Alimento SET idInsumo=:idInsumo,"
                 + "nombre=:nombre,caducidad=:caducidad,"
                 + "cantidad=:cantidad,"
-                + "refrigeracion=:refrigeracion,tipo=:tipo,"
+                + "refrigeracion=:refrigeracion,tipo=:tipo "
                 + "WHERE idInsumo=:idInsumo";
             
         Map<String,Object> map = new HashMap<String,Object>();

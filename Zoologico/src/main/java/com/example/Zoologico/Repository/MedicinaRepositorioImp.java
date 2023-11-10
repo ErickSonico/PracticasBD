@@ -4,8 +4,8 @@
  */
 package com.example.Zoologico.Repository;
 
-import com.example.Zoologico.Mapper.AlimentoRowMapper;
-import com.example.Zoologico.model.Alimento;
+import com.example.Zoologico.Mapper.MedicinaRowMapper;
+import com.example.Zoologico.model.Medicina;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -30,19 +30,19 @@ public class MedicinaRepositorioImp {
     
     NamedParameterJdbcTemplate template;
     
-    public AlimentoRepositorioImp(NamedParameterJdbcTemplate template){
+    public MedicinaRepositorioImp(NamedParameterJdbcTemplate template){
         this.template = template;
     }
     @Override
-    public List<Alimento> findAll() {
-        return template.query("SELECT * FROM Alimento", new AlimentoRowMapper());
+    public List<Medicina> findAll() {
+        return template.query("SELECT * FROM Medicina", new MedicinaRowMapper());
     }
 
     @Override
-    public void insertAlimento(Alimento op) {
-        final String sql = "INSERT INTO Alimento(idInsumo,nombre,caducidad,"
-            + "cantidad,refrigeracion,tipo) values (:idInsumo,:nombre,"
-            + ":caducidad,:cantidad,:refrigeracion,:tipo)";
+    public void insertMedicina(Medicina op) {
+        final String sql = "INSERT INTO Medicina(idInsumo,nombre,caducidad,"
+            + "cantidad,refrigeracion,tipo,laboratorio) values (:idInsumo,"
+            + ":nombre,:caducidad,:cantidad,:refrigeracion,:tipo,:laboratorio)";
         KeyHolder holder = new GeneratedKeyHolder();
         SqlParameterSource param = new MapSqlParameterSource()
                 .addValue("idInsumo", op.getIdInsumo())
@@ -50,17 +50,19 @@ public class MedicinaRepositorioImp {
                 .addValue("caducidad", op.getCaducidad())
                 .addValue("cantidad", op.getCantidad())
                 .addValue("refrigeracion", op.getRefrigeracion())
-                .addValue("tipo", op.getTipo());
+                .addValue("tipo", op.getTipo())
+                .addValue("laboratorio", op.getLaboratorio());
         template.update(sql,param,holder);
         
     }
     
 
     @Override
-    public void updateAlimento(Alimento op) {
-            final String sql = "UPDATE Alimento SET idInsumo:=idInsumo,"
+    public void updateMedicina(Medicina op) {
+            final String sql = "UPDATE Medicina SET idInsumo:=idInsumo,"
                 + "nombre=:nombre,caducidad=:caducidad,cantidad=:cantidad,"
-                + "refrigeracion=:refrigeracion,tipo=:tipo"
+                + "refrigeracion=:refrigeracion,tipo=:tipo,"
+                + "laboratorio=:laboratorio "
                 + "WHERE idInsumo=:idInsumo";
             
         KeyHolder holder = new GeneratedKeyHolder();
@@ -70,17 +72,18 @@ public class MedicinaRepositorioImp {
                 .addValue("caducidad", op.getCaducidad())
                 .addValue("cantidad", op.getCantidad())
                 .addValue("refrigeracion", op.getRefrigeracion())
-                .addValue("tipo", op.getTipo());
+                .addValue("tipo", op.getTipo())
+                .addValue("laboratorio", op.getLaboratorio());
         template.update(sql,param,holder);
     }
 
     @Override
-    public void executeUpdateAlimento(Alimento op) {
+    public void executeUpdateMedicina(Medicina op) {
         
-        final String sql = "UPDATE Alimento SET idInsumo=:idInsumo,"
+        final String sql = "UPDATE Medicina SET idInsumo=:idInsumo,"
                 + "nombre=:nombre,caducidad=:caducidad,"
-                + "cantidad=:cantidad,"
-                + "refrigeracion=:refrigeracion,tipo=:tipo,"
+                + "cantidad=:cantidad,refrigeracion=:refrigeracion,"
+                + "tipo=:tipo,laboratorio=:laboratorio "
                 + "WHERE idInsumo=:idInsumo";
             
         Map<String,Object> map = new HashMap<String,Object>();
@@ -90,6 +93,7 @@ public class MedicinaRepositorioImp {
                 map.put("cantidad", op.getCantidad());
                 map.put("refrigeracion", op.getRefrigeracion());
                 map.put("tipo", op.getTipo());
+                map.put("laboratorio", op.getLaboratorio());
                
                 template.execute(sql,map,new PreparedStatementCallback<Object>(){
                     @Override
@@ -103,8 +107,8 @@ public class MedicinaRepositorioImp {
     }
 
     @Override
-    public void deleteAlimento(Alimento op) {
-        final String sql = "DELETE FROM Alimento WHERE idInsumo=:idInsumo";
+    public void deleteMedicina(Medicina op) {
+        final String sql = "DELETE FROM Medicina WHERE idInsumo=:idInsumo";
         Map<String,Object> map = new HashMap<String, Object>();
         map.put("idInsumo",op.getIdInsumo());
             template.execute(sql,map,new PreparedStatementCallback<Object>(){
