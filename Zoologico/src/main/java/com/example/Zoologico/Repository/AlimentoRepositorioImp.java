@@ -24,9 +24,10 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author bruno
+ * @author Eduardo
  */
 public class AlimentoRepositorioImp {
+    
     NamedParameterJdbcTemplate template;
     
     public AlimentoRepositorioImp(NamedParameterJdbcTemplate template){
@@ -49,7 +50,7 @@ public class AlimentoRepositorioImp {
                 .addValue("caducidad", op.getCaducidad())
                 .addValue("cantidad", op.getCantidad())
                 .addValue("refrigeracion", op.getRefrigeracion())
-                .addValue("tipo", op.getTipo())
+                .addValue("tipo", op.getTipo());
         template.update(sql,param,holder);
         
     }
@@ -65,12 +66,11 @@ public class AlimentoRepositorioImp {
         KeyHolder holder = new GeneratedKeyHolder();
         SqlParameterSource param = new MapSqlParameterSource()
                 .addValue("idInsumo", op.getIdInsumo())
-                .addValue("curp", op.getCurp())
                 .addValue("nombre", op.getNombre())
                 .addValue("caducidad", op.getCaducidad())
-                .addValue("cantidad", op.getcantidad())
+                .addValue("cantidad", op.getCantidad())
                 .addValue("refrigeracion", op.getRefrigeracion())
-                .addValue("tipo", op.getTipo())
+                .addValue("tipo", op.getTipo());
         template.update(sql,param,holder);
     }
 
@@ -87,7 +87,7 @@ public class AlimentoRepositorioImp {
                 map.put("idInsumo", op.getIdInsumo());
                 map.put("nombre", op.getNombre());
                 map.put("caducidad", op.getCaducidad());
-                map.put("cantidad", op.getcantidad());
+                map.put("cantidad", op.getCantidad());
                 map.put("refrigeracion", op.getRefrigeracion());
                 map.put("tipo", op.getTipo());
                
@@ -116,4 +116,5 @@ public class AlimentoRepositorioImp {
                     
             });
     }
+    
 }
