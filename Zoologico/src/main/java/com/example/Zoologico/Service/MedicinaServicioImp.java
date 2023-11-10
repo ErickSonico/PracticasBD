@@ -9,35 +9,62 @@ import com.example.Zoologico.model.Medicina;
 import jakarta.annotation.Resource;
 import java.util.List;
 import org.springframework.stereotype.Service;
+
 /**
- *
- * @author Los Basados
+ * Clase que implementa los métodos para el servicio de medicina.
+ * @author Valeria Ramírez Vacheron. 
+ * @author Eduardo Alfonso Reyes López. 
+ * @author Mario Andrés Rosales Peña. 
+ * @author Erick Iram García Velasco. 
+ * @author Bruno Fernando Ortiz Amaya.
  */
+
+@Service
 public class MedicinaServicioImp implements MedicinaServicio{
     
     @Resource
     MedicinaRepositorio medicinaRep;
     
+    /**
+     * Método que regresa una lista de medicinas disponibles.
+     * @return lista de medicinas.
+     */
     @Override
     public List<Medicina> findAll(){
         return (List<Medicina>) medicinaRep.findAll();
     }
     
+    /**
+     * Inserta una medicina al repositorio de medicinas. 
+     * @param med medicina para insertar.
+     */
     @Override
     public void insertMedicina(Medicina med){
         medicinaRep.insertMedicina(med);
     }
     
+    /**
+     * Actualiza una medicina del repositorio.
+     * @param med medicina para actualizar.
+     */
     @Override
     public void updateMedicina(Medicina med){
         medicinaRep.updateMedicina(med);
     }
     
+    /**
+     * Ejecuta una medicina actualizada en el repositorio.
+     * @param med medicina para ejecutar.
+     */
     @Override
     public void executeMedicina(Medicina med){
         medicinaRep.executeUpdateMedicina(med);
     }
     
+    /**
+     * Elimina una medicina del repositorio.
+     * @param med medicina a eliminar.
+     */
     @Override
     public void deleteMedicina(Medicina med){
         medicinaRep.deleteMedicina(med);

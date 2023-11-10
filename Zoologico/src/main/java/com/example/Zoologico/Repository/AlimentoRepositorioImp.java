@@ -26,7 +26,7 @@ import org.springframework.stereotype.Repository;
  *
  * @author Eduardo
  */
-public class AlimentoRepositorioImp {
+public class AlimentoRepositorioImp implements AlimentoRepositorio{
     
     NamedParameterJdbcTemplate template;
     

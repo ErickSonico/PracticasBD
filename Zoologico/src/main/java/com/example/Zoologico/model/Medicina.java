@@ -31,10 +31,10 @@ public class Medicina {
     /**
      * Metodo constructor Medicina
      * @param nombre - nombre de la medicina
+     * @param idInsumo - ID del insumo
      * @param caducidad - fecha de caducidad de la medicina
      * @param cantidad - cantidad de la medicina
      * @param refrigeracion - refrigeracion de la medicina
-     * @param numProveedor - numero del proveedor de la medicina
      * @param tipo - tipo de medicina
      * @param laboratorio - laboratorio de la medicina
      */
@@ -120,15 +120,7 @@ public class Medicina {
      */
     public void setCantidad(Integer cantidad) {
         this.cantidad = cantidad;
-    }
-    
-    /**
-     * Metodo que regresa la refrigeracion de la medicina
-     * @return refrigeracion de medicina
-     */
-    public Boolean getRefrigeracion() {
-        return refrigeracion;
-    }
+    }    
     
     /**
      * Metodo que asigna una nueva refrigeracion de la medicina
