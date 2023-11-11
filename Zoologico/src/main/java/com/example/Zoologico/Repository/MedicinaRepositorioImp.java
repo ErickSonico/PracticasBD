@@ -24,21 +24,47 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author Eduardo
+ * @author Valeria Ramírez Vacheron.
+ * @author Eduardo Alfonso Reyes López.
+ * @author Mario Andrés Rosales Peña.
+ * @author Erick Iram García Velasco. 
+ * @author Bruno Fernando Ortiz Amaya.
+ */
+
+/**
+ * 
+ * Clase con la implementación de la intefraz MedicinaRepositorio.
  */
 @Repository
 public class MedicinaRepositorioImp implements MedicinaRepositorio{
     
+    /**
+     * Variable para las operaciones actualizar, ejecutar queries, consultas
+     * y utilizar los preparatory statement.
+     */
     NamedParameterJdbcTemplate template;
     
     public MedicinaRepositorioImp(NamedParameterJdbcTemplate template){
         this.template = template;
     }
+
+    /**
+     * Método que nos devuelve todas las tuplas de la tabla Medicina.
+     * Se usa el MedicinaRowMapper para que la lista que pase la query
+     * lo transforme en un operador.
+     * @return List<Medicina> -- Lista con las tuplas de la tabla Medicina
+     */
     @Override
     public List<Medicina> findAll() {
         return template.query("SELECT * FROM Medicina", new MedicinaRowMapper());
     }
 
+    /**
+     * Método que inserta una tupla en la tabla.
+     * Se hace la consulta SQL INSERT con los parámetros mostrados.
+     * El holder permite mandar la información de manera segura.
+     * @param op -- Operador Medicina
+     */
     @Override
     public void insertMedicina(Medicina op) {
         final String sql = "INSERT INTO Medicina(idInsumo,nombre,caducidad,"
@@ -54,10 +80,14 @@ public class MedicinaRepositorioImp implements MedicinaRepositorio{
                 .addValue("tipo", op.getTipo())
                 .addValue("laboratorio", op.getLaboratorio());
         template.update(sql,param,holder);
-        
     }
     
-
+    /**
+     * Método que actualiza una medicina.
+     * Emplea un holder en coordinación con template para realizar
+     * los cambios.
+     * @param op -- Operador Medicina
+     */
     @Override
     public void updateMedicina(Medicina op) {
             final String sql = "UPDATE Medicina SET idInsumo:=idInsumo,"
@@ -78,6 +108,12 @@ public class MedicinaRepositorioImp implements MedicinaRepositorio{
         template.update(sql,param,holder);
     }
 
+    /**
+     * Método que hace un mapeo de los campos de la tabla Medicina
+     * para efectuar una query UPDATE usando un Prepared Statemnt
+     * que garantiza la seguridad de la operación.
+     * @param op -- Operador Medicina
+     */
     @Override
     public void executeUpdateMedicina(Medicina op) {
         
@@ -102,24 +138,29 @@ public class MedicinaRepositorioImp implements MedicinaRepositorio{
                             throws SQLException, DataAccessException{
                         return ps.executeUpdate();
                     }
-                    
                 });
         
     }
 
+    /**
+     * Método para eleminar alguna tupla de la tabla Medicina.
+     * Se efectúa con el template que usa como parámetros la query
+     * DELETE SQL y el mapeo con el idInsumo de la tupla a borrar
+     * con un Prepared Statement.
+     * @param op -- Operador Medicina
+     */
     @Override
     public void deleteMedicina(Medicina op) {
         final String sql = "DELETE FROM Medicina WHERE idInsumo=:idInsumo";
         Map<String,Object> map = new HashMap<String, Object>();
         map.put("idInsumo",op.getIdInsumo());
-            template.execute(sql,map,new PreparedStatementCallback<Object>(){
-                @Override
-                public Object doInPreparedStatement(PreparedStatement ps)
-                    throws SQLException, DataAccessException{
-                    return ps.executeUpdate();
-                }
-                    
-            });
+        template.execute(sql,map,new PreparedStatementCallback<Object>(){
+            @Override
+            public Object doInPreparedStatement(PreparedStatement ps)
+                throws SQLException, DataAccessException{
+                return ps.executeUpdate();
+            }      
+        });
     }
     
 }
