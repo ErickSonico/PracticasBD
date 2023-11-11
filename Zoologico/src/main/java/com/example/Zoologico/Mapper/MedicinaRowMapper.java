@@ -35,7 +35,7 @@ public class MedicinaRowMapper  implements RowMapper<Medicina>{
         Medicina med = new Medicina();
         med.setIdInsumo(rs.getInt("idInsumo"));
         med.setNombre(rs.getString("nombre"));
-        med.setCaducidad(rs.getString("caducidad"));
+        med.setCaducidad(rs.getDate("caducidad"));
         med.setCantidad(rs.getInt("cantidad"));
         med.setRefrigeracion(rs.getBoolean("refrigeracion"));
         med.setTipo(rs.getString("tipo"));  
