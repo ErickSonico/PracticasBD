@@ -24,7 +24,11 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author Eduardo
+ * @author Valeria Ramírez Vacheron.
+ * @author Eduardo Alfonso Reyes López.
+ * @author Mario Andrés Rosales Peña.
+ * @author Erick Iram García Velasco. 
+ * @author Bruno Fernando Ortiz Amaya.
  */
 
 /**
@@ -77,7 +81,12 @@ public class AlimentoRepositorioImp implements AlimentoRepositorio{
         template.update(sql,param,holder); 
     }
     
-
+    /**
+     * Método que actualiza un alimento.
+     * Emplea un holder en coordinación con template para realizar
+     * los cambios.
+     * @param op -- Operador Alimento
+     */
     @Override
     public void updateAlimento(Alimento op) {
             final String sql = "UPDATE Alimento SET idInsumo:=idInsumo,"
@@ -96,6 +105,12 @@ public class AlimentoRepositorioImp implements AlimentoRepositorio{
         template.update(sql,param,holder);
     }
 
+    /**
+     * Método que hace un mapeo de los campos de la tabla Alimento
+     * para efectuar una query UPDATE usando un Prepared Statemnt
+     * que garantiza la seguridad de la operación.
+     * @param op -- Operador Alimento
+     */
     @Override
     public void executeUpdateAlimento(Alimento op) {
         
@@ -118,25 +133,30 @@ public class AlimentoRepositorioImp implements AlimentoRepositorio{
                     public Object doInPreparedStatement(PreparedStatement ps)
                             throws SQLException, DataAccessException{
                         return ps.executeUpdate();
-                    }
-                    
+                    } 
                 });
-        
+                
     }
 
+    /**
+     * Método para eleminar alguna tupla de la tabla Alimento.
+     * Se efectúa con el template que usa como parámetros la query
+     * DELETE SQL y el mapeo con el idInsumo de la tupla a borrar
+     * con un Prepared Statement.
+     * @param op -- Operador Alimento
+     */
     @Override
     public void deleteAlimento(Alimento op) {
         final String sql = "DELETE FROM Alimento WHERE idInsumo=:idInsumo";
         Map<String,Object> map = new HashMap<String, Object>();
         map.put("idInsumo",op.getIdInsumo());
-            template.execute(sql,map,new PreparedStatementCallback<Object>(){
-                @Override
-                public Object doInPreparedStatement(PreparedStatement ps)
-                    throws SQLException, DataAccessException{
-                    return ps.executeUpdate();
-                }
-                    
-            });
+        template.execute(sql,map,new PreparedStatementCallback<Object>(){
+            @Override
+            public Object doInPreparedStatement(PreparedStatement ps)
+                throws SQLException, DataAccessException{
+                return ps.executeUpdate();
+            }  
+        });
     }
     
 }

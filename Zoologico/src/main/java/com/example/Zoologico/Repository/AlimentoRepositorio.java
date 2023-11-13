@@ -9,7 +9,11 @@ import java.util.List;
 
 /**
  *
- * @author Eduardo
+ * @author Valeria Ramírez Vacheron.
+ * @author Eduardo Alfonso Reyes López.
+ * @author Mario Andrés Rosales Peña.
+ * @author Erick Iram García Velasco. 
+ * @author Bruno Fernando Ortiz Amaya.
  */
 /**
  * 

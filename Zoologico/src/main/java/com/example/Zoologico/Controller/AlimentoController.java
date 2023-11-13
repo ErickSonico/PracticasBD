@@ -20,6 +20,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Controlador para gestionar los alimentos.
+ * @author Valeria Ramírez Vacheron.
+ * @author Eduardo Alfonso Reyes López.
+ * @author Mario Andrés Rosales Peña.
+ * @author Erick Iram García Velasco. 
+ * @author Bruno Fernando Ortiz Amaya.
  */
 @RestController
 @RequestMapping("/postgressApp")
