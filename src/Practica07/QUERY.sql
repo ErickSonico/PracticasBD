@@ -25,3 +25,10 @@ WHERE Alimentacion = 'carnivoro';
 -- Todos los clientes: --
 SELECT *
 FROM Cliente;
+
+-- Los animales herbivoros que pertenezcan al bioma bosque templado --
+SELECT Nombre
+FROM Animal
+WHERE Alimentacion = 'herbivoro' AND
+IDBioma IN
+(SELECT IDBioma FROM Bioma WHERE Tipo = 'Bosque templado')
