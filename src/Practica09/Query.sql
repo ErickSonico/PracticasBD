@@ -17,9 +17,12 @@ WHERE Tipo = 'Semilla' AND
 IDInsumo IN (SELECT IDInsumo FROM DistribuirAlimento WHERE IDBioma = 6)
 
 -- Los cuidadores y proveedores que vivan en el mismo estado.
-SELECT *
+(SELECT IdPersona, Nombre, ApellidoPaterno, ApellidoMaterno, Estado
 FROM Cuidador
-WHERE Estado IN (SELECT Estado FROM Proveedor)
+WHERE Estado IN (SELECT Estado FROM Proveedor)) UNION
+(SELECT Idpersona, Nombre, ApellidoPaterno, ApellidoMaterno, Estado
+FROM Proveedor
+WHERE Estado IN (SELECT Estado FROM Cuidador))
 
 -- Biomas que posean almenos 10 animales
 select *
