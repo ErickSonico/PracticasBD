@@ -1,7 +1,8 @@
 -- Los veterinarios y cuidadores que comparten el apellido --
 SELECT *
 FROM Veterinario
-WHERE ApellidoPaterno IN (SELECT ApellidoPaterno FROM Cuidador);
+WHERE ApellidoPaterno IN (SELECT ApellidoPaterno FROM Cuidador) 
+    OR ApellidoMaterno IN (SELECT ApellidoMaterno FROM Cuidador);
 
 -- Los animales herbivoros que pertenezcan al bioma bosque templado --
 SELECT Nombre
