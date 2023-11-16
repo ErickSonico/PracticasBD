@@ -9,5 +9,12 @@ FROM Animal
 WHERE Alimentacion = 'herbivoro' AND
 IDBioma IN (SELECT IDBioma FROM Bioma WHERE Tipo = 'Bosque templado')
 
+-- Alimentos de tipo semilla, que son distribuidos en el aviario.
+SELECT Nombre
+FROM Alimento 
+WHERE Tipo = 'Semilla' AND
+IDInsumo IN (SELECT IDInsumo FROM DistribuirAlimento WHERE IDBioma = 6)
+
+
 -- Biomas que posean almenos 10 animales
 
