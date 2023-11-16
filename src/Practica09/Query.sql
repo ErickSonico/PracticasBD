@@ -18,4 +18,6 @@ IDInsumo IN (SELECT IDInsumo FROM DistribuirAlimento WHERE IDBioma = 6)
 
 
 -- Biomas que posean almenos 10 animales
-
+select *
+from Bioma
+where IDBioma in (select IDBioma from Animal group by IDBioma having count (*) >=10)
