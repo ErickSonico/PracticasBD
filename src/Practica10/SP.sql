@@ -3,7 +3,7 @@ CREATE OR REPLACE PROCEDURE agregaCliente(idpersona IN INT, nombre IN VARCHAR(50
 AS $$
 BEGIN
 		
-		IF idpersona IS NULL OR idpersona <= 0 THEN
+		IF idpersona <= 0 THEN
     	RAISE EXCEPTION 'El identificador no es válido';
   		END IF;
   	
