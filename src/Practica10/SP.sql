@@ -18,15 +18,14 @@ BEGIN
     	RAISE EXCEPTION 'Los nombres y apellidos no pueden contener números';
   		END IF;
   		
-  		IF genero NOT IN ('F', 'M', 'O') THEN 
-  		RAISE EXCEPTION 'El género sólo puedes ser F,M u O';
+  		IF genero NOT IN ('F', 'M') THEN 
+  		RAISE EXCEPTION 'El género sólo puede ser F o M';
   		END IF;
   		
   		INSERT INTO cliente(idpersona, nombre, apellidopaterno, apellidomaterno, genero, nacimiento) VALUES (idpersona, nombre, apellidopaterno, apellidomaterno, genero, nacimiento);
   end;
   $$
   LANGUAGE plpgsql;
- 
  
  -- SP que se encargue de eliminar un proveedor a traves de su id
  CREATE OR REPLACE PROCEDURE eliminaProveedor(idproveedor IN INT)
