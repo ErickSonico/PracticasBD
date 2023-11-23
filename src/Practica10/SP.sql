@@ -32,7 +32,7 @@ BEGIN
  AS $$
  BEGIN 
 	 
- 		IF idproveedor IS NULL OR idproveedor <= 0 THEN
+ 		IF idproveedor <= 0 THEN
     	RAISE EXCEPTION 'El identificador no es válido';
   		END IF;
   	
