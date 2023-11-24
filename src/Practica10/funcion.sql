@@ -27,22 +27,22 @@ where v.IDPersona = 50;
 
 
 --ii. Una función que reciba el bioma y calcule el número de animales en ese bioma.
-create or replace function animalesBioma (bioma VARCHAR(30)) returns int 
-as $$
-declare 
+CREATE OR REPLACE FUNCTION animalesBioma (bioma VARCHAR(30)) RETURNS INT 
+AS $$
+DECLARE 
 	fila animal%ROWTYPE;
 	contador int := 0;
-begin 
-	for fila in 
-	select IDAnimal
-	from Animal a natural join Jaula b natural join Bioma c
-	where c.Tipo = bioma
+BEGIN 
+	FOR fila IN 
+	SELECT IDAnimal
+	FROM Animal a NATURAL JOIN Jaula b NATURAL JOIN Bioma c
+	WHERE c.Tipo = bioma
 
-	loop 
+	LOOP 
 		contador = contador + 1;
-	end loop;
-	return contador;
-end;
+	END LOOP;
+	RETURN contador;
+END;
 $$ LANGUAGE plpgsql;
 
 SELECT animalesBioma('Franja');
