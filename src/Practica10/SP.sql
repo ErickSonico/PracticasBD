@@ -23,9 +23,13 @@ BEGIN
   		END IF;
   		
   		INSERT INTO cliente(idpersona, nombre, apellidopaterno, apellidomaterno, genero, nacimiento) VALUES (idpersona, nombre, apellidopaterno, apellidomaterno, genero, nacimiento);
-  end;
+  END;
   $$
   LANGUAGE plpgsql;
+ 
+ 
+ CALL agregacliente(200, 'Mariano', 'Colexcua', 'Ramírez', 'M', '2002-04-21');
+ CALL agregacliente(201, 'Marian0', 'Colexcua', 'Ramírez', 'M', '2002-04-21'); -- Lanza error
  
  -- SP que se encargue de eliminar un proveedor a traves de su id
  CREATE OR REPLACE PROCEDURE eliminaProveedor(idproveedor IN INT)
@@ -41,3 +45,5 @@ BEGIN
 END;
 $$
 LANGUAGE plpgsql;
+
+CALL eliminaproveedor(2);
